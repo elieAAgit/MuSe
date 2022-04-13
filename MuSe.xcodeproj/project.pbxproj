@@ -34,6 +34,9 @@
 		0D94BA21280702B800AC8A6D /* Place.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D94BA20280702B800AC8A6D /* Place.storyboard */; };
 		0D94BA24280739BC00AC8A6D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA23280739BB00AC8A6D /* Coordinator.swift */; };
 		0D94BA2628073A0500AC8A6D /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA2528073A0400AC8A6D /* Storyboarded.swift */; };
+		0D94BA2928073C6900AC8A6D /* MainNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA2828073C6900AC8A6D /* MainNavigator.swift */; };
+		0D94BA2B28073D8F00AC8A6D /* FavoritesNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA2A28073D8F00AC8A6D /* FavoritesNavigator.swift */; };
+		0D94BA2D28073DF900AC8A6D /* HistoryNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA2C28073DF900AC8A6D /* HistoryNavigator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +88,9 @@
 		0D94BA20280702B800AC8A6D /* Place.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Place.storyboard; sourceTree = "<group>"; };
 		0D94BA23280739BB00AC8A6D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		0D94BA2528073A0400AC8A6D /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		0D94BA2828073C6900AC8A6D /* MainNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigator.swift; sourceTree = "<group>"; };
+		0D94BA2A28073D8F00AC8A6D /* FavoritesNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesNavigator.swift; sourceTree = "<group>"; };
+		0D94BA2C28073DF900AC8A6D /* HistoryNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryNavigator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				0D94BA222807399900AC8A6D /* Protocols */,
+				0D94BA2728073C4300AC8A6D /* Navigation */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -251,6 +258,16 @@
 				0D94BA2528073A0400AC8A6D /* Storyboarded.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		0D94BA2728073C4300AC8A6D /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				0D94BA2828073C6900AC8A6D /* MainNavigator.swift */,
+				0D94BA2A28073D8F00AC8A6D /* FavoritesNavigator.swift */,
+				0D94BA2C28073DF900AC8A6D /* HistoryNavigator.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -393,16 +410,19 @@
 				0D5C38F62805AFCB005BF28D /* HomeViewController.swift in Sources */,
 				0D94BA24280739BC00AC8A6D /* Coordinator.swift in Sources */,
 				0D5C38B92805AA8A005BF28D /* AppDelegate.swift in Sources */,
+				0D94BA2D28073DF900AC8A6D /* HistoryNavigator.swift in Sources */,
 				0D5C38BB2805AA8A005BF28D /* SceneDelegate.swift in Sources */,
 				0D94BA1D2806FF5A00AC8A6D /* HistoryViewController.swift in Sources */,
 				0D5C38C32805AA8A005BF28D /* MuSe.xcdatamodeld in Sources */,
 				0D5C38EF2805AB34005BF28D /* MainViewController.swift in Sources */,
 				0D94BA112806D39000AC8A6D /* RoundButton.swift in Sources */,
 				0D94BA172806F20800AC8A6D /* RoundedView.swift in Sources */,
+				0D94BA2928073C6900AC8A6D /* MainNavigator.swift in Sources */,
 				0D5C38F92805B625005BF28D /* AnimateButton.swift in Sources */,
 				0D94BA1F280702A400AC8A6D /* PlaceViewController.swift in Sources */,
 				0D5C38FB2805BCF8005BF28D /* MapViewController.swift in Sources */,
 				0D94BA192806F9C200AC8A6D /* FavoritesViewController.swift in Sources */,
+				0D94BA2B28073D8F00AC8A6D /* FavoritesNavigator.swift in Sources */,
 				0D5C393E280606D2005BF28D /* CapsuleButton.swift in Sources */,
 				0D94BA2628073A0500AC8A6D /* Storyboarded.swift in Sources */,
 			);
