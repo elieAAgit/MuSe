@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="MapViewController" id="Y6W-OH-hqX" customClass="MapViewController" customModule="MuSe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="wuY-EY-07f">
+                                <rect key="frame" x="0.0" y="44" width="428" height="882"/>
+                            </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LCW-Qw-xBk" userLabel="Buttons View">
+                                <rect key="frame" x="0.0" y="60" width="428" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0j-Kk-3mR" userLabel="Filters" customClass="CapsuleButton" customModule="MuSe" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="0.0" width="100" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Boh-Vd-Wrk">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                                            </constraint>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Filtres">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                            <imageReference key="image" image="text.alignleft" catalog="system" symbolScale="large"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="showFilters:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="vVs-Rc-Fcj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWZ-bR-KUl" userLabel="fav" customClass="CapsuleButton" customModule="MuSe" customModuleProvider="target">
+                                        <rect key="frame" x="298" y="0.0" width="40" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="KWZ-bR-KUl" secondAttribute="height" multiplier="1:1" id="3id-rs-DEP"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                            <imageReference key="image" image="heart" catalog="system" symbolScale="large"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium" weight="regular"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wut-xW-lsy" userLabel="Finder" customClass="RoundButton" customModule="MuSe" customModuleProvider="target">
+                                        <rect key="frame" x="368" y="0.0" width="40" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="wut-xW-lsy" secondAttribute="height" multiplier="1:1" id="Cne-mG-0bb"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                            <imageReference key="image" image="viewfinder.circle" catalog="system" symbolScale="large"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium" weight="semibold"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="wut-xW-lsy" firstAttribute="top" secondItem="LCW-Qw-xBk" secondAttribute="top" id="3yQ-qb-rMz"/>
+                                    <constraint firstAttribute="bottom" secondItem="d0j-Kk-3mR" secondAttribute="bottom" id="6sE-tO-B7W"/>
+                                    <constraint firstAttribute="bottom" secondItem="KWZ-bR-KUl" secondAttribute="bottom" id="Ee3-jA-Lf5"/>
+                                    <constraint firstItem="KWZ-bR-KUl" firstAttribute="top" secondItem="LCW-Qw-xBk" secondAttribute="top" id="TPj-2Z-Ld9"/>
+                                    <constraint firstAttribute="height" constant="40" id="dVy-nU-hV6">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                    </constraint>
+                                    <constraint firstAttribute="bottom" secondItem="wut-xW-lsy" secondAttribute="bottom" id="e9w-Ky-UGL"/>
+                                    <constraint firstItem="d0j-Kk-3mR" firstAttribute="top" secondItem="LCW-Qw-xBk" secondAttribute="top" id="gwv-JX-c3k"/>
+                                    <constraint firstItem="wut-xW-lsy" firstAttribute="leading" secondItem="KWZ-bR-KUl" secondAttribute="trailing" constant="30" id="mP3-ug-ANW">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                    </constraint>
+                                </constraints>
+                            </view>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="gl3-Iy-mFe" userLabel="Filters Stack View">
+                                <rect key="frame" x="20" y="120" width="150" height="208"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ira-C4-Xek" customClass="CapsuleButton" customModule="MuSe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Musée" image="Museum">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        </variation>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKZ-Df-Zv7" customClass="CapsuleButton" customModule="MuSe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="56" width="150" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Cinéma" image="Theatre">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        </variation>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HFG-bX-2S6" customClass="CapsuleButton" customModule="MuSe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="112" width="150" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="3UE-oY-AOF">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                            </constraint>
+                                            <constraint firstAttribute="width" constant="150" id="o4L-uC-rEx">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                            </constraint>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Bibliothèque" image="Library">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        </variation>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCP-Lf-YRo" customClass="CapsuleButton" customModule="MuSe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="168" width="150" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Jardin" image="Garden">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        </variation>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="ButtonColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="wuY-EY-07f" secondAttribute="trailing" id="Bd2-cO-mdt"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="wut-xW-lsy" secondAttribute="trailing" constant="20" id="Egn-XT-aA9">
+                                <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="LCW-Qw-xBk" secondAttribute="trailing" id="K6S-Bc-b2P"/>
+                            <constraint firstItem="wuY-EY-07f" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="LJF-HC-FZf"/>
+                            <constraint firstItem="gl3-Iy-mFe" firstAttribute="leading" secondItem="d0j-Kk-3mR" secondAttribute="leading" id="Uf2-lw-3RB"/>
+                            <constraint firstItem="LCW-Qw-xBk" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="d8x-XN-10Z"/>
+                            <constraint firstItem="LCW-Qw-xBk" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="dXn-fR-Qd2"/>
+                            <constraint firstItem="d0j-Kk-3mR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="j2b-vS-UF8">
+                                <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                            </constraint>
+                            <constraint firstAttribute="bottom" secondItem="wuY-EY-07f" secondAttribute="bottom" id="lqi-yr-HgB"/>
+                            <constraint firstItem="gl3-Iy-mFe" firstAttribute="top" secondItem="LCW-Qw-xBk" secondAttribute="bottom" constant="20" id="vyD-Zq-Spw"/>
+                            <constraint firstItem="wuY-EY-07f" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="zjb-PR-dAr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="filtersStackView" destination="gl3-Iy-mFe" id="hc3-N7-afa"/>
+                        <outlet property="mapView" destination="wuY-EY-07f" id="QTv-kw-dTu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="38.839285714285715" y="59.420289855072468"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Garden" width="32" height="32"/>
+        <image name="Library" width="32" height="32"/>
+        <image name="Museum" width="32" height="32"/>
+        <image name="Theatre" width="32" height="32"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="text.alignleft" catalog="system" width="128" height="100"/>
+        <image name="viewfinder.circle" catalog="system" width="128" height="121"/>
+        <namedColor name="ButtonColor">
+            <color red="0.41499999165534973" green="0.14300000667572021" blue="0.43299999833106995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
