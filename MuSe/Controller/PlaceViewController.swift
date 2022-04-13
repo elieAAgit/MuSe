@@ -8,7 +8,7 @@
 import UIKit
 import MapKit
 
-class PlaceViewController: UIViewController {
+class PlaceViewController: UIViewController, Storyboarded {
 
     // MARK: - Properties
 
