@@ -30,6 +30,8 @@
 		0D94BA192806F9C200AC8A6D /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA182806F9C200AC8A6D /* FavoritesViewController.swift */; };
 		0D94BA1B2806FA8300AC8A6D /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D94BA1A2806FA8300AC8A6D /* History.storyboard */; };
 		0D94BA1D2806FF5A00AC8A6D /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA1C2806FF5A00AC8A6D /* HistoryViewController.swift */; };
+		0D94BA1F280702A400AC8A6D /* PlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA1E280702A400AC8A6D /* PlaceViewController.swift */; };
+		0D94BA21280702B800AC8A6D /* Place.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D94BA20280702B800AC8A6D /* Place.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		0D94BA182806F9C200AC8A6D /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		0D94BA1A2806FA8300AC8A6D /* History.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
 		0D94BA1C2806FF5A00AC8A6D /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		0D94BA1E280702A400AC8A6D /* PlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewController.swift; sourceTree = "<group>"; };
+		0D94BA20280702B800AC8A6D /* Place.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Place.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +186,7 @@
 				0D5C38FA2805BCF7005BF28D /* MapViewController.swift */,
 				0D94BA182806F9C200AC8A6D /* FavoritesViewController.swift */,
 				0D94BA1C2806FF5A00AC8A6D /* HistoryViewController.swift */,
+				0D94BA1E280702A400AC8A6D /* PlaceViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -194,6 +199,7 @@
 				0D5C38FC2805BD15005BF28D /* Map.storyboard */,
 				0D94BA142806DE3500AC8A6D /* Favorites.storyboard */,
 				0D94BA1A2806FA8300AC8A6D /* History.storyboard */,
+				0D94BA20280702B800AC8A6D /* Place.storyboard */,
 				0D5C38F72805B603005BF28D /* Extension */,
 			);
 			path = View;
@@ -341,6 +347,7 @@
 				0D5C38C52805AA91005BF28D /* Assets.xcassets in Resources */,
 				0D94BA1B2806FA8300AC8A6D /* History.storyboard in Resources */,
 				0D94BA152806DE3500AC8A6D /* Favorites.storyboard in Resources */,
+				0D94BA21280702B800AC8A6D /* Place.storyboard in Resources */,
 				0D5C38FD2805BD15005BF28D /* Map.storyboard in Resources */,
 				0D5C38C02805AA8A005BF28D /* Main.storyboard in Resources */,
 				0D5C38F42805AF9F005BF28D /* Home.storyboard in Resources */,
@@ -378,6 +385,7 @@
 				0D94BA112806D39000AC8A6D /* RoundButton.swift in Sources */,
 				0D94BA172806F20800AC8A6D /* RoundedView.swift in Sources */,
 				0D5C38F92805B625005BF28D /* AnimateButton.swift in Sources */,
+				0D94BA1F280702A400AC8A6D /* PlaceViewController.swift in Sources */,
 				0D5C38FB2805BCF8005BF28D /* MapViewController.swift in Sources */,
 				0D94BA192806F9C200AC8A6D /* FavoritesViewController.swift in Sources */,
 				0D5C393E280606D2005BF28D /* CapsuleButton.swift in Sources */,
