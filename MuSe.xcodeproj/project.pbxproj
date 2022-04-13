@@ -37,6 +37,8 @@
 		0D94BA2928073C6900AC8A6D /* MainNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA2828073C6900AC8A6D /* MainNavigator.swift */; };
 		0D94BA2B28073D8F00AC8A6D /* FavoritesNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA2A28073D8F00AC8A6D /* FavoritesNavigator.swift */; };
 		0D94BA2D28073DF900AC8A6D /* HistoryNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA2C28073DF900AC8A6D /* HistoryNavigator.swift */; };
+		0D94BA2F28073F1F00AC8A6D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA2E28073F1F00AC8A6D /* TabBarController.swift */; };
+		0D94BA322807402700AC8A6D /* TabBarAndNavDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA312807402700AC8A6D /* TabBarAndNavDesign.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,8 @@
 		0D94BA2828073C6900AC8A6D /* MainNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigator.swift; sourceTree = "<group>"; };
 		0D94BA2A28073D8F00AC8A6D /* FavoritesNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesNavigator.swift; sourceTree = "<group>"; };
 		0D94BA2C28073DF900AC8A6D /* HistoryNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryNavigator.swift; sourceTree = "<group>"; };
+		0D94BA2E28073F1F00AC8A6D /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		0D94BA312807402700AC8A6D /* TabBarAndNavDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarAndNavDesign.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +232,7 @@
 			children = (
 				0D94BA222807399900AC8A6D /* Protocols */,
 				0D94BA2728073C4300AC8A6D /* Navigation */,
+				0D94BA3028073FF300AC8A6D /* Navigation configuration */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -266,8 +271,17 @@
 				0D94BA2828073C6900AC8A6D /* MainNavigator.swift */,
 				0D94BA2A28073D8F00AC8A6D /* FavoritesNavigator.swift */,
 				0D94BA2C28073DF900AC8A6D /* HistoryNavigator.swift */,
+				0D94BA2E28073F1F00AC8A6D /* TabBarController.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		0D94BA3028073FF300AC8A6D /* Navigation configuration */ = {
+			isa = PBXGroup;
+			children = (
+				0D94BA312807402700AC8A6D /* TabBarAndNavDesign.swift */,
+			);
+			path = "Navigation configuration";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,6 +433,8 @@
 				0D94BA172806F20800AC8A6D /* RoundedView.swift in Sources */,
 				0D94BA2928073C6900AC8A6D /* MainNavigator.swift in Sources */,
 				0D5C38F92805B625005BF28D /* AnimateButton.swift in Sources */,
+				0D94BA322807402700AC8A6D /* TabBarAndNavDesign.swift in Sources */,
+				0D94BA2F28073F1F00AC8A6D /* TabBarController.swift in Sources */,
 				0D94BA1F280702A400AC8A6D /* PlaceViewController.swift in Sources */,
 				0D5C38FB2805BCF8005BF28D /* MapViewController.swift in Sources */,
 				0D94BA192806F9C200AC8A6D /* FavoritesViewController.swift in Sources */,
