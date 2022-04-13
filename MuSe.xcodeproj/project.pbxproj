@@ -42,6 +42,7 @@
 		0D94BA342807438800AC8A6D /* NavigationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA332807438800AC8A6D /* NavigationConfiguration.swift */; };
 		0D94BA36280743C100AC8A6D /* ButtonBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA35280743C100AC8A6D /* ButtonBack.swift */; };
 		0D94BA38280746FA00AC8A6D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA37280746FA00AC8A6D /* AppCoordinator.swift */; };
+		0D94BA3B280752C300AC8A6D /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA3A280752C300AC8A6D /* MainCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		0D94BA332807438800AC8A6D /* NavigationConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationConfiguration.swift; sourceTree = "<group>"; };
 		0D94BA35280743C100AC8A6D /* ButtonBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBack.swift; sourceTree = "<group>"; };
 		0D94BA37280746FA00AC8A6D /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		0D94BA3A280752C300AC8A6D /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +242,7 @@
 				0D94BA222807399900AC8A6D /* Protocols */,
 				0D94BA2728073C4300AC8A6D /* Navigation */,
 				0D94BA3028073FF300AC8A6D /* Navigation configuration */,
+				0D94BA392807526E00AC8A6D /* Coordinators */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -291,6 +294,14 @@
 				0D94BA35280743C100AC8A6D /* ButtonBack.swift */,
 			);
 			path = "Navigation configuration";
+			sourceTree = "<group>";
+		};
+		0D94BA392807526E00AC8A6D /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				0D94BA3A280752C300AC8A6D /* MainCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -442,6 +453,7 @@
 				0D94BA112806D39000AC8A6D /* RoundButton.swift in Sources */,
 				0D94BA172806F20800AC8A6D /* RoundedView.swift in Sources */,
 				0D94BA38280746FA00AC8A6D /* AppCoordinator.swift in Sources */,
+				0D94BA3B280752C300AC8A6D /* MainCoordinator.swift in Sources */,
 				0D94BA2928073C6900AC8A6D /* MainNavigator.swift in Sources */,
 				0D5C38F92805B625005BF28D /* AnimateButton.swift in Sources */,
 				0D94BA322807402700AC8A6D /* TabBarAndNavDesign.swift in Sources */,
