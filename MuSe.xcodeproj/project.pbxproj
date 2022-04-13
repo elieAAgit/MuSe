@@ -39,6 +39,8 @@
 		0D94BA2D28073DF900AC8A6D /* HistoryNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA2C28073DF900AC8A6D /* HistoryNavigator.swift */; };
 		0D94BA2F28073F1F00AC8A6D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA2E28073F1F00AC8A6D /* TabBarController.swift */; };
 		0D94BA322807402700AC8A6D /* TabBarAndNavDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA312807402700AC8A6D /* TabBarAndNavDesign.swift */; };
+		0D94BA342807438800AC8A6D /* NavigationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA332807438800AC8A6D /* NavigationConfiguration.swift */; };
+		0D94BA36280743C100AC8A6D /* ButtonBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA35280743C100AC8A6D /* ButtonBack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +97,8 @@
 		0D94BA2C28073DF900AC8A6D /* HistoryNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryNavigator.swift; sourceTree = "<group>"; };
 		0D94BA2E28073F1F00AC8A6D /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		0D94BA312807402700AC8A6D /* TabBarAndNavDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarAndNavDesign.swift; sourceTree = "<group>"; };
+		0D94BA332807438800AC8A6D /* NavigationConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationConfiguration.swift; sourceTree = "<group>"; };
+		0D94BA35280743C100AC8A6D /* ButtonBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,6 +284,8 @@
 			isa = PBXGroup;
 			children = (
 				0D94BA312807402700AC8A6D /* TabBarAndNavDesign.swift */,
+				0D94BA332807438800AC8A6D /* NavigationConfiguration.swift */,
+				0D94BA35280743C100AC8A6D /* ButtonBack.swift */,
 			);
 			path = "Navigation configuration";
 			sourceTree = "<group>";
@@ -426,6 +432,7 @@
 				0D5C38B92805AA8A005BF28D /* AppDelegate.swift in Sources */,
 				0D94BA2D28073DF900AC8A6D /* HistoryNavigator.swift in Sources */,
 				0D5C38BB2805AA8A005BF28D /* SceneDelegate.swift in Sources */,
+				0D94BA36280743C100AC8A6D /* ButtonBack.swift in Sources */,
 				0D94BA1D2806FF5A00AC8A6D /* HistoryViewController.swift in Sources */,
 				0D5C38C32805AA8A005BF28D /* MuSe.xcdatamodeld in Sources */,
 				0D5C38EF2805AB34005BF28D /* MainViewController.swift in Sources */,
@@ -436,6 +443,7 @@
 				0D94BA322807402700AC8A6D /* TabBarAndNavDesign.swift in Sources */,
 				0D94BA2F28073F1F00AC8A6D /* TabBarController.swift in Sources */,
 				0D94BA1F280702A400AC8A6D /* PlaceViewController.swift in Sources */,
+				0D94BA342807438800AC8A6D /* NavigationConfiguration.swift in Sources */,
 				0D5C38FB2805BCF8005BF28D /* MapViewController.swift in Sources */,
 				0D94BA192806F9C200AC8A6D /* FavoritesViewController.swift in Sources */,
 				0D94BA2B28073D8F00AC8A6D /* FavoritesNavigator.swift in Sources */,
