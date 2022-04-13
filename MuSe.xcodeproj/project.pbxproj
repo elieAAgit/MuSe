@@ -25,6 +25,11 @@
 		0D5C393E280606D2005BF28D /* CapsuleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C393D280606D2005BF28D /* CapsuleButton.swift */; };
 		0D94BA0F2806D20300AC8A6D /* Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA0E2806D20300AC8A6D /* Design.swift */; };
 		0D94BA112806D39000AC8A6D /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA102806D39000AC8A6D /* RoundButton.swift */; };
+		0D94BA152806DE3500AC8A6D /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D94BA142806DE3500AC8A6D /* Favorites.storyboard */; };
+		0D94BA172806F20800AC8A6D /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA162806F20700AC8A6D /* RoundedView.swift */; };
+		0D94BA192806F9C200AC8A6D /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA182806F9C200AC8A6D /* FavoritesViewController.swift */; };
+		0D94BA1B2806FA8300AC8A6D /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D94BA1A2806FA8300AC8A6D /* History.storyboard */; };
+		0D94BA1D2806FF5A00AC8A6D /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA1C2806FF5A00AC8A6D /* HistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +72,11 @@
 		0D5C393D280606D2005BF28D /* CapsuleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleButton.swift; sourceTree = "<group>"; };
 		0D94BA0E2806D20300AC8A6D /* Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design.swift; sourceTree = "<group>"; };
 		0D94BA102806D39000AC8A6D /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		0D94BA142806DE3500AC8A6D /* Favorites.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favorites.storyboard; sourceTree = "<group>"; };
+		0D94BA162806F20700AC8A6D /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		0D94BA182806F9C200AC8A6D /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		0D94BA1A2806FA8300AC8A6D /* History.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
+		0D94BA1C2806FF5A00AC8A6D /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +180,8 @@
 				0D5C38EE2805AB34005BF28D /* MainViewController.swift */,
 				0D5C38F52805AFCB005BF28D /* HomeViewController.swift */,
 				0D5C38FA2805BCF7005BF28D /* MapViewController.swift */,
+				0D94BA182806F9C200AC8A6D /* FavoritesViewController.swift */,
+				0D94BA1C2806FF5A00AC8A6D /* HistoryViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -180,6 +192,8 @@
 				0D5C38BE2805AA8A005BF28D /* Main.storyboard */,
 				0D5C38F32805AF9F005BF28D /* Home.storyboard */,
 				0D5C38FC2805BD15005BF28D /* Map.storyboard */,
+				0D94BA142806DE3500AC8A6D /* Favorites.storyboard */,
+				0D94BA1A2806FA8300AC8A6D /* History.storyboard */,
 				0D5C38F72805B603005BF28D /* Extension */,
 			);
 			path = View;
@@ -206,6 +220,7 @@
 				0D5C38F82805B625005BF28D /* AnimateButton.swift */,
 				0D94BA102806D39000AC8A6D /* RoundButton.swift */,
 				0D5C393D280606D2005BF28D /* CapsuleButton.swift */,
+				0D94BA162806F20700AC8A6D /* RoundedView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -324,6 +339,8 @@
 			files = (
 				0D5C38C82805AA91005BF28D /* LaunchScreen.storyboard in Resources */,
 				0D5C38C52805AA91005BF28D /* Assets.xcassets in Resources */,
+				0D94BA1B2806FA8300AC8A6D /* History.storyboard in Resources */,
+				0D94BA152806DE3500AC8A6D /* Favorites.storyboard in Resources */,
 				0D5C38FD2805BD15005BF28D /* Map.storyboard in Resources */,
 				0D5C38C02805AA8A005BF28D /* Main.storyboard in Resources */,
 				0D5C38F42805AF9F005BF28D /* Home.storyboard in Resources */,
@@ -355,11 +372,14 @@
 				0D5C38F62805AFCB005BF28D /* HomeViewController.swift in Sources */,
 				0D5C38B92805AA8A005BF28D /* AppDelegate.swift in Sources */,
 				0D5C38BB2805AA8A005BF28D /* SceneDelegate.swift in Sources */,
+				0D94BA1D2806FF5A00AC8A6D /* HistoryViewController.swift in Sources */,
 				0D5C38C32805AA8A005BF28D /* MuSe.xcdatamodeld in Sources */,
 				0D5C38EF2805AB34005BF28D /* MainViewController.swift in Sources */,
 				0D94BA112806D39000AC8A6D /* RoundButton.swift in Sources */,
+				0D94BA172806F20800AC8A6D /* RoundedView.swift in Sources */,
 				0D5C38F92805B625005BF28D /* AnimateButton.swift in Sources */,
 				0D5C38FB2805BCF8005BF28D /* MapViewController.swift in Sources */,
+				0D94BA192806F9C200AC8A6D /* FavoritesViewController.swift in Sources */,
 				0D5C393E280606D2005BF28D /* CapsuleButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
