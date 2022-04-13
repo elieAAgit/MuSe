@@ -43,6 +43,8 @@
 		0D94BA36280743C100AC8A6D /* ButtonBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA35280743C100AC8A6D /* ButtonBack.swift */; };
 		0D94BA38280746FA00AC8A6D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA37280746FA00AC8A6D /* AppCoordinator.swift */; };
 		0D94BA3B280752C300AC8A6D /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA3A280752C300AC8A6D /* MainCoordinator.swift */; };
+		0D94BA3D280756BE00AC8A6D /* FavoritesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA3C280756BE00AC8A6D /* FavoritesCoordinator.swift */; };
+		0D94BA3F2807577000AC8A6D /* HistoryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA3E2807577000AC8A6D /* HistoryCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +105,8 @@
 		0D94BA35280743C100AC8A6D /* ButtonBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBack.swift; sourceTree = "<group>"; };
 		0D94BA37280746FA00AC8A6D /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		0D94BA3A280752C300AC8A6D /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		0D94BA3C280756BE00AC8A6D /* FavoritesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCoordinator.swift; sourceTree = "<group>"; };
+		0D94BA3E2807577000AC8A6D /* HistoryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,6 +304,8 @@
 			isa = PBXGroup;
 			children = (
 				0D94BA3A280752C300AC8A6D /* MainCoordinator.swift */,
+				0D94BA3C280756BE00AC8A6D /* FavoritesCoordinator.swift */,
+				0D94BA3E2807577000AC8A6D /* HistoryCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -442,10 +448,12 @@
 			files = (
 				0D94BA0F2806D20300AC8A6D /* Design.swift in Sources */,
 				0D5C38F62805AFCB005BF28D /* HomeViewController.swift in Sources */,
+				0D94BA3F2807577000AC8A6D /* HistoryCoordinator.swift in Sources */,
 				0D94BA24280739BC00AC8A6D /* Coordinator.swift in Sources */,
 				0D5C38B92805AA8A005BF28D /* AppDelegate.swift in Sources */,
 				0D94BA2D28073DF900AC8A6D /* HistoryNavigator.swift in Sources */,
 				0D5C38BB2805AA8A005BF28D /* SceneDelegate.swift in Sources */,
+				0D94BA3D280756BE00AC8A6D /* FavoritesCoordinator.swift in Sources */,
 				0D94BA36280743C100AC8A6D /* ButtonBack.swift in Sources */,
 				0D94BA1D2806FF5A00AC8A6D /* HistoryViewController.swift in Sources */,
 				0D5C38C32805AA8A005BF28D /* MuSe.xcdatamodeld in Sources */,

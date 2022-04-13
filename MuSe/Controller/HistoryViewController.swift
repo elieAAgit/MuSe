@@ -11,6 +11,8 @@ class HistoryViewController: UIViewController, Storyboarded {
 
     // MARK: - Properties
 
+    weak var coordinator: Coordinator?
+
     @IBOutlet weak var missingEntry: RoundedView!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!

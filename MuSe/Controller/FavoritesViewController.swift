@@ -11,6 +11,8 @@ class FavoritesViewController: UIViewController, Storyboarded {
 
     // MARK: - Properties
 
+    weak var coordinator: FavoritesCoordinator?
+
     @IBOutlet weak var missingEntry: RoundedView!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
