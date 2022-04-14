@@ -53,6 +53,13 @@
 		0DB20223280809FE00262DEE /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DB20221280809FE00262DEE /* HomeCollectionViewCell.xib */; };
 		0DB202252808200C00262DEE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB202242808200C00262DEE /* HomeViewModel.swift */; };
 		0DB20227280821F800262DEE /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB20226280821F700262DEE /* HomeCoordinator.swift */; };
+		0DB2022B28082EE600262DEE /* MuseumDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB2022A28082EE600262DEE /* MuseumDecodable.swift */; };
+		0DB2022D28082F6F00262DEE /* TheatreDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB2022C28082F6F00262DEE /* TheatreDecodable.swift */; };
+		0DB2022F28082F8B00262DEE /* GardenDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB2022E28082F8B00262DEE /* GardenDecodable.swift */; };
+		0DB2023128082FC200262DEE /* LibraryDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB2023028082FC200262DEE /* LibraryDecodable.swift */; };
+		0DB202342808300C00262DEE /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB202332808300C00262DEE /* ApiKeys.swift */; };
+		0DB202382808539100262DEE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB202372808539100262DEE /* NetworkManager.swift */; };
+		0DB2023A2808559800262DEE /* NetworkTreatment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB202392808559800262DEE /* NetworkTreatment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +130,13 @@
 		0DB20221280809FE00262DEE /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		0DB202242808200C00262DEE /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		0DB20226280821F700262DEE /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		0DB2022A28082EE600262DEE /* MuseumDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumDecodable.swift; sourceTree = "<group>"; };
+		0DB2022C28082F6F00262DEE /* TheatreDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheatreDecodable.swift; sourceTree = "<group>"; };
+		0DB2022E28082F8B00262DEE /* GardenDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenDecodable.swift; sourceTree = "<group>"; };
+		0DB2023028082FC200262DEE /* LibraryDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryDecodable.swift; sourceTree = "<group>"; };
+		0DB202332808300C00262DEE /* ApiKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
+		0DB202372808539100262DEE /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		0DB202392808559800262DEE /* NetworkTreatment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTreatment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +187,7 @@
 		0D5C38B72805AA8A005BF28D /* MuSe */ = {
 			isa = PBXGroup;
 			children = (
+				0DB2022828082EB200262DEE /* Network */,
 				0D5C38F22805ABAA005BF28D /* Coordinator */,
 				0D5C38F12805AB9C005BF28D /* Model */,
 				0D94BA0D2806D1CF00AC8A6D /* Design */,
@@ -334,6 +349,36 @@
 			path = Coordinators;
 			sourceTree = "<group>";
 		};
+		0DB2022828082EB200262DEE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0DB202372808539100262DEE /* NetworkManager.swift */,
+				0DB202392808559800262DEE /* NetworkTreatment.swift */,
+				0DB2023228082FF800262DEE /* ApiKeys */,
+				0DB2022928082EBB00262DEE /* Decodables */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0DB2022928082EBB00262DEE /* Decodables */ = {
+			isa = PBXGroup;
+			children = (
+				0DB2022A28082EE600262DEE /* MuseumDecodable.swift */,
+				0DB2022C28082F6F00262DEE /* TheatreDecodable.swift */,
+				0DB2022E28082F8B00262DEE /* GardenDecodable.swift */,
+				0DB2023028082FC200262DEE /* LibraryDecodable.swift */,
+			);
+			path = Decodables;
+			sourceTree = "<group>";
+		};
+		0DB2023228082FF800262DEE /* ApiKeys */ = {
+			isa = PBXGroup;
+			children = (
+				0DB202332808300C00262DEE /* ApiKeys.swift */,
+			);
+			path = ApiKeys;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -475,7 +520,9 @@
 				0D94BA0F2806D20300AC8A6D /* Design.swift in Sources */,
 				0D5C38F62805AFCB005BF28D /* HomeViewController.swift in Sources */,
 				0D94BA3F2807577000AC8A6D /* HistoryCoordinator.swift in Sources */,
+				0DB202382808539100262DEE /* NetworkManager.swift in Sources */,
 				0DB202252808200C00262DEE /* HomeViewModel.swift in Sources */,
+				0DB2022F28082F8B00262DEE /* GardenDecodable.swift in Sources */,
 				0D94BA432807685700AC8A6D /* PlaceTableViewCell.swift in Sources */,
 				0D94BA24280739BC00AC8A6D /* Coordinator.swift in Sources */,
 				0D5C38B92805AA8A005BF28D /* AppDelegate.swift in Sources */,
@@ -488,6 +535,7 @@
 				0D94BA1D2806FF5A00AC8A6D /* HistoryViewController.swift in Sources */,
 				0D94BA4628076C6A00AC8A6D /* Category.swift in Sources */,
 				0D5C38C32805AA8A005BF28D /* MuSe.xcdatamodeld in Sources */,
+				0DB2022D28082F6F00262DEE /* TheatreDecodable.swift in Sources */,
 				0D5C38EF2805AB34005BF28D /* MainViewController.swift in Sources */,
 				0D94BA112806D39000AC8A6D /* RoundButton.swift in Sources */,
 				0D94BA172806F20800AC8A6D /* RoundedView.swift in Sources */,
@@ -498,13 +546,17 @@
 				0D94BA322807402700AC8A6D /* TabBarAndNavDesign.swift in Sources */,
 				0D94BA2F28073F1F00AC8A6D /* TabBarController.swift in Sources */,
 				0D94BA1F280702A400AC8A6D /* PlaceViewController.swift in Sources */,
+				0DB202342808300C00262DEE /* ApiKeys.swift in Sources */,
 				0D94BA342807438800AC8A6D /* NavigationConfiguration.swift in Sources */,
+				0DB2023A2808559800262DEE /* NetworkTreatment.swift in Sources */,
 				0D5C38FB2805BCF8005BF28D /* MapViewController.swift in Sources */,
 				0D94BA192806F9C200AC8A6D /* FavoritesViewController.swift in Sources */,
 				0D94BA2B28073D8F00AC8A6D /* FavoritesNavigator.swift in Sources */,
 				0D5C393E280606D2005BF28D /* CapsuleButton.swift in Sources */,
+				0DB2023128082FC200262DEE /* LibraryDecodable.swift in Sources */,
 				0D94BA2628073A0500AC8A6D /* Storyboarded.swift in Sources */,
 				0DB20227280821F800262DEE /* HomeCoordinator.swift in Sources */,
+				0DB2022B28082EE600262DEE /* MuseumDecodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
