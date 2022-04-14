@@ -1,13 +1,13 @@
 //
-//  MainCoordinator.swift
+//  HomeCoordinator.swift
 //  MuSe
 //
-//  Created by Qattus on 13/04/2022.
+//  Created by Qattus on 14/04/2022.
 //
 
 import UIKit
 
-final class MainCoordinator: Coordinator {
+final class HomeCoordinator: Coordinator {
 
     // MARK: - Properties
 
@@ -25,20 +25,16 @@ final class MainCoordinator: Coordinator {
     /// Configure Main (with tabBar item)
     func start() {
 
-        let vc = MainViewController.instantiate()
+        let vc = HomeViewController.instantiate()
         let nav = NavigationConfiguration(controller: vc)
-        vc.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "house.fill"), tag: 0)
         vc.coordinator = self
-        nav.configurationNavigation(title: "", buttonBack: "")
+        nav.configurationNavigation(title: "", buttonBack: "Home")
 
         navigationController.pushViewController(vc, animated: false)
     }
 
     /// Go to home view
-    func goToHome() {
-        let child = HomeCoordinator(navigationController: navigationController)
-        childCoordinators.append(child)
-        child.start()
+    func getSelectors(with selectors: [String]) {
 
     }
 
@@ -55,3 +51,4 @@ final class MainCoordinator: Coordinator {
         }
     }
 }
+
