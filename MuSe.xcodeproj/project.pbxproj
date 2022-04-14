@@ -49,6 +49,8 @@
 		0D94BA442807685700AC8A6D /* PlaceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D94BA422807685600AC8A6D /* PlaceTableViewCell.xib */; };
 		0D94BA4628076C6A00AC8A6D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA4528076C6A00AC8A6D /* Category.swift */; };
 		0D94BA48280770C500AC8A6D /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA47280770C500AC8A6D /* Place.swift */; };
+		0DB20222280809FE00262DEE /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB20220280809FE00262DEE /* HomeCollectionViewCell.swift */; };
+		0DB20223280809FE00262DEE /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DB20221280809FE00262DEE /* HomeCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +117,8 @@
 		0D94BA422807685600AC8A6D /* PlaceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceTableViewCell.xib; sourceTree = "<group>"; };
 		0D94BA4528076C6A00AC8A6D /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		0D94BA47280770C500AC8A6D /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		0DB20220280809FE00262DEE /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		0DB20221280809FE00262DEE /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +242,8 @@
 				0D94BA20280702B800AC8A6D /* Place.storyboard */,
 				0D94BA422807685600AC8A6D /* PlaceTableViewCell.xib */,
 				0D5C38F72805B603005BF28D /* Extension */,
+				0DB20220280809FE00262DEE /* HomeCollectionViewCell.swift */,
+				0DB20221280809FE00262DEE /* HomeCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -431,6 +437,7 @@
 				0D94BA442807685700AC8A6D /* PlaceTableViewCell.xib in Resources */,
 				0D94BA1B2806FA8300AC8A6D /* History.storyboard in Resources */,
 				0D94BA152806DE3500AC8A6D /* Favorites.storyboard in Resources */,
+				0DB20223280809FE00262DEE /* HomeCollectionViewCell.xib in Resources */,
 				0D94BA21280702B800AC8A6D /* Place.storyboard in Resources */,
 				0D5C38FD2805BD15005BF28D /* Map.storyboard in Resources */,
 				0D5C38C02805AA8A005BF28D /* Main.storyboard in Resources */,
@@ -467,6 +474,7 @@
 				0D5C38B92805AA8A005BF28D /* AppDelegate.swift in Sources */,
 				0D94BA2D28073DF900AC8A6D /* HistoryNavigator.swift in Sources */,
 				0D5C38BB2805AA8A005BF28D /* SceneDelegate.swift in Sources */,
+				0DB20222280809FE00262DEE /* HomeCollectionViewCell.swift in Sources */,
 				0D94BA3D280756BE00AC8A6D /* FavoritesCoordinator.swift in Sources */,
 				0D94BA48280770C500AC8A6D /* Place.swift in Sources */,
 				0D94BA36280743C100AC8A6D /* ButtonBack.swift in Sources */,
