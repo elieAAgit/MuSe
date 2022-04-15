@@ -45,7 +45,7 @@ final class HistoryNavigator: NSObject, Coordinator, UINavigationControllerDeleg
             childDidFinish(historyViewController.coordinator)
         }
 
-        if let placeViewController = fromViewController as? HistoryViewController {
+        if let placeViewController = fromViewController as? PlaceViewController {
             childDidFinish(placeViewController.coordinator)
         }
     }

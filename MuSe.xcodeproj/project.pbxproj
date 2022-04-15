@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D2EE73C280A06CE00EE6349 /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2EE73B280A06CE00EE6349 /* NetworkModel.swift */; };
+		0D2EE73E280A0B2500EE6349 /* MapCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2EE73D280A0B2500EE6349 /* MapCoordinator.swift */; };
 		0D5C38B92805AA8A005BF28D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C38B82805AA8A005BF28D /* AppDelegate.swift */; };
 		0D5C38BB2805AA8A005BF28D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C38BA2805AA8A005BF28D /* SceneDelegate.swift */; };
 		0D5C38C02805AA8A005BF28D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D5C38BE2805AA8A005BF28D /* Main.storyboard */; };
@@ -83,6 +84,7 @@
 
 /* Begin PBXFileReference section */
 		0D2EE73B280A06CE00EE6349 /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
+		0D2EE73D280A0B2500EE6349 /* MapCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCoordinator.swift; sourceTree = "<group>"; };
 		0D5C38B52805AA8A005BF28D /* MuSe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuSe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D5C38B82805AA8A005BF28D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D5C38BA2805AA8A005BF28D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -348,6 +350,7 @@
 			children = (
 				0D94BA3A280752C300AC8A6D /* MainCoordinator.swift */,
 				0DB20226280821F700262DEE /* HomeCoordinator.swift */,
+				0D2EE73D280A0B2500EE6349 /* MapCoordinator.swift */,
 				0D94BA3C280756BE00AC8A6D /* FavoritesCoordinator.swift */,
 				0D94BA3E2807577000AC8A6D /* HistoryCoordinator.swift */,
 			);
@@ -554,6 +557,7 @@
 				0D94BA322807402700AC8A6D /* TabBarAndNavDesign.swift in Sources */,
 				0D94BA2F28073F1F00AC8A6D /* TabBarController.swift in Sources */,
 				0D94BA1F280702A400AC8A6D /* PlaceViewController.swift in Sources */,
+				0D2EE73E280A0B2500EE6349 /* MapCoordinator.swift in Sources */,
 				0DB202342808300C00262DEE /* ApiKeys.swift in Sources */,
 				0D94BA342807438800AC8A6D /* NavigationConfiguration.swift in Sources */,
 				0DB2023A2808559800262DEE /* NetworkTreatment.swift in Sources */,

@@ -24,7 +24,6 @@ final class MainCoordinator: Coordinator {
 
     /// Configure Main (with tabBar item)
     func start() {
-
         let vc = MainViewController.instantiate()
         let nav = NavigationConfiguration(controller: vc)
         vc.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "house.fill"), tag: 0)
@@ -44,7 +43,6 @@ final class MainCoordinator: Coordinator {
 
     /// Remove the last controller
     func childDidFinish(_ child: Coordinator?) {
-
         for (index, coordinator) in
             childCoordinators.enumerated() {
 

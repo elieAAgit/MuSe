@@ -22,9 +22,8 @@ final class HomeCoordinator: Coordinator {
 
     // MARK: - Methods
 
-    /// Configure Main (with tabBar item)
+    /// Configure Home
     func start() {
-
         let vc = HomeViewController.instantiate()
         let nav = NavigationConfiguration(controller: vc)
         vc.coordinator = self
@@ -33,14 +32,15 @@ final class HomeCoordinator: Coordinator {
         navigationController.pushViewController(vc, animated: false)
     }
 
-    /// Go to home view
+    /// Go to map view
     func getSelectors(with selectors: [String]) {
-
+        let child = MapCoordinator(navigationController: navigationController)
+        childCoordinators.append(child)
+        child.getSelectors(with: selectors)
     }
 
     /// Remove the last controller
     func childDidFinish(_ child: Coordinator?) {
-
         for (index, coordinator) in
             childCoordinators.enumerated() {
 

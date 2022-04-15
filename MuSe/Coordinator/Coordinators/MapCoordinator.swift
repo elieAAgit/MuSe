@@ -1,13 +1,13 @@
 //
-//  HistoryCoordinator.swift
+//  MapCoordinator.swift
 //  MuSe
 //
-//  Created by Qattus on 13/04/2022.
+//  Created by Qattus on 15/04/2022.
 //
 
 import UIKit
 
-final class HistoryCoordinator: Coordinator {
+final class MapCoordinator: Coordinator {
 
     // MARK: - Properties
 
@@ -22,14 +22,23 @@ final class HistoryCoordinator: Coordinator {
 
     // MARK: - Methods
 
-    /// Configure History (with tabBar item)
+    /// Configure Map
     func start() {
 
-        let vc = HistoryViewController.instantiate()
+        let vc = MapViewController.instantiate()
         let nav = NavigationConfiguration(controller: vc)
-        vc.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "clock.arrow.circlepath"), tag: 2)
         vc.coordinator = self
-        nav.configurationNavigation(title: "Historique", buttonBack: "Historique")
+        nav.configurationNavigation(title: "Plan", buttonBack: "Plan")
+
+        navigationController.pushViewController(vc, animated: false)
+    }
+
+    /// Retrieve data from home view
+    func getSelectors(with selectors: [String]) {
+        let vc = MapViewController.instantiate()
+        let nav = NavigationConfiguration(controller: vc)
+        vc.coordinator = self
+        nav.configurationNavigation(title: "Plan", buttonBack: "Plan")
 
         navigationController.pushViewController(vc, animated: false)
     }
@@ -47,3 +56,5 @@ final class HistoryCoordinator: Coordinator {
         }
     }
 }
+
+

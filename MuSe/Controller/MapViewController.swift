@@ -12,6 +12,8 @@ class MapViewController: UIViewController, Storyboarded {
 
     // MARK: - Properties
 
+    weak var coordinator: MapCoordinator!
+
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var filtersStackView: UIStackView!
     
