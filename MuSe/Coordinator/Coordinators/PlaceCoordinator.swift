@@ -1,13 +1,13 @@
 //
-//  FavoritesCoordinator.swift
+//  PlaceCoordinator.swift
 //  MuSe
 //
-//  Created by Qattus on 13/04/2022.
+//  Created by Qattus on 15/04/2022.
 //
 
 import UIKit
 
-final class FavoritesCoordinator: Coordinator {
+final class PlaceCoordinator: Coordinator {
 
     // MARK: - Properties
 
@@ -22,27 +22,29 @@ final class FavoritesCoordinator: Coordinator {
 
     // MARK: - Methods
 
-    /// Configure Favorites (with tabBar item)
+    /// Configure Place
     func start() {
-
-        let vc = FavoritesViewController.instantiate()
+        let vc = PlaceViewController.instantiate()
         let nav = NavigationConfiguration(controller: vc)
-        vc.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "star.fill"), tag: 1)
         vc.coordinator = self
-        nav.configurationNavigation(title: "Favoris", buttonBack: "Favoris")
+        nav.configurationNavigation(title: "", buttonBack: "")
 
         navigationController.pushViewController(vc, animated: false)
     }
 
+    /// Retrieve data from previous
     func getPlace(with place: Place) {
-        let child = PlaceCoordinator(navigationController: navigationController)
-        childCoordinators.append(child)
-        child.getPlace(with: place)
+        let vc = PlaceViewController.instantiate()
+        let nav = NavigationConfiguration(controller: vc)
+        vc.coordinator = self
+        vc.place = place
+        nav.configurationNavigation(title: place.title, buttonBack: place.title)
+
+        navigationController.pushViewController(vc, animated: false)
     }
 
     /// Remove the last controller
     func childDidFinish(_ child: Coordinator?) {
-
         for (index, coordinator) in
             childCoordinators.enumerated() {
 
@@ -53,3 +55,6 @@ final class FavoritesCoordinator: Coordinator {
         }
     }
 }
+
+
+

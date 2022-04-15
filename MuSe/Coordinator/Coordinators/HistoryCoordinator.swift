@@ -34,6 +34,12 @@ final class HistoryCoordinator: Coordinator {
         navigationController.pushViewController(vc, animated: false)
     }
 
+    func getPlace(with place: Place) {
+        let child = PlaceCoordinator(navigationController: navigationController)
+        childCoordinators.append(child)
+        child.getPlace(with: place)
+    }
+
     /// Remove the last controller
     func childDidFinish(_ child: Coordinator?) {
 

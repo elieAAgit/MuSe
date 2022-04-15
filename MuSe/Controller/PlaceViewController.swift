@@ -12,6 +12,9 @@ class PlaceViewController: UIViewController, Storyboarded {
 
     // MARK: - Properties
 
+    weak var coordinator: PlaceCoordinator!
+    var place: Place!
+
     @IBOutlet weak var mapLocation: MKMapView!
 
     override func viewDidLoad() {

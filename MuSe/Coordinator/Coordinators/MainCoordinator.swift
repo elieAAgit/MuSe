@@ -38,7 +38,6 @@ final class MainCoordinator: Coordinator {
         let child = HomeCoordinator(navigationController: navigationController)
         childCoordinators.append(child)
         child.start()
-
     }
 
     /// Remove the last controller
