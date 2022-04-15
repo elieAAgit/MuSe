@@ -10,12 +10,12 @@ import Foundation
 struct Place {
     let title: String
     let category: Category
-    let coordOne: Double
-    let coordTwo: Double
+    let latitude: Double
+    let longitude: Double
     let favorite: Bool
-    let adress: String
-    let opening: String
-    let phone: String
-    let internet: String
-    let description: String
+    let adress: String?
+    let opening: String?
+    let phone: String?
+    let internet: String?
+    let description: String?
 }

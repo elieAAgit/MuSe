@@ -24,15 +24,14 @@ struct ApiKeys {
 
     // MARK: - Museum
     static private let datasetMuseum = "search/?dataset=liste-et-localisation-des-musees-de-france"
-    static private let facetMuseum = "&q=&facet=region&facet=departement"
-
+    static private let facetMuseum = "&q=&facet=region_administrative&facet=departement&rows=1500"
     static private var museumBody: String {
         return datasetMuseum + facetMuseum
     }
 
     // MARK: - Theatre
     static private let datasetTheatre = "search/?dataset=etablissements-cinematographiques"
-    static private let facetTheatre = "&q=&facet=region_administrative&facet=genre&facet=multiplexe&facet=zone_de_la_commune"
+    static private let facetTheatre = "&q=&facet=region_administrative&facet=genre&facet=multiplexe&facet=zone_de_la_commune&rows=3000"
 
     static private var theatreBody: String {
         return datasetTheatre + facetTheatre
@@ -40,7 +39,7 @@ struct ApiKeys {
 
     // MARK: - Garden
     static private let datasetGarden = "search/?dataset=liste-des-jardins-remarquables"
-    static private let facetGarden = "&&q=&facet=region&facet=departement"
+    static private let facetGarden = "&q=&facet=region&facet=departement&rows=300"
 
     static private var gardenBody: String {
         return datasetGarden + facetTheatre

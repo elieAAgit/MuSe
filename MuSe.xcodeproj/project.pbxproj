@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D2EE73C280A06CE00EE6349 /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2EE73B280A06CE00EE6349 /* NetworkModel.swift */; };
 		0D5C38B92805AA8A005BF28D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C38B82805AA8A005BF28D /* AppDelegate.swift */; };
 		0D5C38BB2805AA8A005BF28D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C38BA2805AA8A005BF28D /* SceneDelegate.swift */; };
 		0D5C38C02805AA8A005BF28D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D5C38BE2805AA8A005BF28D /* Main.storyboard */; };
@@ -60,6 +61,7 @@
 		0DB202342808300C00262DEE /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB202332808300C00262DEE /* ApiKeys.swift */; };
 		0DB202382808539100262DEE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB202372808539100262DEE /* NetworkManager.swift */; };
 		0DB2023A2808559800262DEE /* NetworkTreatment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB202392808559800262DEE /* NetworkTreatment.swift */; };
+		0DB2023C280859DA00262DEE /* NetworkCallsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB2023B280859DA00262DEE /* NetworkCallsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D2EE73B280A06CE00EE6349 /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
 		0D5C38B52805AA8A005BF28D /* MuSe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuSe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D5C38B82805AA8A005BF28D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D5C38BA2805AA8A005BF28D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +140,7 @@
 		0DB202332808300C00262DEE /* ApiKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
 		0DB202372808539100262DEE /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		0DB202392808559800262DEE /* NetworkTreatment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTreatment.swift; sourceTree = "<group>"; };
+		0DB2023B280859DA00262DEE /* NetworkCallsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCallsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,8 +191,8 @@
 		0D5C38B72805AA8A005BF28D /* MuSe */ = {
 			isa = PBXGroup;
 			children = (
-				0DB2022828082EB200262DEE /* Network */,
 				0D5C38F22805ABAA005BF28D /* Coordinator */,
+				0DB2022828082EB200262DEE /* Network */,
 				0D5C38F12805AB9C005BF28D /* Model */,
 				0D94BA0D2806D1CF00AC8A6D /* Design */,
 				0D5C38F02805AB50005BF28D /* View */,
@@ -235,6 +239,7 @@
 				0DB202242808200C00262DEE /* HomeViewModel.swift */,
 				0DB20220280809FE00262DEE /* HomeCollectionViewCell.swift */,
 				0D94BA412807685600AC8A6D /* PlaceTableViewCell.swift */,
+				0DB2023B280859DA00262DEE /* NetworkCallsViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -354,6 +359,7 @@
 			children = (
 				0DB202372808539100262DEE /* NetworkManager.swift */,
 				0DB202392808559800262DEE /* NetworkTreatment.swift */,
+				0D2EE73B280A06CE00EE6349 /* NetworkModel.swift */,
 				0DB2023228082FF800262DEE /* ApiKeys */,
 				0DB2022928082EBB00262DEE /* Decodables */,
 			);
@@ -529,6 +535,7 @@
 				0D94BA2D28073DF900AC8A6D /* HistoryNavigator.swift in Sources */,
 				0D5C38BB2805AA8A005BF28D /* SceneDelegate.swift in Sources */,
 				0DB20222280809FE00262DEE /* HomeCollectionViewCell.swift in Sources */,
+				0D2EE73C280A06CE00EE6349 /* NetworkModel.swift in Sources */,
 				0D94BA3D280756BE00AC8A6D /* FavoritesCoordinator.swift in Sources */,
 				0D94BA48280770C500AC8A6D /* Place.swift in Sources */,
 				0D94BA36280743C100AC8A6D /* ButtonBack.swift in Sources */,
@@ -541,6 +548,7 @@
 				0D94BA172806F20800AC8A6D /* RoundedView.swift in Sources */,
 				0D94BA38280746FA00AC8A6D /* AppCoordinator.swift in Sources */,
 				0D94BA3B280752C300AC8A6D /* MainCoordinator.swift in Sources */,
+				0DB2023C280859DA00262DEE /* NetworkCallsViewModel.swift in Sources */,
 				0D94BA2928073C6900AC8A6D /* MainNavigator.swift in Sources */,
 				0D5C38F92805B625005BF28D /* AnimateButton.swift in Sources */,
 				0D94BA322807402700AC8A6D /* TabBarAndNavDesign.swift in Sources */,
