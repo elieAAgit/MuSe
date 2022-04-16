@@ -106,8 +106,11 @@
                                         <variation key="heightClass=regular-widthClass=regular">
                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         </variation>
+                                        <connections>
+                                            <action selector="selectorIsTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="uIV-4Z-0n1"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKZ-Df-Zv7" customClass="CapsuleButton" customModule="MuSe" customModuleProvider="target">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKZ-Df-Zv7" customClass="CapsuleButton" customModule="MuSe" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="56" width="150" height="40"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="tintColor" systemColor="labelColor"/>
@@ -119,8 +122,11 @@
                                         <variation key="heightClass=regular-widthClass=regular">
                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         </variation>
+                                        <connections>
+                                            <action selector="selectorIsTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="5dk-nT-M8u"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HFG-bX-2S6" customClass="CapsuleButton" customModule="MuSe" customModuleProvider="target">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HFG-bX-2S6" customClass="CapsuleButton" customModule="MuSe" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="112" width="150" height="40"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -140,8 +146,11 @@
                                         <variation key="heightClass=regular-widthClass=regular">
                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         </variation>
+                                        <connections>
+                                            <action selector="selectorIsTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="lUk-eg-1Sd"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCP-Lf-YRo" customClass="CapsuleButton" customModule="MuSe" customModuleProvider="target">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCP-Lf-YRo" customClass="CapsuleButton" customModule="MuSe" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="168" width="150" height="40"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="tintColor" systemColor="labelColor"/>
@@ -153,6 +162,9 @@
                                         <variation key="heightClass=regular-widthClass=regular">
                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         </variation>
+                                        <connections>
+                                            <action selector="selectorIsTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="xJn-OL-T20"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -180,7 +192,11 @@
                     </view>
                     <connections>
                         <outlet property="filtersStackView" destination="gl3-Iy-mFe" id="hc3-N7-afa"/>
+                        <outlet property="garden" destination="SCP-Lf-YRo" id="nDf-tR-maM"/>
+                        <outlet property="library" destination="HFG-bX-2S6" id="OIx-g8-Ndv"/>
                         <outlet property="mapView" destination="wuY-EY-07f" id="QTv-kw-dTu"/>
+                        <outlet property="museum" destination="Ira-C4-Xek" id="mdV-MV-nvM"/>
+                        <outlet property="theatre" destination="IKZ-Df-Zv7" id="ASI-Yv-dUe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

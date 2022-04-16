@@ -9,10 +9,6 @@ import UIKit
 
 class RoundButton: UIButton {
 
-    // MARK: - Property
-
-    var isActivated: Bool = false
-
     // MARK: - Lifecycle
 
     override func awakeFromNib() {
@@ -23,29 +19,40 @@ class RoundButton: UIButton {
 
     override func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
         animated()
-        defineColors()
 
         return super.beginTracking(touch, with: event)
     }
 
     // MARK: - Methods
 
+    override var isSelected: Bool {
+        didSet {
+            if self.isSelected {
+                setTitleColor(UIColor(named: Colors.capsuleColor.rawValue), for: .normal)
+                layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0)
+                layer.borderWidth = 0
+                backgroundColor = .systemBackground
+            } else {
+                setTitleColor(.label, for: .normal)
+                layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0)
+                layer.borderWidth = 0
+                backgroundColor = UIColor.systemBackground
+            }
+        }
+    }
+
     /// Different states colors
     func defineColors() {
-        if self.isActivated {
+        if self.isSelected {
             setTitleColor(UIColor(named: Colors.capsuleColor.rawValue), for: .normal)
             layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0)
             layer.borderWidth = 0
             backgroundColor = .systemBackground
-
-            isActivated = false
         } else {
             setTitleColor(.label, for: .normal)
             layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0)
             layer.borderWidth = 0
             backgroundColor = UIColor.systemBackground
-
-            isActivated = true
         }
     }
 

@@ -15,7 +15,7 @@ final class HomeViewModel: NSObject {
 
     private var collectionView: UICollectionView
     private var categories = Categories.categories
-    private var selectors = [String]()
+    var selectors = [String]()
 
     init(coordinator: HomeCoordinator, collectionView: UICollectionView) {
         self.coordinator = coordinator
@@ -31,6 +31,10 @@ final class HomeViewModel: NSObject {
         // To use reusable custom cell
         let nib = UINib(nibName: HomeCollectionViewCell.nibName, bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: HomeCollectionViewCell.cellIdentifier)
+    }
+
+    func refreshSelectors(with selectors: [String]) {
+        self.selectors = selectors
     }
 }
 
@@ -82,9 +86,7 @@ extension HomeViewModel {
         if selectors.isEmpty {
             // Show Alert
         } else {
-        // Coordinator to next ViewController
             coordinator.getSelectors(with: selectors)
         }
-        print(selectors)
     }
 }

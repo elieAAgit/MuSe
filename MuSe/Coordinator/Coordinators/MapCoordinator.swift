@@ -37,9 +37,16 @@ final class MapCoordinator: Coordinator {
         let vc = MapViewController.instantiate()
         let nav = NavigationConfiguration(controller: vc)
         vc.coordinator = self
+        vc.selectors = selectors
         nav.configurationNavigation(title: "Plan", buttonBack: "Plan")
 
         navigationController.pushViewController(vc, animated: false)
+    }
+
+    func refreshSelectors(with selectors: [String]) {
+        guard let vc = navigationController.viewControllers.last as? HomeViewController else { return }
+    
+        vc.refreshSelectors(with: selectors)
     }
 
     func getPlace(with place: Place) {

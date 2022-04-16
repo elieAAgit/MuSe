@@ -12,7 +12,7 @@ class HomeViewController: UIViewController, Storyboarded {
     // MARK: - Properties
 
     weak var coordinator: HomeCoordinator!
-    private var homeModel: HomeViewModel?
+    var homeModel: HomeViewModel?
     private var networkModel = NetworkCallsViewModel()
 
     @IBOutlet weak var homeCollection: UICollectionView!
@@ -25,9 +25,17 @@ class HomeViewController: UIViewController, Storyboarded {
         networkModel.setup()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        homeModel?.reloadData()
+    }
+
     // MARK: - Method
 
     @IBAction func selectCategories(_ sender: AnimateButton) {
         homeModel?.getSelectors()
+    }
+
+    func refreshSelectors(with selectors: [String]) {
+        homeModel?.refreshSelectors(with: selectors)
     }
 }
