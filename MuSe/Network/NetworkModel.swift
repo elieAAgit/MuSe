@@ -8,8 +8,6 @@
 import Foundation
 
 final class NetworkModel {
-    
-    private var places = [Place]()
 
     func museum(response: MuseumDecodable?) {
         guard let museums: [MuseumRecord] = response?.records else { return }
@@ -41,7 +39,7 @@ final class NetworkModel {
                                           internet: museum.fields.webSite,
                                           description: nil)
 
-                        self.places.append(place)
+                        Places.places.append(place)
                     }
                 }
             }
@@ -78,7 +76,7 @@ final class NetworkModel {
                                           internet: nil,
                                           description: nil)
 
-                        self.places.append(place)
+                        Places.places.append(place)
                     }
                 }
             }
@@ -115,7 +113,7 @@ final class NetworkModel {
                                           internet: garden.fields.webSite,
                                           description: garden.fields.description)
 
-                        self.places.append(place)
+                        Places.places.append(place)
                     }
                 }
             }
@@ -152,7 +150,7 @@ final class NetworkModel {
                                           internet: nil,
                                           description: library.fields.description)
 
-                        self.places.append(place)
+                        Places.places.append(place)
                     }
                 }
             }

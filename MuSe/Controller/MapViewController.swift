@@ -26,13 +26,19 @@ final class MapViewController: UIViewController, Storyboarded {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        mapViewModel = MapViewModel(coordinator: coordinator, mapView: mapView, filtersStackView: filtersStackView, selectors: selectors)
+        mapViewModel = MapViewModel(coordinator: coordinator, mapView: mapView, selectors: selectors)
+        mapViewModel?.start()
         selectedOrNot()
     }
 
     override func viewDidDisappear(_ animated: Bool) {
         mapViewModel?.viewDidDisappear()
     }
+
+    override func didReceiveMemoryWarning() {
+            super.didReceiveMemoryWarning()
+            // Dispose of any resources that can be recreated.
+        }
 }
 
 // MARK: - Methods
@@ -70,5 +76,9 @@ extension MapViewController {
             mapViewModel?.addSelector(tag: sender.tag)
             sender.isSelected = true
         }
+    }
+
+    @IBAction func userLocation(_ sender: RoundButton) {
+        mapViewModel?.getUserLocation()
     }
 }

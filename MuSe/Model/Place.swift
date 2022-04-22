@@ -7,6 +7,10 @@
 
 import Foundation
 
+struct Places {
+    static var places = [Place]()
+}
+
 struct Place {
     let title: String
     let category: Category

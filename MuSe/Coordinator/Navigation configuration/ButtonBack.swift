@@ -18,4 +18,3 @@ extension UIBarButtonItem {
         tintColor = .label
     }
 }
-
