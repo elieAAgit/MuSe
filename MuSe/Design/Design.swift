@@ -9,4 +9,5 @@ import UIKit
 
 enum Colors: String {
     case capsuleColor = "CapsuleSelected"
+    case buttonColor = "ButtonColor"
 }

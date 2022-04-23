@@ -15,6 +15,6 @@ extension UIBarButtonItem {
         style = .plain
         target = nil
         action = nil
-        tintColor = .label
+        tintColor = .white
     }
 }

@@ -11,10 +11,13 @@ final class TabBarAndNavDesign {
 
     func configuration() {
 
-        UITabBar.appearance().isTranslucent = true
+        UITabBar.appearance().isTranslucent = false
         UITabBar.appearance().barTintColor = .systemGray6
+        UITabBar.appearance().backgroundColor = .systemBackground
         UITabBar.appearance().tintColor = UIColor(named: Colors.capsuleColor.rawValue)
 
-        UINavigationBar.appearance().barTintColor = UIColor(named: Colors.capsuleColor.rawValue)
+        UINavigationBar.appearance().barTintColor = .purple
+        UINavigationBar.appearance().backgroundColor = UIColor(named: Colors.buttonColor.rawValue)
+        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.white]
     }
 }

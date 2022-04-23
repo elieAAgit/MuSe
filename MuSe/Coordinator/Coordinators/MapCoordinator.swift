@@ -27,7 +27,7 @@ final class MapCoordinator: Coordinator {
         let vc = MapViewController.instantiate()
         let nav = NavigationConfiguration(controller: vc)
         vc.coordinator = self
-        nav.configurationNavigation(title: "Plan", buttonBack: "Plan")
+        nav.configurationNavigation(title: "Plan", buttonBack: "")
 
         navigationController.pushViewController(vc, animated: false)
     }
@@ -38,7 +38,7 @@ final class MapCoordinator: Coordinator {
         let nav = NavigationConfiguration(controller: vc)
         vc.coordinator = self
         vc.selectors = selectors
-        nav.configurationNavigation(title: "Plan", buttonBack: "Plan")
+        nav.configurationNavigation(title: "Plan", buttonBack: "")
 
         navigationController.pushViewController(vc, animated: false)
     }

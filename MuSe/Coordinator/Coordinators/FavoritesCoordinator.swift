@@ -27,9 +27,9 @@ final class FavoritesCoordinator: Coordinator {
 
         let vc = FavoritesViewController.instantiate()
         let nav = NavigationConfiguration(controller: vc)
+        nav.configurationNavigation(title: "Favoris", buttonBack: "")
         vc.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "star.fill"), tag: 1)
         vc.coordinator = self
-        nav.configurationNavigation(title: "Favoris", buttonBack: "Favoris")
 
         navigationController.pushViewController(vc, animated: false)
     }
