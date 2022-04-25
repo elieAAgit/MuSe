@@ -11,7 +11,8 @@ class FavoritesViewController: UIViewController, Storyboarded {
 
     // MARK: - Properties
 
-    weak var coordinator: FavoritesCoordinator?
+    weak var coordinator: FavoritesCoordinator!
+    private var tableViewModel: TableViewModel?
 
     @IBOutlet weak var missingEntry: RoundedView!
     @IBOutlet weak var searchBar: UISearchBar!
@@ -20,6 +21,14 @@ class FavoritesViewController: UIViewController, Storyboarded {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        tableViewModel = TableViewModel(coordinator: coordinator,
+                                        tableView: tableView,
+                                        searchBar: searchBar,
+                                        missingEntry: missingEntry)
+        tableViewModel?.setup()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        tableViewModel?.reloadData()
     }
 }

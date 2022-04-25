@@ -8,6 +8,7 @@
 import UIKit
 import MapKit
 import CoreLocation
+import CoreData
 
 final class MapViewModel: NSObject {
 
@@ -16,6 +17,8 @@ final class MapViewModel: NSObject {
     private var coordinator: MapCoordinator
     private var mapView: MKMapView
     private var selectors: [String]
+    private var placeManager: PlaceManager!
+    private var places = [Place]()
     lazy var locationManager = CLLocationManager()
 
     init (coordinator: MapCoordinator, mapView: MKMapView, selectors: [String]) {
@@ -27,8 +30,12 @@ final class MapViewModel: NSObject {
     // MARK: - Methods
 
     func start() {
+        let context = AppDelegate.coreDataStack.viewContext
+        placeManager = PlaceManager(context: context)
+
         mapView.delegate = self
         locationManager.delegate = self
+
         setupMap()
         setupLocationManager()
     }
@@ -71,7 +78,9 @@ final class MapViewModel: NSObject {
 extension MapViewModel: MKMapViewDelegate {
     /// Create the annotations and add to the map
     private func setupMap() {
-        for place in Places.places {
+        places = placeManager.fetchedResultsController
+
+        for place in places {
                 let location = PlaceMap(place: place)
                 mapView.addAnnotation(location)
         }

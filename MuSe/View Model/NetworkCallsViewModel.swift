@@ -12,6 +12,7 @@ final class NetworkCallsViewModel: NSObject {
     private var networkModel = NetworkModel()
 
     func setup() {
+        networkModel.start()
         networkMuseum()
     }
 }

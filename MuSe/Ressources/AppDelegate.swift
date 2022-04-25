@@ -11,6 +11,14 @@ import CoreData
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    /// CoreData property
+    lazy var coreData = CoreDataStack(name: "MuSe")
+
+    /// Refactorisation
+    static var coreDataStack: CoreDataStack {
+        return (UIApplication.shared.delegate as! AppDelegate).coreData
+    }
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
         return true
@@ -29,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     lazy var persistentContainer: NSPersistentContainer = {
 
-        let container = NSPersistentContainer(name: "Muse")
+        let container = NSPersistentContainer(name: "MuSe")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
 

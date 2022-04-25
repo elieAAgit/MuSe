@@ -38,7 +38,7 @@ final class PlaceCoordinator: Coordinator {
         let nav = NavigationConfiguration(controller: vc)
         vc.coordinator = self
         vc.place = place
-        nav.configurationNavigation(title: place.title, buttonBack: place.title)
+        nav.configurationNavigation(title: place.title ?? "", buttonBack: place.title ?? "")
 
         navigationController.pushViewController(vc, animated: false)
     }

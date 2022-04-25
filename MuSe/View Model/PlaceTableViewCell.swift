@@ -31,8 +31,8 @@ class PlaceTableViewCell: UITableViewCell {
     }
 
     func getInfo(place: Place) {
-        self.category?.image = UIImage(named: place.category.id)
+        self.category?.image = UIImage(named: place.category?.id ?? Images.defaultImage.rawValue)
         self.title.text = place.title
-        self.detail.text = place.category.title
+        self.detail.text = place.category?.title
     }
 }

@@ -11,3 +11,7 @@ enum Colors: String {
     case capsuleColor = "CapsuleSelected"
     case buttonColor = "ButtonColor"
 }
+
+enum Images: String {
+    case defaultImage = "Default"
+}

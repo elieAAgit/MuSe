@@ -20,12 +20,11 @@ class PlaceMap: NSObject, MKAnnotation {
         self.coordinate = CLLocationCoordinate2D(latitude: place.latitude,
                                                  longitude: place.longitude)
         self.place = place
-        self.image = UIImage(named: place.category.id) ?? UIImage(named: "Default")!
+        self.image = UIImage(named: place.category?.id ?? Images.defaultImage.rawValue)!
     }
-
     
     var subtitle: String? {
-        return place.category.id
+        return place.category?.id
     }
 /*
     var mapItem: MKMapItem? {

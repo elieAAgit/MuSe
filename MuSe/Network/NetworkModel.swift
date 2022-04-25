@@ -6,8 +6,16 @@
 //
 
 import Foundation
+import CoreData
 
 final class NetworkModel {
+
+    private var placeManager: PlaceManager?
+
+    func start() {
+        let context = AppDelegate.coreDataStack.viewContext
+        placeManager = PlaceManager(context: context)
+    }
 
     func museum(response: MuseumDecodable?) {
         guard let museums: [MuseumRecord] = response?.records else { return }
@@ -28,18 +36,15 @@ final class NetworkModel {
 
                         let location = adress + " " + city + " " + county
 
-                        let place = Place(title: name,
-                                          category: Categories.museum,
-                                          latitude: latitude,
-                                          longitude: longitude,
-                                          favorite: false,
-                                          adress: location,
-                                          opening: nil,
-                                          phone: museum.fields.phone,
-                                          internet: museum.fields.webSite,
-                                          description: nil)
-
-                        Places.places.append(place)
+                        placeManager?.addPlace(title: name,
+                                               category: Categories.museum,
+                                               longitude: longitude,
+                                               latitude: latitude,
+                                               adress: location,
+                                               opening: nil,
+                                               phone: museum.fields.phone,
+                                               internet: museum.fields.webSite,
+                                               description: nil)
                     }
                 }
             }
@@ -65,18 +70,15 @@ final class NetworkModel {
 
                         let location = adress + " " + city + " " + county
 
-                        let place = Place(title: name,
-                                          category: Categories.theatre,
-                                          latitude: latitude,
-                                          longitude: longitude,
-                                          favorite: false,
-                                          adress: location,
-                                          opening: nil,
-                                          phone: nil,
-                                          internet: nil,
-                                          description: nil)
-
-                        Places.places.append(place)
+                        placeManager?.addPlace(title: name,
+                                               category: Categories.theatre,
+                                               longitude: longitude,
+                                               latitude: latitude,
+                                               adress: location,
+                                               opening: nil,
+                                               phone: nil,
+                                               internet: nil,
+                                               description: nil)
                     }
                 }
             }
@@ -102,18 +104,15 @@ final class NetworkModel {
 
                         let location = adress + " " + city + " " + county
 
-                        let place = Place(title: name,
-                                          category: Categories.garden,
-                                          latitude: latitude,
-                                          longitude: longitude,
-                                          favorite: false,
-                                          adress: location,
-                                          opening: nil,
-                                          phone: nil,
-                                          internet: garden.fields.webSite,
-                                          description: garden.fields.description)
-
-                        Places.places.append(place)
+                        placeManager?.addPlace(title: name,
+                                               category: Categories.garden,
+                                               longitude: longitude,
+                                               latitude: latitude,
+                                               adress: location,
+                                               opening: nil,
+                                               phone: nil,
+                                               internet: garden.fields.webSite,
+                                               description: garden.fields.description)
                     }
                 }
             }
@@ -139,18 +138,15 @@ final class NetworkModel {
         
                         let location = adress + " " + city + " " + county
 
-                        let place = Place(title: name,
-                                          category: Categories.library,
-                                          latitude: latitude,
-                                          longitude: longitude,
-                                          favorite: false,
-                                          adress: location,
-                                          opening: nil,
-                                          phone: nil,
-                                          internet: nil,
-                                          description: library.fields.description)
-
-                        Places.places.append(place)
+                        placeManager?.addPlace(title: name,
+                                               category: Categories.library,
+                                               longitude: longitude,
+                                               latitude: latitude,
+                                               adress: location,
+                                               opening: nil,
+                                               phone: nil,
+                                               internet: nil,
+                                               description: library.fields.description)
                     }
                 }
             }

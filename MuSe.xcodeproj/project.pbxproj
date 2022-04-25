@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0D2C313F2812AABF00CD12DF /* MKMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2C313E2812AABF00CD12DF /* MKMapView.swift */; };
 		0D2C31412812DC4D00CD12DF /* PlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2C31402812DC4D00CD12DF /* PlaceView.swift */; };
+		0D2C31452813E55300CD12DF /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2C31442813E55300CD12DF /* CoreDataStack.swift */; };
+		0D2C31492813EBE300CD12DF /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2C31482813EBE300CD12DF /* TableViewModel.swift */; };
 		0D2EE73C280A06CE00EE6349 /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2EE73B280A06CE00EE6349 /* NetworkModel.swift */; };
 		0D2EE73E280A0B2500EE6349 /* MapCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2EE73D280A0B2500EE6349 /* MapCoordinator.swift */; };
 		0D2EE740280A0DFA00EE6349 /* PlaceCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2EE73F280A0DFA00EE6349 /* PlaceCoordinator.swift */; };
@@ -55,7 +57,6 @@
 		0D94BA432807685700AC8A6D /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA412807685600AC8A6D /* PlaceTableViewCell.swift */; };
 		0D94BA442807685700AC8A6D /* PlaceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D94BA422807685600AC8A6D /* PlaceTableViewCell.xib */; };
 		0D94BA4628076C6A00AC8A6D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA4528076C6A00AC8A6D /* Category.swift */; };
-		0D94BA48280770C500AC8A6D /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA47280770C500AC8A6D /* Place.swift */; };
 		0DB20222280809FE00262DEE /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB20220280809FE00262DEE /* HomeCollectionViewCell.swift */; };
 		0DB20223280809FE00262DEE /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DB20221280809FE00262DEE /* HomeCollectionViewCell.xib */; };
 		0DB202252808200C00262DEE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB202242808200C00262DEE /* HomeViewModel.swift */; };
@@ -68,6 +69,7 @@
 		0DB202382808539100262DEE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB202372808539100262DEE /* NetworkManager.swift */; };
 		0DB2023A2808559800262DEE /* NetworkTreatment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB202392808559800262DEE /* NetworkTreatment.swift */; };
 		0DB2023C280859DA00262DEE /* NetworkCallsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB2023B280859DA00262DEE /* NetworkCallsViewModel.swift */; };
+		0DDE95B32814108000114464 /* PlaceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE95B22814108000114464 /* PlaceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,8 @@
 /* Begin PBXFileReference section */
 		0D2C313E2812AABF00CD12DF /* MKMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMapView.swift; sourceTree = "<group>"; };
 		0D2C31402812DC4D00CD12DF /* PlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceView.swift; sourceTree = "<group>"; };
+		0D2C31442813E55300CD12DF /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		0D2C31482813EBE300CD12DF /* TableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
 		0D2EE73B280A06CE00EE6349 /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
 		0D2EE73D280A0B2500EE6349 /* MapCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCoordinator.swift; sourceTree = "<group>"; };
 		0D2EE73F280A0DFA00EE6349 /* PlaceCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCoordinator.swift; sourceTree = "<group>"; };
@@ -140,7 +144,6 @@
 		0D94BA412807685600AC8A6D /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
 		0D94BA422807685600AC8A6D /* PlaceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceTableViewCell.xib; sourceTree = "<group>"; };
 		0D94BA4528076C6A00AC8A6D /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
-		0D94BA47280770C500AC8A6D /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		0DB20220280809FE00262DEE /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		0DB20221280809FE00262DEE /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		0DB202242808200C00262DEE /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -153,6 +156,7 @@
 		0DB202372808539100262DEE /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		0DB202392808559800262DEE /* NetworkTreatment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTreatment.swift; sourceTree = "<group>"; };
 		0DB2023B280859DA00262DEE /* NetworkCallsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCallsViewModel.swift; sourceTree = "<group>"; };
+		0DDE95B22814108000114464 /* PlaceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +192,16 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		0D2C31432813E53100CD12DF /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				0D5C38C12805AA8A005BF28D /* MuSe.xcdatamodeld */,
+				0D2C31442813E55300CD12DF /* CoreDataStack.swift */,
+				0DDE95B22814108000114464 /* PlaceManager.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		0D5C38AC2805AA8A005BF28D = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +227,7 @@
 			children = (
 				0D5C38F22805ABAA005BF28D /* Coordinator */,
 				0DB2022828082EB200262DEE /* Network */,
+				0D2C31432813E53100CD12DF /* CoreData */,
 				0D5C38F12805AB9C005BF28D /* Model */,
 				0D94BA0D2806D1CF00AC8A6D /* Design */,
 				0D5C38F02805AB50005BF28D /* View */,
@@ -260,6 +275,7 @@
 				0DB20220280809FE00262DEE /* HomeCollectionViewCell.swift */,
 				0D31DB39280AA2330076017D /* MapViewModel.swift */,
 				0D2C31402812DC4D00CD12DF /* PlaceView.swift */,
+				0D2C31482813EBE300CD12DF /* TableViewModel.swift */,
 				0D94BA412807685600AC8A6D /* PlaceTableViewCell.swift */,
 				0DB2023B280859DA00262DEE /* NetworkCallsViewModel.swift */,
 				0D2C314228133E6E00CD12DF /* Extension */,
@@ -299,9 +315,7 @@
 		0D5C38F12805AB9C005BF28D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0D5C38C12805AA8A005BF28D /* MuSe.xcdatamodeld */,
 				0D94BA4528076C6A00AC8A6D /* Category.swift */,
-				0D94BA47280770C500AC8A6D /* Place.swift */,
 				0D31DB3D280B53FA0076017D /* PlaceMap.swift */,
 			);
 			path = Model;
@@ -556,6 +570,7 @@
 				0DB202252808200C00262DEE /* HomeViewModel.swift in Sources */,
 				0DB2022F28082F8B00262DEE /* GardenDecodable.swift in Sources */,
 				0D2EE740280A0DFA00EE6349 /* PlaceCoordinator.swift in Sources */,
+				0D2C31452813E55300CD12DF /* CoreDataStack.swift in Sources */,
 				0D94BA432807685700AC8A6D /* PlaceTableViewCell.swift in Sources */,
 				0D94BA24280739BC00AC8A6D /* Coordinator.swift in Sources */,
 				0D5C38B92805AA8A005BF28D /* AppDelegate.swift in Sources */,
@@ -563,11 +578,12 @@
 				0D5C38BB2805AA8A005BF28D /* SceneDelegate.swift in Sources */,
 				0DB20222280809FE00262DEE /* HomeCollectionViewCell.swift in Sources */,
 				0D2EE73C280A06CE00EE6349 /* NetworkModel.swift in Sources */,
+				0D2C31492813EBE300CD12DF /* TableViewModel.swift in Sources */,
 				0D94BA3D280756BE00AC8A6D /* FavoritesCoordinator.swift in Sources */,
-				0D94BA48280770C500AC8A6D /* Place.swift in Sources */,
 				0D94BA36280743C100AC8A6D /* ButtonBack.swift in Sources */,
 				0D94BA1D2806FF5A00AC8A6D /* HistoryViewController.swift in Sources */,
 				0D94BA4628076C6A00AC8A6D /* Category.swift in Sources */,
+				0DDE95B32814108000114464 /* PlaceManager.swift in Sources */,
 				0D5C38C32805AA8A005BF28D /* MuSe.xcdatamodeld in Sources */,
 				0DB2022D28082F6F00262DEE /* TheatreDecodable.swift in Sources */,
 				0D5C38EF2805AB34005BF28D /* MainViewController.swift in Sources */,

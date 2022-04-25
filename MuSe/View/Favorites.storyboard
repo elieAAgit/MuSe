@@ -23,7 +23,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0pj-ef-oOI" userLabel="Top View">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="95"/>
                                 <subviews>
-                                    <searchBar contentMode="redraw" placeholder="Rechercher" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Er5-k9-nIF">
+                                    <searchBar contentMode="redraw" placeholder="Rechercher" translatesAutoresizingMaskIntoConstraints="NO" id="Er5-k9-nIF">
                                         <rect key="frame" x="0.0" y="44" width="414" height="51"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" name="ButtonColor"/>
@@ -37,7 +37,7 @@
                                 </constraints>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oMM-87-ObI" userLabel="Missing Entry View" customClass="RoundedView" customModule="MuSe" customModuleProvider="target">
-                                <rect key="frame" x="16" y="403" width="382" height="90"/>
+                                <rect key="frame" x="16" y="408" width="382" height="90"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Votre liste de favoris est vide." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8N-o1-iDv" userLabel="Missing Entry">
                                         <rect key="frame" x="79.5" y="34.5" width="223" height="21"/>
@@ -53,9 +53,9 @@
                                     <constraint firstAttribute="height" constant="90" id="ZPQ-eG-1cS"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5NB-eC-7XJ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="110" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5NB-eC-7XJ">
                                 <rect key="frame" x="8" y="103" width="398" height="739"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -63,7 +63,6 @@
                         <constraints>
                             <constraint firstItem="0pj-ef-oOI" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="2C4-vC-oUf"/>
                             <constraint firstAttribute="bottom" secondItem="ZoT-zU-Md9" secondAttribute="bottom" id="56L-7I-lVy"/>
-                            <constraint firstItem="oMM-87-ObI" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="8zC-jX-X45"/>
                             <constraint firstItem="0pj-ef-oOI" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="9hI-gA-5XP"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Er5-k9-nIF" secondAttribute="trailing" id="Fjs-rV-3Up"/>
                             <constraint firstItem="5NB-eC-7XJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="8" id="JCC-Zv-kkp"/>
@@ -75,6 +74,7 @@
                             <constraint firstItem="oMM-87-ObI" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="dNs-1O-0g2"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="5NB-eC-7XJ" secondAttribute="trailing" constant="8" id="g25-sg-GjD"/>
                             <constraint firstItem="5NB-eC-7XJ" firstAttribute="top" secondItem="0pj-ef-oOI" secondAttribute="bottom" constant="8" id="ig1-7G-fRK"/>
+                            <constraint firstItem="oMM-87-ObI" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="izS-my-8uE"/>
                             <constraint firstItem="Er5-k9-nIF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="mhl-Rg-PlF"/>
                             <constraint firstAttribute="trailing" secondItem="0pj-ef-oOI" secondAttribute="trailing" id="oKc-rF-7Tt"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="oMM-87-ObI" secondAttribute="trailing" constant="16" id="qbc-0g-EAF"/>
