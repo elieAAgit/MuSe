@@ -89,16 +89,34 @@ final class PlaceManager {
 
         if let results = try? context.fetch(request) {
             for result in results {
-
                 places.append(result)
             }
 
             try? context.save()
             return places
+        } else {
+            try? context.save()
+            return places
         }
+    }
 
-        try? context.save()
-        return places
+    /// Update favorite
+    func updateFavorite(_ find: Place) {
+        let request: NSFetchRequest<Place> = Place.fetchRequest()
+        request.predicate = NSPredicate(format: "title == %@", find.title!)
+
+        if let results = try? context.fetch(request) {
+
+            for result in results {
+                if result.favorite == false {
+                    result.favorite = true
+                } else if result.favorite == true {
+                    result.favorite = false
+                }
+
+                try? context.save()
+            }
+        }
     }
 
     /// Remove place in Database

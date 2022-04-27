@@ -70,6 +70,8 @@
 		0DB2023A2808559800262DEE /* NetworkTreatment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB202392808559800262DEE /* NetworkTreatment.swift */; };
 		0DB2023C280859DA00262DEE /* NetworkCallsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB2023B280859DA00262DEE /* NetworkCallsViewModel.swift */; };
 		0DDE95B32814108000114464 /* PlaceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE95B22814108000114464 /* PlaceManager.swift */; };
+		0DE9470228187FAD0043049B /* PlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE9470128187FAC0043049B /* PlaceViewModel.swift */; };
+		0DE94704281888A10043049B /* PlaceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE94703281888A00043049B /* PlaceButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,6 +159,8 @@
 		0DB202392808559800262DEE /* NetworkTreatment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTreatment.swift; sourceTree = "<group>"; };
 		0DB2023B280859DA00262DEE /* NetworkCallsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCallsViewModel.swift; sourceTree = "<group>"; };
 		0DDE95B22814108000114464 /* PlaceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceManager.swift; sourceTree = "<group>"; };
+		0DE9470128187FAC0043049B /* PlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewModel.swift; sourceTree = "<group>"; };
+		0DE94703281888A00043049B /* PlaceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,6 +283,7 @@
 				0D94BA412807685600AC8A6D /* PlaceTableViewCell.swift */,
 				0DB2023B280859DA00262DEE /* NetworkCallsViewModel.swift */,
 				0D2C314228133E6E00CD12DF /* Extension */,
+				0DE9470128187FAC0043049B /* PlaceViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -339,6 +344,7 @@
 				0D94BA102806D39000AC8A6D /* RoundButton.swift */,
 				0D5C393D280606D2005BF28D /* CapsuleButton.swift */,
 				0D94BA162806F20700AC8A6D /* RoundedView.swift */,
+				0DE94703281888A00043049B /* PlaceButton.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -588,6 +594,7 @@
 				0DB2022D28082F6F00262DEE /* TheatreDecodable.swift in Sources */,
 				0D5C38EF2805AB34005BF28D /* MainViewController.swift in Sources */,
 				0D94BA112806D39000AC8A6D /* RoundButton.swift in Sources */,
+				0DE94704281888A10043049B /* PlaceButton.swift in Sources */,
 				0D94BA172806F20800AC8A6D /* RoundedView.swift in Sources */,
 				0D94BA38280746FA00AC8A6D /* AppCoordinator.swift in Sources */,
 				0D94BA3B280752C300AC8A6D /* MainCoordinator.swift in Sources */,
@@ -612,6 +619,7 @@
 				0DB2023128082FC200262DEE /* LibraryDecodable.swift in Sources */,
 				0D94BA2628073A0500AC8A6D /* Storyboarded.swift in Sources */,
 				0DB20227280821F800262DEE /* HomeCoordinator.swift in Sources */,
+				0DE9470228187FAD0043049B /* PlaceViewModel.swift in Sources */,
 				0DB2022B28082EE600262DEE /* MuseumDecodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
