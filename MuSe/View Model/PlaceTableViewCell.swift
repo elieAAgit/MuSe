@@ -10,6 +10,7 @@ import UIKit
 class PlaceTableViewCell: UITableViewCell {
 
     // MARK: - Properties
+    var place: Place?
 
     @IBOutlet weak var category: UIImageView!
     @IBOutlet weak var title: UILabel!
@@ -31,6 +32,7 @@ class PlaceTableViewCell: UITableViewCell {
     }
 
     func getInfo(place: Place) {
+        self.place = place
         self.category?.image = UIImage(named: place.category?.id ?? Images.defaultImage.rawValue)
         self.title.text = place.title
         self.detail.text = place.category?.title

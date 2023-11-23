@@ -20,6 +20,7 @@ class FavoritesViewController: UIViewController, Storyboarded {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchBar.backgroundImage = UIImage()
 
         tableViewModel = TableViewModel(coordinator: coordinator,
                                         tableView: tableView,

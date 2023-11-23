@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Itinerary View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Itinerary" id="Y6W-OH-hqX" customClass="ItineraryViewController" customModule="MuSe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="DCH-gG-ySH" userLabel="Map Location">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="ButtonColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="DCH-gG-ySH" secondAttribute="bottom" id="38Y-2A-iqJ"/>
+                            <constraint firstAttribute="trailing" secondItem="DCH-gG-ySH" secondAttribute="trailing" id="OAE-SQ-MeZ"/>
+                            <constraint firstItem="DCH-gG-ySH" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="SzX-ff-bKB"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="DCH-gG-ySH" secondAttribute="top" id="vvF-0d-dBv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapLocation" destination="DCH-gG-ySH" id="WMw-IC-MVA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86.383928571428569" y="60.869565217391312"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="ButtonColor">
+            <color red="0.41499999165534973" green="0.14300000667572021" blue="0.43299999833106995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

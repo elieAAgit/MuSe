@@ -1,16 +1,16 @@
 //
-//  TableViewModel.swift
+//  HistoryViewModel.swift
 //  MuSe
 //
-//  Created by Qattus on 23/04/2022.
+//  Created by Elie Arquier on 18/11/2023.
 //
 
 import UIKit
 import CoreData
 
-final class TableViewModel: NSObject {
+final class HistoryViewModel: NSObject {
 
-    private var coordinator: FavoritesCoordinator?
+    private var coordinator: HistoryCoordinator?
     private var placeManager: PlaceManager?
 
     private var searchBar: UISearchBar
@@ -24,7 +24,7 @@ final class TableViewModel: NSObject {
 
     private var identifierCell = PlaceTableViewCell.cellIdentifier
 
-    init(coordinator: FavoritesCoordinator, tableView: UITableView, searchBar: UISearchBar, missingEntry: RoundedView!) {
+    init(coordinator: HistoryCoordinator, tableView: UITableView, searchBar: UISearchBar, missingEntry: RoundedView!) {
         self.coordinator = coordinator
         self.tableView = tableView
         self.missingEntry = missingEntry
@@ -57,12 +57,12 @@ final class TableViewModel: NSObject {
 }
 
 // MARK: - Loading and updating view
-extension TableViewModel {
+extension HistoryViewModel {
     /// Show table view if objects in database > 0, else show indicative message
     private func updateView() {
         var hasEntry = false
 
-        if let entities = placeManager?.findPlacesFavorite() {
+        if let entities = placeManager?.findPlacesHistory() {
             hasEntry = entities.count > 0
         }
 
@@ -71,7 +71,7 @@ extension TableViewModel {
     }
 }
 
-extension TableViewModel: UITableViewDelegate, UITableViewDataSource {
+extension HistoryViewModel: UITableViewDelegate, UITableViewDataSource {
     /// Number of sections for the table view
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -79,7 +79,7 @@ extension TableViewModel: UITableViewDelegate, UITableViewDataSource {
 
     /// Number of row for the table view: number of favorites in the database
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let entities = placeManager?.findPlacesFavorite() else { return 0 }
+        guard let entities = placeManager?.findPlacesHistory() else { return 0 }
 
         if isFiltering {
 
@@ -107,7 +107,7 @@ extension TableViewModel: UITableViewDelegate, UITableViewDataSource {
             place = value
         } else {
             // Fetch places
-            guard let places = placeManager?.findPlacesFavorite() else { return cell }
+            guard let places = placeManager?.findPlacesHistory() else { return cell }
 
             place = places[indexPath.row]
         }
@@ -124,7 +124,7 @@ extension TableViewModel: UITableViewDelegate, UITableViewDataSource {
 
             guard let place = cell?.place else { return }
             
-            self.placeManager?.updateFavorite(place)
+            self.placeManager?.removeFromHistory(place)
             tableView.deleteRows(at: [indexPath], with: .automatic)
         }
 
@@ -133,7 +133,7 @@ extension TableViewModel: UITableViewDelegate, UITableViewDataSource {
 }
 
 // MARK: - Manage adding and deleting cell in table view
-extension TableViewModel: NSFetchedResultsControllerDelegate {
+extension HistoryViewModel: NSFetchedResultsControllerDelegate {
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         tableView.beginUpdates()
     }
@@ -153,7 +153,7 @@ extension TableViewModel: NSFetchedResultsControllerDelegate {
             }
         case .delete:
             if let indexPath = indexPath {
-                tableView.deleteRows(at: [indexPath], with: .fade)
+                tableView.deleteRows(at: [indexPath], with: .automatic)
             }
         default:
             print("Other case.")
@@ -162,7 +162,7 @@ extension TableViewModel: NSFetchedResultsControllerDelegate {
 }
 
 // MARK: - Use UITableViewDelegate to access recipe detail
-extension TableViewModel {
+extension HistoryViewModel {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         var place: Place
 
@@ -173,7 +173,7 @@ extension TableViewModel {
             place = value
         } else {
             // Fetch places
-            guard let places = placeManager?.findPlacesFavorite() else { return }
+            guard let places = placeManager?.findPlacesHistory() else { return }
 
             place = places[indexPath.row]
         }
@@ -208,10 +208,10 @@ extension TableViewModel {
 */
 
 // MARK: - SearchBar
-extension TableViewModel: UISearchBarDelegate {
+extension HistoryViewModel: UISearchBarDelegate {
     /// Preparation of filtering in the searchbar
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        let places = placeManager?.findPlacesFavorite()
+        let places = placeManager?.findPlacesHistory()
         var table = [String]()
         
         for place in places! {
@@ -225,7 +225,7 @@ extension TableViewModel: UISearchBarDelegate {
 }
 
 // MARK: - Keyboard
-extension TableViewModel {
+extension HistoryViewModel {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         searchBar.resignFirstResponder()
 

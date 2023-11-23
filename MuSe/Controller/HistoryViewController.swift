@@ -11,7 +11,8 @@ class HistoryViewController: UIViewController, Storyboarded {
 
     // MARK: - Properties
 
-    weak var coordinator: Coordinator?
+    weak var coordinator: HistoryCoordinator!
+    private var historyViewModel: HistoryViewModel?
 
     @IBOutlet weak var missingEntry: RoundedView!
     @IBOutlet weak var searchBar: UISearchBar!
@@ -19,8 +20,16 @@ class HistoryViewController: UIViewController, Storyboarded {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchBar.backgroundImage = UIImage()
 
-        // Do any additional setup after loading the view.
+        historyViewModel = HistoryViewModel(coordinator: coordinator,
+                                        tableView: tableView,
+                                        searchBar: searchBar,
+                                        missingEntry: missingEntry)
+        historyViewModel?.setup()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        historyViewModel?.reloadData()
+    }
 }
