@@ -32,6 +32,8 @@ final class PlaceViewModel {
     func setup() {
         let context = AppDelegate.coreDataStack.viewContext
         placeManager = PlaceManager(context: context)
+
+        history()
     }
 
     /// Loading place's coordinates
@@ -49,7 +51,13 @@ final class PlaceViewModel {
         placeManager?.updateFavorite(place)
     }
 
-    func itinerary() {}
+    func history() {
+        placeManager?.updateHistory(place)
+    }
+
+    func itinerary() {
+        coordinator.donePlace(with: place)
+    }
 
     /// Call place
     func phone() {
@@ -60,7 +68,15 @@ final class PlaceViewModel {
 
     /// Go to place's website
     func web() {
-        guard let url = URL(string: place.internet ?? "") else { return}
+        var web = ""
+
+        if place.category == Categories.museum {
+            web = "https://" + (place.internet ?? "")
+        } else {
+            web = place.internet ?? ""
+        }
+
+        guard let url = URL(string: web) else { return}
             UIApplication.shared.open(url)
     }
 }

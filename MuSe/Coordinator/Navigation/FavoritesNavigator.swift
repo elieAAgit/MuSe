@@ -48,6 +48,10 @@ final class FavoritesNavigator: NSObject, Coordinator, UINavigationControllerDel
         if let placeViewController = fromViewController as? PlaceViewController {
             childDidFinish(placeViewController.coordinator)
         }
+
+        if let itineraryViewController = fromViewController as? ItineraryViewController {
+            childDidFinish(itineraryViewController.coordinator)
+        }
     }
 
     /// Remove the last controller

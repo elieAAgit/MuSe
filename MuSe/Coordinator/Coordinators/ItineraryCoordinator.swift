@@ -1,13 +1,13 @@
 //
-//  PlaceCoordinator.swift
+//  ItineraryCoordinator.swift
 //  MuSe
 //
-//  Created by Qattus on 15/04/2022.
+//  Created by Elie Arquier on 19/10/2023.
 //
 
 import UIKit
 
-final class PlaceCoordinator: Coordinator {
+final class ItineraryCoordinator: Coordinator {
 
     // MARK: - Properties
 
@@ -24,7 +24,7 @@ final class PlaceCoordinator: Coordinator {
 
     /// Configure Place
     func start() {
-        let vc = PlaceViewController.instantiate()
+        let vc = ItineraryViewController.instantiate()
         let nav = NavigationConfiguration(controller: vc)
         vc.coordinator = self
         nav.configurationNavigation(title: "", buttonBack: "")
@@ -34,19 +34,13 @@ final class PlaceCoordinator: Coordinator {
 
     /// Retrieve data from previous
     func getPlace(with place: Place) {
-        let vc = PlaceViewController.instantiate()
+        let vc = ItineraryViewController.instantiate()
         let nav = NavigationConfiguration(controller: vc)
         vc.coordinator = self
         vc.place = place
         nav.configurationNavigation(title: place.title ?? "", buttonBack: place.title ?? "")
 
         navigationController.pushViewController(vc, animated: false)
-    }
-
-    func donePlace(with place: Place) {
-        let child = ItineraryCoordinator(navigationController: navigationController)
-        childCoordinators.append(child)
-        child.getPlace(with: place)
     }
 
     /// Remove the last controller

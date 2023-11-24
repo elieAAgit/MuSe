@@ -22,6 +22,7 @@ class PlaceViewController: UIViewController, Storyboarded {
     @IBOutlet weak var categoryImage: UIImageView!
     @IBOutlet weak var category: UILabel!
     @IBOutlet weak var favorite: PlaceButton!
+    @IBOutlet weak var adressImage: UIImageView!
     @IBOutlet weak var adress: UILabel!
     @IBOutlet weak var opening: UILabel!
     @IBOutlet weak var phoneView: UIView!
@@ -30,7 +31,8 @@ class PlaceViewController: UIViewController, Storyboarded {
     @IBOutlet weak var web: PlaceButton!
     @IBOutlet weak var descriptionTitle: UILabel!
     @IBOutlet weak var descriptionDetail: UITextView!
-
+    @IBOutlet weak var backUp: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         placeViewModel = PlaceViewModel(coordinator: coordinator, map: mapLocation, place: place)
@@ -49,10 +51,10 @@ class PlaceViewController: UIViewController, Storyboarded {
 extension PlaceViewController {
     private func setup() {
         name.text = place.title
-        adress.text = place.adress
         opening.text = place.opening
         phone.setTitle(place.phone, for: .normal)
 
+        validAdress()
         categories()
         phoneAndInternet()
         favoriteColor()
@@ -62,6 +64,7 @@ extension PlaceViewController {
     @IBAction func favoriteTapped(_ sender: Any) {
         placeViewModel?.updateFavorite()
         favoriteColor()
+        print("ok")
     }
 
     @IBAction func itinerary(_ sender: AnimateButton) {
@@ -76,9 +79,23 @@ extension PlaceViewController {
         placeViewModel?.web()
     }
 
+    private func validAdress() {
+        if place.adress != nil && place.adress != "" {
+            adress.text = place.adress
+        } else {
+            adressImage.isHidden = true
+            adress.isHidden = true
+        }
+    }
+
     private func categories() {
         categoryImage.image = UIImage(named: place.category?.id ?? "")
-        category.text = place.category?.title
+
+        if place.detail != nil && place.detail != "" {
+            category.text = place.detail
+        } else {
+            category.text = place.category?.title
+        }
     }
 
     private func favoriteColor() {
@@ -89,7 +106,6 @@ extension PlaceViewController {
             topFavorite.tintColor = .label
             favorite.tintColor = UIColor(named: Colors.capsuleColor.rawValue)
         }
-    
     }
 
     private func phoneAndInternet() {

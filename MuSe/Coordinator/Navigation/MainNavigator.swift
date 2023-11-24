@@ -56,6 +56,10 @@ final class MainNavigator: NSObject, Coordinator, UINavigationControllerDelegate
         if let placeViewController = fromViewController as? PlaceViewController {
             childDidFinish(placeViewController.coordinator)
         }
+
+        if let itineraryViewController = fromViewController as? ItineraryViewController {
+            childDidFinish(itineraryViewController.coordinator)
+        }
     }
 
     /// Remove the last controller
