@@ -34,10 +34,12 @@ final class PlaceManager {
 
     /// Add place in Database
     func addPlace(title: String,
+                  detail: String? = nil,
                   category: Category,
                   longitude: Double,
                   latitude: Double,
                   favorite: Bool = false,
+                  history: Bool = false,
                   adress: String?,
                   opening: String?,
                   phone: String?,
@@ -47,10 +49,12 @@ final class PlaceManager {
 
         // Add data
         place.title = title
+        place.detail = detail
         place.category = category
         place.longitude = longitude
         place.latitude = latitude
         place.favorite = favorite
+        place.history = history
         place.adress = adress
         place.opening = opening
         place.phone = phone
@@ -81,9 +85,17 @@ final class PlaceManager {
     }
 
     ///
-    func findPlaces() -> [Place] {
+    func findPlacesFavorite() -> [Place] {
+        findPlaces("favorite")
+    }
+
+    func findPlacesHistory() -> [Place] {
+        findPlaces("history")
+    }
+
+    func findPlaces(_ with: String) -> [Place] {
         let request: NSFetchRequest<Place> = Place.fetchRequest()
-        request.predicate = NSPredicate(format: "favorite  == true")
+        request.predicate = NSPredicate(format: "\(with) == true")
 
         var places: [Place] = []
 
@@ -112,6 +124,39 @@ final class PlaceManager {
                     result.favorite = true
                 } else if result.favorite == true {
                     result.favorite = false
+                }
+
+                try? context.save()
+            }
+        }
+    }
+
+    /// Update favorite
+    func updateHistory(_ find: Place) {
+        let request: NSFetchRequest<Place> = Place.fetchRequest()
+        request.predicate = NSPredicate(format: "title == %@", find.title!)
+
+        if let results = try? context.fetch(request) {
+
+            for result in results {
+                if result.history == false {
+                    result.history = true
+                }
+
+                try? context.save()
+            }
+        }
+    }
+
+    func removeFromHistory(_ find: Place) {
+        let request: NSFetchRequest<Place> = Place.fetchRequest()
+        request.predicate = NSPredicate(format: "title == %@", find.title!)
+
+        if let results = try? context.fetch(request) {
+
+            for result in results {
+                if result.history == true {
+                    result.history = false
                 }
 
                 try? context.save()

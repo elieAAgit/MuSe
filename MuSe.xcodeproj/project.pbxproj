@@ -19,6 +19,10 @@
 		0D4A219C2B095F2D00BEA10D /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A219B2B095F2D00BEA10D /* HistoryViewModel.swift */; };
 		0D53ECF12B0FFA4E00663239 /* MockCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D53ECF02B0FFA4E00663239 /* MockCoreDataStack.swift */; };
 		0D53ECF32B0FFA5F00663239 /* PlaceManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D53ECF22B0FFA5F00663239 /* PlaceManagerTests.swift */; };
+		0D53ECF62B10070100663239 /* FakeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D53ECF52B10070000663239 /* FakeResponse.swift */; };
+		0D53ECF82B10074900663239 /* FakeResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D53ECF72B10074900663239 /* FakeResponseData.swift */; };
+		0D53ECFA2B1007E000663239 /* ApiSessionFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D53ECF92B1007E000663239 /* ApiSessionFake.swift */; };
+		0D53ECFC2B10087300663239 /* ApiServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D53ECFB2B10087300663239 /* ApiServiceTests.swift */; };
 		0D5C38B92805AA8A005BF28D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C38B82805AA8A005BF28D /* AppDelegate.swift */; };
 		0D5C38BB2805AA8A005BF28D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C38BA2805AA8A005BF28D /* SceneDelegate.swift */; };
 		0D5C38C02805AA8A005BF28D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D5C38BE2805AA8A005BF28D /* Main.storyboard */; };
@@ -78,7 +82,6 @@
 		0DDE95B32814108000114464 /* PlaceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE95B22814108000114464 /* PlaceManager.swift */; };
 		0DE9470228187FAD0043049B /* PlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE9470128187FAC0043049B /* PlaceViewModel.swift */; };
 		0DE94704281888A10043049B /* PlaceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE94703281888A00043049B /* PlaceButton.swift */; };
-		0DE9D12E2B0FE5210077643B /* tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE9D12D2B0FE5210077643B /* tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +114,10 @@
 		0D4A219B2B095F2D00BEA10D /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
 		0D53ECF02B0FFA4E00663239 /* MockCoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCoreDataStack.swift; sourceTree = "<group>"; };
 		0D53ECF22B0FFA5F00663239 /* PlaceManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceManagerTests.swift; sourceTree = "<group>"; };
+		0D53ECF52B10070000663239 /* FakeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeResponse.swift; sourceTree = "<group>"; };
+		0D53ECF72B10074900663239 /* FakeResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeResponseData.swift; sourceTree = "<group>"; };
+		0D53ECF92B1007E000663239 /* ApiSessionFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiSessionFake.swift; sourceTree = "<group>"; };
+		0D53ECFB2B10087300663239 /* ApiServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceTests.swift; sourceTree = "<group>"; };
 		0D5C38B52805AA8A005BF28D /* MuSe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuSe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D5C38B82805AA8A005BF28D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D5C38BA2805AA8A005BF28D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -174,7 +181,6 @@
 		0DE9470128187FAC0043049B /* PlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewModel.swift; sourceTree = "<group>"; };
 		0DE94703281888A00043049B /* PlaceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceButton.swift; sourceTree = "<group>"; };
 		0DE9D1242B0FE4E00077643B /* MuSeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuSeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0DE9D12D2B0FE5210077643B /* tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +224,15 @@
 				0DDE95B22814108000114464 /* PlaceManager.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		0D53ECF42B1006BA00663239 /* API Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0D53ECF52B10070000663239 /* FakeResponse.swift */,
+				0D53ECF72B10074900663239 /* FakeResponseData.swift */,
+			);
+			path = "API Tests";
 			sourceTree = "<group>";
 		};
 		0D5C38AC2805AA8A005BF28D = {
@@ -446,7 +461,9 @@
 			isa = PBXGroup;
 			children = (
 				0DE9D12F2B0FE54B0077643B /* Core Data Tests */,
-				0DE9D12D2B0FE5210077643B /* tests.swift */,
+				0D53ECF42B1006BA00663239 /* API Tests */,
+				0D53ECF92B1007E000663239 /* ApiSessionFake.swift */,
+				0D53ECFB2B10087300663239 /* ApiServiceTests.swift */,
 			);
 			path = MuSeTests;
 			sourceTree = "<group>";
@@ -671,8 +688,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D53ECF62B10070100663239 /* FakeResponse.swift in Sources */,
+				0D53ECF82B10074900663239 /* FakeResponseData.swift in Sources */,
+				0D53ECFC2B10087300663239 /* ApiServiceTests.swift in Sources */,
 				0D53ECF32B0FFA5F00663239 /* PlaceManagerTests.swift in Sources */,
-				0DE9D12E2B0FE5210077643B /* tests.swift in Sources */,
+				0D53ECFA2B1007E000663239 /* ApiSessionFake.swift in Sources */,
 				0D53ECF12B0FFA4E00663239 /* MockCoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
