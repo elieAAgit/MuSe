@@ -26,8 +26,8 @@ final class HomeCoordinator: Coordinator {
     func start() {
         let vc = HomeViewController.instantiate()
         let nav = NavigationConfiguration(controller: vc)
+        nav.configurationNavigation(title: "", buttonBack: "", buttonIsHidden: true)
         vc.coordinator = self
-        nav.configurationNavigation(title: "", buttonBack: "")
 
         navigationController.pushViewController(vc, animated: false)
     }

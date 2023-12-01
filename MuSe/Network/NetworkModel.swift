@@ -11,10 +11,17 @@ import CoreData
 final class NetworkModel {
 
     private var placeManager: PlaceManager?
+    private var saveFavorites = [Place]()
+    private var saveHistory = [Place]()
 
     func start() {
         let context = AppDelegate.coreDataStack.viewContext
         placeManager = PlaceManager(context: context)
+
+        saveFavorites = placeManager?.findPlacesFavorite() ?? []
+        saveHistory = placeManager?.findPlacesHistory() ?? []
+
+        placeManager?.deleteAll()
     }
 
     func museum(response: MuseumDecodable?) {
@@ -25,26 +32,63 @@ final class NetworkModel {
                 if let longitude = museum.geometry.coordinates?.first {
                     if let latitude = museum.geometry.coordinates?.last {
 
-                        let city = museum.fields.city ?? ""
-                        var adress = ""
-                        var county = ""
+                        var detail = ""
 
-                        if city != "" {
-                            adress = museum.fields.adress ?? ""
-                            county = museum.fields.county ?? ""
+                        if museum.fields.category != nil {
+                            detail = museum.fields.category ?? ""
+                        } else if museum.fields.otherName != nil {
+                            detail = museum.fields.otherName ?? ""
                         }
 
-                        let location = adress + " " + city + " " + county
+                        var location = ""
+                        let city = museum.fields.city ?? ""
+                        let adress = museum.fields.adress ?? ""
+                        let county = museum.fields.county ?? ""
+
+                        if city != "" && adress != "" {
+                            location = adress + ", " + city
+                        } else if city != "" && adress != "" {
+                            location = city
+                        } else if city == "" && county != "" {
+                            location = county
+                        }
+
+                        var opening = ""
+
+                        if museum.fields.protEsp != nil {
+                            opening = museum.fields.protEsp ?? ""
+                            opening = opening.replacingOccurrences(of: ";", with: ", ")
+                        } else if museum.fields.dompal != nil {
+                            opening = museum.fields.dompal ?? ""
+                            opening = opening.replacingOccurrences(of: ";", with: ", ")
+                        }
+
+                        var history = ""
+                        var asset = ""
+
+                        if museum.fields.history != nil {
+                            history = museum.fields.history ?? ""
+                        }
+
+                        if museum.fields.asset != nil {
+                            asset = museum.fields.asset ?? ""
+                        }
+
+                        let descript =  """
+                                        \(history)
+                                        \(asset)
+                                        """
 
                         placeManager?.addPlace(title: name,
+                                               detail: detail,
                                                category: Categories.museum,
                                                longitude: longitude,
                                                latitude: latitude,
                                                adress: location,
-                                               opening: nil,
+                                               opening: opening,
                                                phone: museum.fields.phone,
                                                internet: museum.fields.webSite,
-                                               description: nil)
+                                               description: descript)
                     }
                 }
             }
@@ -59,16 +103,28 @@ final class NetworkModel {
                 if let longitude = theatre.geometry.coordinates?.first {
                     if let latitude = theatre.geometry.coordinates?.last {
 
+                        var location = ""
                         let city = theatre.fields.city ?? ""
-                        var adress = ""
-                        var county = ""
+                        let adress = theatre.fields.adress ?? ""
+                        let county = theatre.fields.region ?? ""
 
-                        if city != "" {
-                            adress = theatre.fields.adress ?? ""
-                            county = theatre.fields.region ?? ""
+                        if city != "" && adress != "" {
+                            location = adress + ", " + city
+                        } else if city != "" && adress != "" {
+                            location = city
+                        } else if city == "" && county != "" {
+                            location = county
                         }
 
-                        let location = adress + " " + city + " " + county
+                        let multiplexe = theatre.fields.multiplexe ?? "inconnu"
+                        let art = theatre.fields.categorieArtEtEssai ?? "inconnu"
+                        var artCategory = ""
+
+                        let descript =  """
+                                        Multiplexe: \(multiplexe)
+                                        art et essai: \(art)
+                                        Nombre d'ecrans:
+                                        """
 
                         placeManager?.addPlace(title: name,
                                                category: Categories.theatre,
@@ -78,7 +134,7 @@ final class NetworkModel {
                                                opening: nil,
                                                phone: nil,
                                                internet: nil,
-                                               description: nil)
+                                               description: descript)
                     }
                 }
             }
@@ -90,19 +146,21 @@ final class NetworkModel {
 
         for garden in gardens {
             if let name = garden.fields.gardenName {
-                if let longitude = garden.fields.coordinates?.first {
-                    if let latitude = garden.fields.coordinates?.last {
+                if let longitude = garden.fields.coordinates?.last {
+                    if let latitude = garden.fields.coordinates?.first {
 
+                        var location = ""
                         let city = garden.fields.city ?? ""
-                        var adress = ""
-                        var county = ""
+                        let adress = garden.fields.adress ?? ""
+                        let county = garden.fields.county ?? ""
 
-                        if city != "" {
-                            adress = garden.fields.adress ?? ""
-                            county = garden.fields.county ?? ""
+                        if city != "" && adress != "" {
+                            location = adress + ", " + city
+                        } else if city != "" && adress != "" {
+                            location = city
+                        } else if city == "" && county != "" {
+                            location = county
                         }
-
-                        let location = adress + " " + city + " " + county
 
                         placeManager?.addPlace(title: name,
                                                category: Categories.garden,
@@ -136,7 +194,7 @@ final class NetworkModel {
                             county = library.fields.postalCode ?? ""
                         }
         
-                        let location = adress + " " + city + " " + county
+                        let location = adress + " " + city
 
                         placeManager?.addPlace(title: name,
                                                category: Categories.library,
@@ -149,6 +207,34 @@ final class NetworkModel {
                                                description: library.fields.description)
                     }
                 }
+            }
+        }
+    }
+    
+    private func saveFavoritesAndHistory() -> Bool {
+        guard let favorites = placeManager?.findPlacesFavorite() else { return true }
+        guard let history = placeManager?.findPlacesHistory() else { return true }
+
+        saveFavorites = favorites
+        saveHistory = history
+
+        return true
+    }
+
+    func loadingFavoritesAndHistory() {
+        for favorite in saveFavorites {
+            guard let title = favorite.title else { return }
+    
+            if ((placeManager?.findPlace(title)) != nil) {
+                placeManager?.updateFavorite(favorite)
+            }
+        }
+
+        for history in saveHistory {
+            guard let title = history.title else { return }
+    
+            if ((placeManager?.findPlace(title)) != nil) {
+                placeManager?.updateHistory(history)
             }
         }
     }

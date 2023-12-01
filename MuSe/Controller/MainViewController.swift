@@ -7,25 +7,23 @@
 
 import UIKit
 
-class MainViewController: UIViewController, Storyboarded {
+class MainViewController: UIViewController, Storyboarded, OtherPageDelegate {
 
     // MARK: - Property
 
     weak var coordinator: MainCoordinator?
+    private var networkModel = NetworkCallsViewModel()
 
     // MARK: - LifeCycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        networkModel.delegate = self
+        networkModel.start()
     }
-}
 
-// MARK: - Method
-
-extension MainViewController {
-    @IBAction func tapped(_ sender: UIButton) {
-        coordinator?.goToHome()
+    func otherPage() {
+        self.coordinator?.goToHome()
     }
 }

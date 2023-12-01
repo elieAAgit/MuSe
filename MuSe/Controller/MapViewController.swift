@@ -69,13 +69,17 @@ extension MapViewController {
     }
 
     @IBAction func selectorIsTapped(_ sender: CapsuleButton) {
-       if sender.isSelected {
-            mapViewModel?.removeSelector(tag: sender.tag)
-           sender.isSelected = false
+        if sender.isSelected {
+           if selectors.count > 1 {
+               mapViewModel?.removeSelector(tag: sender.tag)
+               sender.isSelected = false
+           }
         } else {
             mapViewModel?.addSelector(tag: sender.tag)
             sender.isSelected = true
         }
+
+        selectors = mapViewModel?.refreshSelectors() ?? []
     }
 
     @IBAction func userLocation(_ sender: RoundButton) {

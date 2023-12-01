@@ -23,8 +23,8 @@ struct ApiKeys {
     static private let cultureBase = "https://data.culture.gouv.fr/api/records/1.0/"
 
     // MARK: - Museum
-    static private let datasetMuseum = "search/?dataset=liste-et-localisation-des-musees-de-france"
-    static private let facetMuseum = "&q=&facet=region_administrative&facet=departement&rows=1500"
+    static private let datasetMuseum = "search/?dataset=musees-de-france-base-museofile"
+    static private let facetMuseum = "&q=&facet=dompal&facet=region&rows=1500"
     static private var museumBody: String {
         return datasetMuseum + facetMuseum
     }

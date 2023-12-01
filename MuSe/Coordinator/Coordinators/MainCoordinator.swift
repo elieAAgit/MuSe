@@ -27,7 +27,8 @@ final class MainCoordinator: Coordinator {
         let vc = MainViewController.instantiate()
         let nav = NavigationConfiguration(controller: vc)
         nav.configurationNavigation(title: "", buttonBack: "")
-        vc.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "house.fill"), tag: 0)
+        vc.tabBarItem = UITabBarItem(title: "lieux", image: UIImage(systemName: "house.fill"), tag: 0)
+
         vc.coordinator = self
 
         navigationController.pushViewController(vc, animated: false)

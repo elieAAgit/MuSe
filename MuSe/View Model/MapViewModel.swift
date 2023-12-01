@@ -42,36 +42,62 @@ final class MapViewModel: NSObject {
 
     func viewDidDisappear() {
         coordinator.refreshSelectors(with: selectors)
+        print(selectors)
     }
 
     func addSelector(tag: Int) {
-        switch tag {
-        case 0:
-            selectors.append(Categories.museum.id)
-        case 1:
-            selectors.append(Categories.theatre.id)
-        case 2:
-            selectors.append(Categories.library.id)
-        case 3:
-            selectors.append(Categories.garden.id)
-        default:
-            print("Unknown Selector")
+        var selector: String {
+            switch tag {
+            case 0:
+                selectors.append(Categories.museum.id)
+                return Categories.museum.id
+            case 1:
+                selectors.append(Categories.theatre.id)
+                return Categories.theatre.id
+            case 2:
+                selectors.append(Categories.library.id)
+                return Categories.library.id
+            case 3:
+                selectors.append(Categories.garden.id)
+                return Categories.garden.id
+            default:
+                print("Unknown Selector")
+                return "Unknown"
+            }
         }
+
+        showAnnotations(selector)
     }
 
     func removeSelector(tag: Int) {
-        switch tag {
-        case 0:
-            selectors.removeAll(where: { $0 == Categories.museum.id })
-        case 1:
-            selectors.removeAll(where: { $0 == Categories.theatre.id })
-        case 2:
-            selectors.removeAll(where: { $0 == Categories.library.id })
-        case 3:
-            selectors.removeAll(where: { $0 == Categories.garden.id })
-        default:
-            print("Unknown Selector")
-        }    }
+        var selector: String {
+            switch tag {
+            case 0:
+                selectors.removeAll(where: { $0 == Categories.museum.id })
+                return Categories.museum.id
+            case 1:
+                selectors.removeAll(where: { $0 == Categories.theatre.id })
+                return Categories.theatre.id
+            case 2:
+                selectors.removeAll(where: { $0 == Categories.library.id })
+                return Categories.library.id
+            case 3:
+                selectors.removeAll(where: { $0 == Categories.garden.id })
+                return Categories.garden.id
+            default:
+                print("Unknown Selector")
+                return "Unknown"
+            }
+        }
+
+        hideAnnotations(selector)
+    }
+
+    func refreshSelectors() -> [String] {
+        let value = selectors
+
+        return value
+    }
 }
 
 // MARK: - MapKit
@@ -80,10 +106,40 @@ extension MapViewModel: MKMapViewDelegate {
     private func setupMap() {
         places = placeManager.fetchedResultsController
 
+        loadingAnnotations()
+    }
+
+    private func showAnnotations(_ selector: String) {
         for place in places {
-                let location = PlaceMap(place: place)
+            let location = PlaceMap(place: place)
+
+            guard let placeToAdd = location.place.category?.id else { return }
+
+            if selectors.contains(placeToAdd) && placeToAdd == selector {
                 mapView.addAnnotation(location)
+            }
         }
+    }
+
+    private func hideAnnotations(_ selector: String) {
+        let annotations = mapView.annotations
+
+        mapView.removeAnnotations(annotations)
+
+        loadingAnnotations()
+    }
+
+    private func loadingAnnotations() {
+        for place in places {
+            let location = PlaceMap(place: place)
+
+            guard let placeToAdd = location.place.category?.id else { return }
+
+            if selectors.contains(placeToAdd) {
+                mapView.addAnnotation(location)
+            }
+        }
+
     }
 
     /// Create annotationView with custom pin for different categories
@@ -103,7 +159,8 @@ extension MapViewModel: MKMapViewDelegate {
         return annotationView
     }
 
-    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView,
+                 calloutAccessoryControlTapped control: UIControl) {
         guard let place = view.annotation as? PlaceMap else { return }
 
         coordinator.getPlace(with: place.place)
@@ -136,7 +193,7 @@ extension MapViewModel: CLLocationManagerDelegate {
         let message = """
         message
         """
-        print(message)
+
         //showAlert(withTitle: "Warning", message: message)
       }
     }

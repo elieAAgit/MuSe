@@ -40,6 +40,8 @@ class HomeCollectionViewCell: UICollectionViewCell {
 
     override var isSelected: Bool {
         didSet {
+
+            // Button tapped
             if cellSelected == false && isSelected == true {
                 cellSelected = true
                 trackShape.strokeColor = colorGrey
@@ -47,8 +49,12 @@ class HomeCollectionViewCell: UICollectionViewCell {
                 selectedCell(with: cellSelected)
 
             } else if cellSelected == true && isSelected == false {
+                selectedCell(with: cellSelected)
+                trackShape.strokeColor = buttonColor
 
-            } else if cellSelected == true && isSelected == true {
+            }
+            //Button tapped
+            else if cellSelected == true && isSelected == true {
                 cellSelected = false
                 trackShape.strokeColor = buttonColor
                 animate(with: cellSelected)
@@ -88,7 +94,7 @@ class HomeCollectionViewCell: UICollectionViewCell {
         self.imageView.layer.addSublayer(shape)
     }
     
-    private func selectedCell(with selected: Bool) {
+    func selectedCell(with selected: Bool) {
 
         if selected == false {
             UIImageView.animate(withDuration: 0.3, delay: 0.0, options: .curveEaseOut, animations: {

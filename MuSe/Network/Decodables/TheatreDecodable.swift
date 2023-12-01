@@ -35,8 +35,8 @@ struct RecordTheatre: Decodable {
 
 // MARK: - Fields
 struct FieldsTheatre: Decodable {
-    let screens: Int?
-    let name, multiplexe, categorieArtEtEssai: String?
+    let screens, seats: Int?
+    let name, multiplexe, categorieArtEtEssai, labelArtEtEssai: String?
     let adress, city, urban, region: String?
     let latitude, longitude: String?
 
@@ -44,10 +44,12 @@ struct FieldsTheatre: Decodable {
         case name = "nom"
         case adress = "adresse"
         case screens = "ecrans"
+        case seats = "fauteuils"
         case city = "commune"
         case latitude, longitude, multiplexe
         case region = "region_administrative"
         case categorieArtEtEssai = "categorie_art_et_essai"
+        case labelArtEtEssai = "label_art_et_essai"
         case urban = "unite_urbaine"
     }
 }

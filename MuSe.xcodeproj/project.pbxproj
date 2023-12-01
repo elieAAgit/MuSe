@@ -229,6 +229,7 @@
 		0D53ECF42B1006BA00663239 /* API Tests */ = {
 			isa = PBXGroup;
 			children = (
+				0D7E248F2B10DDCD0000BF41 /* Fake Response Json */,
 				0D53ECF52B10070000663239 /* FakeResponse.swift */,
 				0D53ECF72B10074900663239 /* FakeResponseData.swift */,
 			);
@@ -262,7 +263,6 @@
 				0DB2022828082EB200262DEE /* Network */,
 				0D2C31432813E53100CD12DF /* CoreData */,
 				0D5C38F12805AB9C005BF28D /* Model */,
-				0D94BA0D2806D1CF00AC8A6D /* Design */,
 				0D5C38F02805AB50005BF28D /* View */,
 				0D5C38ED2805AB0F005BF28D /* Controller */,
 				0D5C38EC2805AAFD005BF28D /* View Model */,
@@ -370,16 +370,16 @@
 				0D5C393D280606D2005BF28D /* CapsuleButton.swift */,
 				0D94BA162806F20700AC8A6D /* RoundedView.swift */,
 				0DE94703281888A00043049B /* PlaceButton.swift */,
+				0D94BA0E2806D20300AC8A6D /* Design.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		0D94BA0D2806D1CF00AC8A6D /* Design */ = {
+		0D7E248F2B10DDCD0000BF41 /* Fake Response Json */ = {
 			isa = PBXGroup;
 			children = (
-				0D94BA0E2806D20300AC8A6D /* Design.swift */,
 			);
-			path = Design;
+			path = "Fake Response Json";
 			sourceTree = "<group>";
 		};
 		0D94BA222807399900AC8A6D /* Protocols */ = {

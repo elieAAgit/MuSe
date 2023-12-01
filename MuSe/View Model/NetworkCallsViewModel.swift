@@ -7,11 +7,16 @@
 
 import Foundation
 
+protocol OtherPageDelegate {
+    func otherPage()
+}
+
 final class NetworkCallsViewModel: NSObject {
 
     private var networkModel = NetworkModel()
+    var delegate: OtherPageDelegate?
 
-    func setup() {
+    func start() {
         networkModel.start()
         networkMuseum()
     }
@@ -26,7 +31,7 @@ extension NetworkCallsViewModel {
             switch result {
             case .success(let response):
                 self.networkModel.museum(response: response)
-                print("Museum")
+                print(Categories.museum.id)
             case .failure(let error):
                 print(error)
             }
@@ -41,7 +46,7 @@ extension NetworkCallsViewModel {
             switch result {
             case .success(let response):
                 self.networkModel.theatre(response: response)
-                print("Theatre")
+                print(Categories.theatre.id)
             case .failure(let error):
                 print(error)
             }
@@ -56,7 +61,7 @@ extension NetworkCallsViewModel {
             switch result {
             case .success(let response):
                 self.networkModel.garden(response: response)
-                print("Garden")
+                print(Categories.garden.id)
             case .failure(let error):
                 print(error)
             }
@@ -71,10 +76,12 @@ extension NetworkCallsViewModel {
             switch result {
             case .success(let response):
                 self.networkModel.library(response: response)
-                print("Library")
+                print(Categories.library.id)
             case .failure(let error):
                 print(error)
             }
+            self.networkModel.loadingFavoritesAndHistory()
+            self.delegate?.otherPage()
         }
     }
 }

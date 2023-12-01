@@ -163,7 +163,7 @@ final class PlaceManager {
             }
         }
     }
-
+    
     /// Remove place in Database
     func removePlace(_ remove: Place) {
         let request: NSFetchRequest<Place> = Place.fetchRequest()

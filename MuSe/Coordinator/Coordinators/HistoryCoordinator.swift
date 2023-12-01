@@ -28,7 +28,7 @@ final class HistoryCoordinator: Coordinator {
         let vc = HistoryViewController.instantiate()
         let nav = NavigationConfiguration(controller: vc)
         nav.configurationNavigation(title: "Historique", buttonBack: "")
-        vc.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "clock.arrow.circlepath"), tag: 2)
+        vc.tabBarItem = UITabBarItem(title: "Historique", image: UIImage(systemName: "clock.arrow.circlepath"), tag: 2)
         vc.coordinator = self
 
         navigationController.pushViewController(vc, animated: false)

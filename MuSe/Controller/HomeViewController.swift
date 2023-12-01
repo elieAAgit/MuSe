@@ -13,7 +13,6 @@ class HomeViewController: UIViewController, Storyboarded {
 
     weak var coordinator: HomeCoordinator!
     var homeModel: HomeViewModel?
-    private var networkModel = NetworkCallsViewModel()
 
     @IBOutlet weak var homeCollection: UICollectionView!
 
@@ -22,7 +21,6 @@ class HomeViewController: UIViewController, Storyboarded {
     
         homeModel = HomeViewModel(coordinator: coordinator, collectionView: homeCollection)
         homeModel?.setup()
-        networkModel.setup()
     }
 
     override func viewWillAppear(_ animated: Bool) {

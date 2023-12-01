@@ -11,7 +11,6 @@ struct GardenDecodable: Decodable {
     let nhits: Int
     let parameters: GardenParameters
     let records: [GardenRecord]
-
 }
 
 // MARK: - Parameters

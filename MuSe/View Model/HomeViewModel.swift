@@ -61,6 +61,10 @@ extension HomeViewModel: UICollectionViewDataSource {
         let category = categories[indexPath.row]
         cell.getCategory(category: category)
 
+        if selectors.contains(category.id) {
+            cell.selectedCell(with: true)
+        }
+
         return cell
     }
 }

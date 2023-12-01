@@ -41,19 +41,28 @@ struct MuseumRecord: Decodable {
 
 // MARK: - Fields
 struct MuseumFields: Decodable {
-    let name: String?
+    let name, otherName: String?
     let adress, city, county, region, cp: String?
+    let history, asset, interest, themes: String?
+    let category, dompal, protEsp: String?
     let phone,  webSite: String?
 
     enum CodingKeys: String, CodingKey {
-        case name = "nom_officiel_du_musee"
-        case county = "departement"
-        case city = "commune"
-        case adress = "adresse"
-        case region = "region_administrative"
-        case cp = "code_postal"
-        case phone = "telephone"
-        case webSite = "url"
+        case name = "nomoff"
+        case otherName = "autnom"
+        case history = "hist"
+        case category = "categ"
+        case dompal, themes
+        case protEsp = "prot_esp"
+        case asset = "atout"
+        case interest = "interet"
+        case county = "dpt"
+        case city = "ville_m"
+        case adress = "adrl1_m"
+        case region = "region"
+        case cp = "cp_m"
+        case phone = "tel_m"
+        case webSite = "url_m"
     }
 }
 
