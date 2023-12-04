@@ -2,11 +2,12 @@
 //  AnimateButton.swift
 //  MuSe
 //
-//  Created by Qattus on 12/04/2022.
+//  Created by Elie Arquier on 12/04/2022.
 //
 
 import UIKit
 
+// Animated button when to use
 final class AnimateButton: UIButton {
 
     override func awakeFromNib() {

@@ -2,13 +2,14 @@
 //  PlaceMap.swift
 //  MuSe
 //
-//  Created by Qattus on 16/04/2022.
+//  Created by Elie Arquier on 16/04/2022.
 //
 
 import UIKit
 import MapKit
 import Contacts
 
+// Custom annotation for the map with custom image for the selected category
 class PlaceMap: NSObject, MKAnnotation {
     var title: String?
     var coordinate: CLLocationCoordinate2D
@@ -26,19 +27,4 @@ class PlaceMap: NSObject, MKAnnotation {
     var subtitle: String? {
         return place.category?.id
     }
-/*
-    var mapItem: MKMapItem? {
-        guard let location = title else {
-        return nil
-      }
-
-      let addressDict = [CNPostalAddressStreetKey: location]
-      let placemark = MKPlacemark(
-        coordinate: coordinate,
-        addressDictionary: addressDict)
-      let mapItem = MKMapItem(placemark: placemark)
-      mapItem.name = title
-      return mapItem
-    }
-*/
 }

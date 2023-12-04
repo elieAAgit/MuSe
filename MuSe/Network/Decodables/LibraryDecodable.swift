@@ -2,7 +2,7 @@
 //  LibraryDecodable.swift
 //  MuSe
 //
-//  Created by Qattus on 14/04/2022.
+//  Created by Elie Arquier on 14/04/2022.
 //
 
 import Foundation
@@ -15,37 +15,40 @@ struct LibraryDecodable: Decodable {
 
 // MARK: - Parameters
 struct LibraryParameters: Decodable {
-    let dataset, timezone, format: String
+    let dataset, format, timezone: String
     let rows, start: Int
     let facet: [String]
 }
 
 // MARK: - Record
 struct LibraryRecord: Decodable {
-    let datasetid, recordid: String
+    let datasetidLibrary: String
+    let recordidLibrary: String
     let fields: LibraryFields
     let geometry: LibraryGeometry
-    let recordTimestamp: String
+    let record_timestampLibrary: String
 
     enum CodingKeys: String, CodingKey {
-        case datasetid, recordid
-        case fields = "fields"
+        case datasetidLibrary = "datasetid"
+        case recordidLibrary = "recordid"
+        case fields
         case geometry
-        case recordTimestamp = "record_timestamp"
+        case record_timestampLibrary = "record_timestamp"
     }
 }
 
 // MARK: - Fields
 struct LibraryFields: Decodable {
-    let adress, city, postalCode: String?
-    let name, detail, description: String?
+    let adress, city, county: String?
+    let name, otherName, detail, description: String?
 
     enum CodingKeys: String, CodingKey {
-        case adress = "voie"
-        case postalCode = "cp"
-        case detail = "comment"
-        case name = "libelle1"
-        case city = "adresse_ville"
+        case adress = "adresse"
+        case county = "departement"
+        case detail = "statut"
+        case name = "nom_de_l_etablissement"
+        case otherName = "libelle_2"
+        case city = "ville"
         case description = "type_adresse"
     }
 }

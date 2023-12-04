@@ -1,0 +1,783 @@
+{
+    "nhits": 1227,
+    "parameters": {
+        "dataset": "musees-de-france-base-museofile",
+        "rows": 10,
+        "start": 0,
+        "facet": [
+            "dompal",
+            "region"
+        ],
+        "format": "json",
+        "timezone": "UTC"
+    },
+    "records": [
+        {
+            "datasetid": "musees-de-france-base-museofile",
+            "recordid": "68d3a64f0b3dbc2da75c03f8f9761cd702c052e4",
+            "fields": {
+                "geolocalisation_latlong": [
+                    48.824977,
+                    7.482915
+                ],
+                "latitude": 48.824977,
+                "artiste": "Tableaux de Gimignani, Errard, Mignard.",
+                "themes": "Art religieux (Art protestant);Arts décoratifs : Mobilier;Beaux-Arts : Peinture;Collections militaires : Armes, Uniformes, Armures;Autres collections : Fonds ancien d'imprimés, Numismatique, Philatélie;Ethnologie : Costume, Mobilier, Métiers et Outils, Pratiques religieuses et collectives;Histoire : Histoire locale et régionale, Biographie;Musique : Instruments;Sciences de la nature : Minéralogie, Paléontologie",
+                "longitude": 7.482915,
+                "tel_m": "03 88 00 38 39",
+                "cp_m": "67330",
+                "hist": "Créé en 1934, le musée possède une salle en 1964, ainsi que 1.600 objets. En 1982, il compte sept salles et plus de 15.000 objets.\nLe musée, entièrement rénové, réouvre en juin 2013.",
+                "phare": "Schattenmann (mines de Bouxwiller, XIXe siècle), Marie Hart (Marie-Anne Hartmann), contes de Hanau-Lichtenberg et de Hesse-Darmstadt (XVIe-XVIIIe siècles).",
+                "categ": "Ecomusée",
+                "prot_bat": "Protégé au titre des Monuments historiques :\nhttps://www.pop.culture.gouv.fr/notice/merimee/PA00084643",
+                "url_m": "www.museedupaysdehanau.eu",
+                "dmaj": "2021-11-26",
+                "atout": "Histoire du pays de Hanau, bibliothèque de recherche (5.000 volumes), vie quotidienne au XIXe siècle dans le pays de Hanau, le Bastberg et ses recherches géologiques.\nDivers objets et meubles provenant de la famille de Marie Hart (Marie-Anne Hartmann), célèbre poétesse et romancière d'expression dialectale",
+                "lieu_m": "HALLE AUX BLES",
+                "ref": "M0003",
+                "region": "Grand Est",
+                "adrl1_m": "3 place du Château",
+                "ville_m": "Bouxwiller",
+                "dompal": "Archéologie;Ethnologie;Histoire;Sciences de la nature",
+                "refmer": "PA00084643;IA67009579",
+                "interet": "Ancienne Halle aux grains datant du XVIe siècle qui est adossée à une chapelle castrale du XIVe siècle.",
+                "dpt": "Bas-Rhin",
+                "nomoff": "musée du Pays de Hanau - histoire et vies d’un territoire",
+                "autnom": "Musée de Bouxwiller et du Pays d'Hanau"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.482915,
+                    48.824977
+                ]
+            },
+            "record_timestamp": "2023-10-13T09:14:08.138Z"
+        },
+        {
+            "datasetid": "musees-de-france-base-museofile",
+            "recordid": "f770fe3f3304f183711134dcc29267c8a476a2cc",
+            "fields": {
+                "geolocalisation_latlong": [
+                    48.741958,
+                    7.362787
+                ],
+                "latitude": 48.741958,
+                "artiste": "Alfred Roll, Dufy, Dunoyer de Segonzac, Marcel Baschet, Cappiello, Gus Bofa, Mathurin Meheut, Amédée de La Patellière, Favory, Nahoum Aronson, Pompon, Chana Orloff, Van Dongen, Vlaminck, Albert Brabo, Francki, Weissbuch, Geneviève Gallibert, Emilie Charmy, Jacques Villon, Carzou, Chana Orloff, Hélèna Zelezna, Debré, Pompon, Dalou, De Bayser",
+                "an_creat": "1858",
+                "themes": "Archéologie nationale : Préhistoire, Gallo-romain, Médiéval;Art religieux (Art chrétien);Arts décoratifs : Mobilier, Objets d'art;Beaux-Arts : Dessin, Estampe et Affiche, Peinture, Sculpture;Collections militaires : Armes, Uniformes, Armures;Photographie, Numismatique;Ethnologie : Costume;Histoire : Histoire locale et régionale, Histoire militaire, Biographie",
+                "longitude": 7.362787,
+                "tel_m": "03 88 71 63 95",
+                "cp_m": "67700",
+                "hist": "Le musée a été créé en 1858 pour abriter les vestiges archéologiques découverts dans les environs de Saverne. Des collections d'art et d'histoire ont été acquises par la suite. Entre 1952 et 1966 le musée a reçu plusieurs donations de tableaux du peintre Alfred Roll. En 1983, la journaliste Louise Weiss a légué ses collections au musée (peintures et dessins du XXe siècle, mobilier XIXe et XXe siècles, documents historiques, collections ethnographiques).",
+                "phare": "Louise Weiss (1893 - 1983)",
+                "prot_bat": "Protégé au titre des Monuments historiques :\nhttps://www.pop.culture.gouv.fr/notice/merimee/PA00084953?base=%5B%22Patrimoine%20architectural%20%28M%C3%A9rim%C3%A9e%29%22%5D&mainSearch=%22Rohan%22&ou=%5B%22Saverne%22%5D&last_view=%22list%22&idQuery=%227f68f-d075-6d52-cb86-8707255e4c%22",
+                "url_m": "www.saverne.fr/sport-culture/offre-culturelle/musee-de-saverne/",
+                "dmaj": "2021-11-26",
+                "atout": "Importante collection lapidaire gallo-romaine ;\nVitraux XVe siècle, collections de tuiles, de céramique de poêle, de serrures et de clefs, de plaques de poêles ;\nSculpture religieuse du XVe au XIXe siècles (Nativité du XVe siècle, Vierge du XVe siècle, bas-relief de Saint Vit, Saint Sébastien ... ) ;\nHistoire de Saverne à travers gravures et objets ;\nPeintures des XIXe et XXe siècles ;\nSection d'art et traditions populaires ;\nDonation Louise Weiss (mobilier, tableaux, objets d'art, pièces ethnographiques).",
+                "lieu_m": "Château des Rohan",
+                "ref": "M0012",
+                "region": "Grand Est",
+                "adrl1_m": "Place du Général de Gaulle",
+                "ville_m": "Saverne",
+                "dompal": "Archéologie;Arts décoratifs;Beaux-arts;Histoire;Photographie;Sciences de la nature;Ethnologie",
+                "refmer": "PA00084953;IA00055456",
+                "interet": "Le château des Rohan de Saverne est l'ancienne résidence principale des princes évêques de Strasbourg.",
+                "dpt": "Bas-Rhin",
+                "nomoff": "musée du Château des Rohan",
+                "autnom": "Musée Municipal de Saverne"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.362787,
+                    48.741958
+                ]
+            },
+            "record_timestamp": "2023-10-13T09:14:08.138Z"
+        },
+        {
+            "datasetid": "musees-de-france-base-museofile",
+            "recordid": "2ac10760886a52938b8a7f64319aeeb61f31f1cf",
+            "fields": {
+                "geolocalisation_latlong": [
+                    48.579075,
+                    7.750484
+                ],
+                "latitude": 48.579075,
+                "dmaj": "2021-12-28",
+                "prot_esp": "Site patrimonial remarquable.  Patrimoine mondial de l'UNESCO. Abords d'un Monument historique.",
+                "atout": "Comme la plupart des musées fondés il y a plus d'un siècle, le musée Alsacien a acquis essentiellement de beaux objets, décorés et en bon état. Il donne ainsi de l'Alsace la vision embellie d'une région uniformément cossue. La plupart des pièces constituant le fonds du musée proviennent du Bas-Rhin, département où l'industrialisation fut plus tardive. L'essentiel des collections date de la période que l'on pourrait qualifier d'\"âge d'or\" du monde rural et de la culture traditionnelle, la période allant de 1750 à 1860 environ.\nDeux grands thèmes sont représentés dans le musée, et ce depuis son origine : l'intérieur paysan et les croyances. Celles-ci constitue le point fort des collections. De nombreuses pièces sont consacrées aux trois religions présentes traditionnellement en Alsace (Catholicisme, Protestantisme et Judaïsme), mais également aux superstitions.\nLes reconstitutions qui ponctuent le parcours de visite, dont la majorité remontent à la création du musée, participent pleinement du charme de la visite.",
+                "ref": "M0014",
+                "an_creat": "1907",
+                "region": "Grand Est",
+                "themes": "Photographie;Ethnologie : Costume, Habitat, Mobilier, Métiers et Outils, Pratiques religieuses et collectives",
+                "longitude": 7.750484,
+                "adrl1_m": "23, quai Saint-Nicolas",
+                "tel_m": "03 88 52 50 01",
+                "ville_m": "Strasbourg",
+                "dompal": "Arts décoratifs;Ethnologie;Histoire;Technique et industrie",
+                "refmer": "PA00085182;SPR4400040",
+                "cp_m": "67000",
+                "interet": "Anciennes demeures strasbourgeoises reliées par des escaliers et des coursives en bois.",
+                "hist": "En 1902 est fondée la Société du musée alsacien (SARL) qui bénéficia de nombreux dons de particuliers et effectua des achats dans les villages, acquisitions malheureusement non documentées.\nLe musée ouvre en 1907 avec des reconstitutions d'intérieurs. Durant la Première Guerre mondiale, il est mis sous séquestre, puis repris par la Ville.",
+                "phare": "Charles Spindler (1865-1938) ; Le pasteur Jean-François Oberlin (1740 - 1826)",
+                "dpt": "Bas-Rhin",
+                "nomoff": "musée Alsacien",
+                "autnom": "Elsäsisches museum",
+                "prot_bat": "Protégé au titre des Monuments historiques :\nhttps://www.pop.culture.gouv.fr/notice/merimee/PA00085182?base=%5B%22Patrimoine%20architectural%20%28M%C3%A9rim%C3%A9e%29%22%5D&mainSearch=%22mus%C3%A9e%22&ou=%5B%22Strasbourg%22%5D&last_view=%22list%22&idQuery=%22ac16ce1-41a5-2f8-d7c-31bf5d16bf3e%22",
+                "url_m": "www.musees.strasbourg.eu/musee-alsacien"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.750484,
+                    48.579075
+                ]
+            },
+            "record_timestamp": "2023-10-13T09:14:08.138Z"
+        },
+        {
+            "datasetid": "musees-de-france-base-museofile",
+            "recordid": "7f2d4ecd9aac9627c8132db218448428c2037657",
+            "fields": {
+                "geolocalisation_latlong": [
+                    48.58097,
+                    7.75151
+                ],
+                "latitude": 48.58097,
+                "artiste": "Atelier du transept sud et des portails ouest de la cathédrale (XIIIe siècle), Nicolas de Leyde, sculpteur (à Strasbourg en 1463 - 1467), Nicolas de Haguenau, Johan von Ach (Jean d'Aix), Conrad Witz, peintre bâlois (XVe siècle), Hans Baldung-Grien, artiste strasbourgeois (1520 à 1540), Sébastien Stoskopff, peintre de natures mortes (1597 - 1657).",
+                "dmaj": "2021-12-28",
+                "prot_esp": "Site patrimonial remarquable. Patrimoine mondial de l'UNESCO. Abords d'un Monument historique.",
+                "atout": "Le musée de l’Œuvre Notre-Dame est l’un des rares musées européens entièrement dévolu aux arts du moyen âge et de la Renaissance, et l’un des plus remarquables par l’homogénéité de ses collections. Témoignage de l’importance du foyer artistique strasbourgeois à la confluence des mondes latin et germanique, il mêle les différents arts en un parcours d’ambiance, depuis l’époque romane jusqu’au XVIIe siècle.\nLe parcours de ce musée aux multiples ambiances, dont la muséographie a peu changé depuis ses origines, est dominé d’une part par l’ensemble des sculptures gothiques provenant de la cathédrale, en particulier les grandes figures des portails, chefs-d’œuvre du Moyen Âge occidental, marques de l’inventivité exceptionnel du chantier du XIIIe siècle au début du XVIe siècle. Le deuxième point fort de la collection est constitué par un ensemble d’œuvres majeures de l’art du XVe siècle et du début du XVIe siècle haut-rhénan, peintures, sculptures et vitraux dont certains dus à des artistes illustres tels que Conrad Witz, Nicolas de Leyde ou Hans Baldung Grien.\nSi les collections de sculptures sont majoritaires, les œuvres majeures sont assez bien réparties entre les différents types de supports, proposant un parcours équilibré. L’ensemble mêle également des pièces d’orfèvrerie, de mobilier et d’art décoratif en une vision globale témoignant de l’ampleur du développement artistique de la ville au sein de la région du Rhin supérieur.",
+                "ref": "M0017",
+                "region": "Grand Est",
+                "themes": "Arts décoratifs : Mobilier, Orfèvrerie (Objets d'art), Textiles (Tapisseries), Verrerie (Vitraux);Beaux-Arts : Dessin (Non exposés), Estampe et Affiche (Non exposé), Peinture, Sculpture",
+                "longitude": 7.75151,
+                "adrl1_m": "3, place du Château",
+                "tel_m": "03 68 98 61 50",
+                "ville_m": "Strasbourg",
+                "dompal": "Arts décoratifs;Beaux-arts",
+                "refmer": "PA00085099;SPR4400040",
+                "cp_m": "67076",
+                "interet": "Maisons gothique et Renaissance de la Fondation de l'Œuvre Notre-Dame",
+                "hist": "La création de ce musée entre 1931 et 1955 est le fait d’une personnalité pionnière en matière de muséographie, Hans Haug, directeur des musées de Strasbourg durant près d’un demi-siècle. S’attachant à valoriser les témoignages artistiques souvent disparus ou dispersés de ces périodes, il constitua les collections à partir des fonds des différents musées de Strasbourg, qu’il adjoignit au dépôt des sculptures de la cathédrale constitué depuis le XIXe siècle dans ces mêmes bâtiments en un petit musée de la cathédrale, ainsi qu’aux ensembles collectés par la Société pour la conservation des Monuments Historiques d’Alsace ( SCMHA), cédés à la ville en plusieurs étapes entre 1896 et 1946.\nLes collections du musée sont d’importance moyenne en quantité (un peu moins de 3.000 œuvres, dont environ la moitié est présentée). Leur principale caractéristique est la diversité des supports, à l’intérieur d’un cadre chronologique et géographique très défini. Cette cohérence a été favorisée par le mode particulier de constitution des fonds, « prélevés » entre 1931 et 1955 sur les collections des autres musées en fonction d’un programme précis. Les dépôts de la cathédrale sont également très homogènes (sculptures grès uniquement, 339 pièces), mais se caractérisent par le nombre important des œuvres d’intérêt secondaire pour le grand-public, qui nécessitent une importante réserve lapidaire. Les collections de la Société pour la Conservation des Monuments Historiques d’Alsace, elles-aussi très définies géographiquement et chronologiquement, ont de leur côté amené un élargissement du propos à l’ensemble de la région et plus particulièrement au nord de celle-ci. Elles sont essentiellement constituées d’œuvres provenant de monuments ou de maisons démolis ou modifiés (éléments d’architecture, sculptures, vitraux), et ont également été complétées par des acquisitions (mobilier, orfèvrerie régionale…).",
+                "phare": "Le musée de l’Œuvre Notre-Dame est véritablement le « grand-œuvre » de Hans Haug, témoin de son goût et de sa sensibilité artistique particulière. Il lui a consacré une partie de sa vie et de son énergie et a appliqué là une démarche singulière et d’une grande cohérence. Le principe adopté est celui d’une muséographie d’ambiance, ménageant au fur et à mesure du parcours des effets de surprise par la création d’atmosphères variées. On passe ainsi de la très vaste salle du jubé, dont les volumes évoquent une chapelle, à l’intimité des salles 1400, dont le revêtement de boiseries évoque des espaces privés, de l’obscurité des salles de vitraux à la luminosité des cours extérieures ou du jardinet. À la fois « documents chronologiques et cadre d’époque », les bâtiments anciens, complétés d’éléments rapportés soigneusement choisis et parfois augmentés de reconstitutions de parties de monuments, lui permettent d’accorder chronologiquement les collections et leur cadre selon un principe de « muséographie totale ». Il s’agit également, en mêlant les supports, de favoriser les dialogues entre œuvres de tous les domaines artistiques et de susciter ainsi les comparaisons. Il convient enfin de privilégier le contact esthétique entre l’œuvre et le visiteur en évitant le plus possible l’utilisation de vitrines. Haug se situe dans une tradition muséographique qui privilégie la sensation et la mise en scène, dans la filiation des musées d’ambiance tels que le musée de Cluny à Paris, le musée national bavarois à Munich ou celui des Cloisters à New York. Son approche sensible, mêlant les techniques artistiques, reste d’une grande actualité et se voit actuellement adoptée par de grands musées en rénovation tel le musée des Beaux-Arts de Dijon. Afin de sensibiliser le public à l’originalité de cette démarche, douze fiches de salles mises en place à l’occasion de l’exposition Hans Haug (2009-2010) rendent compte de l'histoire de la création du musée et de ces principes muséographiques.",
+                "dpt": "Bas-Rhin",
+                "nomoff": "musée de l'Œuvre Notre-Dame",
+                "prot_bat": "Protégé au titre des Monuments historiques :\nhttps://www.pop.culture.gouv.fr/notice/merimee/PA00085099?base=%5B%22Patrimoine%20architectural%20%28M%C3%A9rim%C3%A9e%29%22%5D&mainSearch=%22Dame%22&ou=%5B%22Strasbourg%22%5D&last_view=%22list%22&idQuery=%22308afd1-3308-003-ccbc-1858b7c88ea2%22",
+                "url_m": "www.musees.strasbourg.eu/musee-de-l-oeuvre-notre-dame"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.75151,
+                    48.58097
+                ]
+            },
+            "record_timestamp": "2023-10-13T09:14:08.138Z"
+        },
+        {
+            "datasetid": "musees-de-france-base-museofile",
+            "recordid": "2577b4b93f29962ab25a0b296198b1d63264f309",
+            "fields": {
+                "geolocalisation_latlong": [
+                    48.581229,
+                    7.751984
+                ],
+                "latitude": 48.581229,
+                "artiste": "Giotto,  Botticelli, Raphaël, Véronèse, le Guerchin, Tiepolo, Memling, Lucas de Leyde, Rubens, Van Dyck, Le Greco, Zurbaran, Goya, Véronèse, Vouet, Champaigne, Largillière, Valentin, Delacroix, Corot, Chassériau, Courbet.",
+                "an_creat": "1801",
+                "themes": "Beaux-Arts : Peinture, Sculpture",
+                "longitude": 7.751984,
+                "tel_m": "03 68 98 51 60",
+                "cp_m": "67000",
+                "hist": "Créé par l'arrêté consulaire du 1er septembre 1801, le musée fut anéanti par les bombardements du 24 août 1870. Les collections furent reconstituées entre 1889 et 1914 par W. Bode, directeur des musées de Berlin. Il est installé au premier étage du palais Rohan depuis 1899.",
+                "prot_bat": "Protégé au titre des Monuments historiques :\nhttps://www.pop.culture.gouv.fr/notice/merimee/PA00085184?base=%5B%22Patrimoine%20architectural%20%28M%C3%A9rim%C3%A9e%29%22%5D&mainSearch=%22mus%C3%A9e%22&ou=%5B%22Strasbourg%22%5D&last_view=%22list%22&idQuery=%22758271-0fbd-b578-641-afde27fbc26%22",
+                "url_m": "www.musees.strasbourg.eu/musee-des-beaux-arts",
+                "dmaj": "2021-12-28",
+                "prot_esp": "Site patrimonial remarquable. Patrimoine mondial de l'UNESCO. Abords d'un Monument historique.",
+                "atout": "Panorama de l'histoire de la peinture en Europe de ses débuts à 1870 : Primitifs italiens et flamands, Renaissance et Maniérisme, Baroque, Naturalisme et Classicisme aux XVIIe et XVIIIe siècles (\"La Belle Strasbourgeoise\" de Largillière), XIXe siècle.\nLes réserves visitables du musée sont ouvertes au public le premier samedi de chaque mois.",
+                "lieu_m": "Palais Rohan",
+                "ref": "M0019",
+                "region": "Grand Est",
+                "adrl1_m": "2, place du Château",
+                "ville_m": "Strasbourg",
+                "dompal": "Beaux-arts",
+                "refmer": "PA00085184;SPR4400040",
+                "interet": "Palais Rohan, construit de 1739 à 1742 par Robert de Cotte pour le cardinal Armand Gaston de Rohan-Soubise. De style classique, le palais est édifié selon l'ordonnance habituelle de l'hôtel parisien entre cour et jardin.",
+                "dpt": "Bas-Rhin",
+                "nomoff": "musée des Beaux-Arts",
+                "autnom": "Kunstmuseum der Stadt Strassburg. Musée des Beaux-Arts de Strasbourg."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.751984,
+                    48.581229
+                ]
+            },
+            "record_timestamp": "2023-10-13T09:14:08.138Z"
+        },
+        {
+            "datasetid": "musees-de-france-base-museofile",
+            "recordid": "8a68ce6209b0183dfbe680d90b860e6a72b729c8",
+            "fields": {
+                "geolocalisation_latlong": [
+                    48.414759,
+                    7.214925
+                ],
+                "latitude": 48.414759,
+                "dmaj": "2021-12-09",
+                "atout": "Un musée où les enfants et les adultes découvrent, expérimentent, manipulent et jouent. Un musée qui invite à la discussion et à la réflexion sur les thèmes du développement et de l'environnement. Un musée qui associe respect des Droits de l'Homme et développement de la personne. Le musée Jean-Frédéric Oberlin a fait l'objet d'un programme de développement pour devenir un véritable lieu d'apprentissage où la pédagogie de J.F. Oberlin est mise en oeuvre. Il ne s'agit pas de regarder de manière passive un objet, une image, un cartel, mais de percevoir, d'écouter, de lire, de construire, d'expérimenter, de manipuler, de raisonner, de ressentir et enfin de comprendre la divine complexité du monde du pasteur de Waldersbach.",
+                "ref": "M0021",
+                "region": "Grand Est",
+                "themes": "Biographie",
+                "longitude": 7.214925,
+                "adrl1_m": "25, montée Oberlin",
+                "tel_m": "03 88 97 30 27",
+                "ville_m": "Waldersbach",
+                "dompal": "Histoire;Sciences de la nature",
+                "refmer": "IA67013073",
+                "cp_m": "67130",
+                "hist": "Les collections sont celles de Jean-Frédéric Oberlin, pasteur éclairé, pédagogue, encyclopédiste du XVIIIe siècle et défenseur des droits de l'Homme. Elles ne comportent pas de pièces majeures ou de chefs d’œuvre mais leur constitution fut conforme à une conception nouvelle des connaissances fondée sur des objectifs philanthropiques. Jean-François Oberlin avait en effet aménagé un cabinet de curiosités ouvert aux visiteurs de passage au Ban-de-la-Roche. Après la mort de ce dernier, le cabinet est resté accessible au public. Les successeurs de J.-F. Oberlin ont continué à enrichir les collections mais le mot « musée » n'a été adopté qu'en 1958, après la constitution du premier comité de surveillance des collections du musée Oberlin, ancêtre de l'actuelle association du musée Oberlin.",
+                "phare": "Jean-Georges Stuber (1722 - 1797). Jean-Frédéric Oberlin (1740 – 1826).",
+                "dpt": "Bas-Rhin",
+                "nomoff": "musée Oberlin",
+                "categ": "Maison des Illustres.",
+                "prot_bat": "Protégé au titre des Monuments historiques :\nhttps://www.pop.culture.gouv.fr/notice/merimee/IA67013073?base=%5B%22Patrimoine%20architectural%20%28M%C3%A9rim%C3%A9e%29%22%5D&ou=%5B%22Waldersbach%22%5D&last_view=%22mosaic%22&idQuery=%2276c68-383f-afd5-1d54-3c365a81e07e%22",
+                "url_m": "musee-oberlin.org/fr/accueil/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.214925,
+                    48.414759
+                ]
+            },
+            "record_timestamp": "2023-10-13T09:14:08.138Z"
+        },
+        {
+            "datasetid": "musees-de-france-base-museofile",
+            "recordid": "a88af72d1104846fc22825203f94d9fbe23dbec1",
+            "fields": {
+                "geolocalisation_latlong": [
+                    49.038815,
+                    7.944344
+                ],
+                "latitude": 49.038815,
+                "dmaj": "2021-12-10",
+                "prot_esp": "Site patrimonial remarquable. Parc naturel régional.",
+                "atout": "Une petite section archéologique présente stèles romaines et objets de la vie quotidienne.\nLe Moyen Age est illustré par des sculptures et divers éléments d'architecture.\nLe passé militaire est présent également : plans des \"lignes de défense de la Lauter\", uniformes du Second Empire, collections d'armes blanches et d'armes à feu, souvenirs du 87e Régiment d'infanterie.\nLa vie quotidienne, l'imagerie populaire (Wentzel) font l'objet d'une section avec un ensemble de mobilier et de costumes en usage dans la région du XVIIIe au début du XIXe siècles.",
+                "ref": "M0022",
+                "region": "Grand Est",
+                "themes": "Archéologie nationale : Préhistoire, Protohistoire, Gallo-romain, Médiéval;Art religieux (Art chrétien, objets judaïques de la vie quotidienne);Arts décoratifs : Mobilier;Beaux-Arts : Peinture;Civilisations extra-européennes : Africaines, Asiatiques;Collections militaires : Uniformes, Armures;Photographie, Numismatique;Ethnologie : Costume, Métiers et Outils, Pratiques religieuses et collectives;Histoire : Histoire locale et régionale, Histoire militaire;Musique : Instruments;Sciences et techniques (Imagerie populaire)",
+                "longitude": 7.944344,
+                "adrl1_m": "1-3, rue du Musée",
+                "tel_m": "03 88 54 28 14",
+                "ville_m": "Wissembourg",
+                "dompal": "Archéologie;Ethnologie;Histoire",
+                "refmer": "PA00085261;IA67008145;SPR4400041",
+                "cp_m": "67160",
+                "interet": "Grande maison bourgeoise du XVIe siècle à colombages, sans doute ancien siège d'une exploitation viticole en 1599. La façade principale sur rue est rehaussée d'un oriel rectangulaire, d'une grande lucarne et ornée de décors sculptés Renaissance à thème viticole. La façade sur cour comporte une galerie et un puits.",
+                "hist": "Créé et inauguré en 1913, le musée possède des collections données et léguées par les fondateurs, enrichies au fil des années par des dons individuels et par des achats, telle la collection de lithographies wissembourgoises Wentzel et succ. en 1991, comportant 600 pièces.",
+                "dpt": "Bas-Rhin",
+                "nomoff": "musée Westercamp",
+                "categ": "Musée de site",
+                "prot_bat": "Protégé au titre des Monuments historiques :\nhttps://www.pop.culture.gouv.fr/notice/merimee/PA00085261",
+                "url_m": "webmuseo.com/ws/musee-wissembourg/app/report/index.html"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.944344,
+                    49.038815
+                ]
+            },
+            "record_timestamp": "2023-10-13T09:14:08.138Z"
+        },
+        {
+            "datasetid": "musees-de-france-base-museofile",
+            "recordid": "fa73d1f90d657eafed78e712a2dc5bb7d3731433",
+            "fields": {
+                "geolocalisation_latlong": [
+                    48.126069,
+                    7.280128
+                ],
+                "latitude": 48.126069,
+                "dmaj": "2021-09-15",
+                "atout": "Outillage des vignerons, tonnellerie, verrerie, pressoirs à vin.",
+                "lieu_m": "Château de la confrérie Saint-Etienne",
+                "ref": "M0032",
+                "region": "Grand Est",
+                "themes": "Ethnologie : Métiers et Outils;Histoire : Histoire locale et régionale;Sciences et techniques : Agro-alimentaire (Histoire des techniques vini-viticultures en Alsace),",
+                "longitude": 7.280128,
+                "adrl1_m": "9 rue de l'Ours",
+                "tel_m": "03 89 78 21 36",
+                "ville_m": "Kientzheim",
+                "dompal": "Ethnologie;Histoire",
+                "cp_m": "68770",
+                "hist": "Le fonds du musée provient des dons des viticulteurs lors de l'ouverture du musée en 1980",
+                "dpt": "Haut-Rhin",
+                "nomoff": "musée du vignoble et des vins d'Alsace",
+                "autnom": "Musée d'Histoire Locale",
+                "url_m": "www.musee-du-vignoble-alsace.fr/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.280128,
+                    48.126069
+                ]
+            },
+            "record_timestamp": "2023-10-13T09:14:08.138Z"
+        },
+        {
+            "datasetid": "musees-de-france-base-museofile",
+            "recordid": "2de836201e2723421a410fe73ff16d7f16dcee5c",
+            "fields": {
+                "geolocalisation_latlong": [
+                    47.76161416701042,
+                    7.327893525261629
+                ],
+                "latitude": 47.76161416701042,
+                "dmaj": "2021-12-14",
+                "prot_esp": "Site patrimonial remarquable.",
+                "atout": "Importante collection automobile couvrant 120 marques et l'histoire de l'automobile européenne de 1878 à nos jours.\nPlusieurs espaces lèvent le voile sur la vie des collections, sur les problématiques de conservation ou encore sur l'évolution de la mécanique.\nUne piste d’évolution permet à la Cité de l’Automobile de passer de 4 à 8 hectares et introduit dans ce complexe muséal, un théâtre de plein air. Les voitures reprennent leur mouvement pour le plaisir des visiteurs et des collectionneurs. Elle peut accueillir 4.500 personnes dans ses gradins. Elle propose également un paddock non couvert dans lequel jusqu’à 30 voitures peuvent stationner ainsi qu’un clubhouse équipé d’un garage pour recevoir les clubs et permettre de travailler sur les véhicules. Ses trois anneaux permettent de proposer des spectacles et animations autour de l’automobile ainsi que des défilés des voitures les plus prestigieuses du Musée. Elle est également un lieu d’accueil pour les différents clubs et associations de collectionneurs de voitures.",
+                "ref": "M0035",
+                "region": "Grand Est",
+                "themes": "Sciences et techniques : Transports terrestres",
+                "longitude": 7.327893525261629,
+                "adrl1_m": "192, avenue de Colmar - BP 1096",
+                "tel_m": "03 89 33 23 23",
+                "ville_m": "Mulhouse",
+                "dompal": "Technique et industrie",
+                "refmer": "SPR4400043;SPR4400044",
+                "cp_m": "68051",
+                "interet": "Le musée est installé dans une ancienne filature construite en 1880. L'accès à l'imposante entrée de la Cité de l'Automobile se fait grâce à une passerelle enjambant le canal. Cet espace a été conçu par le Studio Milou en 2006 lors de la création des nouveaux espaces d'accueil et de découverte. Il symbolise la création et l'imagination humaine, particulièrement fertiles dans le domaine de l'automobile.",
+                "hist": "Le musée conserve la collection des frères Schlumpf (environ 480 pièces dont 422 ont été classées au titre des Monuments historiques), constituée entre 1961 et 1963. Pour effectuer ces achats, Fritz Schlumpf noue une série de contacts avec des « rabatteurs » en France, en Suisse, en Angleterre, en Italie, en Allemagne et aux Etats-Unis. Le riche industriel achète sans répit les voitures européennes de la haute époque en refusant les modèles américains. Dans les années 1970, la crise textile frappe les entreprises Schlumpf et les deux frères sont contraints de déposert le bilan. En 1981, l'Association du Musée national de l'Automobile – qui regroupe la ville de Mulhouse, le Département du Haut-Rhin, la Région Alsace, la Chambre de Commerce et d'Industrie de Mulhouse, l'Automobile Club de France, la Société Panhard et le Comité du salon de l'Automobile – rachète la collection pour 44 millions de francs, rachat autorisé par la Cour de cassation l’année précédente. Le 10 juillet 1982, le Musée national de l’Automobile ouvre au public. En 1989, suite à des arrêts de la Cour d'appel de Paris, le Musée national de l'Automobile est contraint d'ajouter « Collection Schlumpf » à son nom et sur tous les documents mentionnant un élément de la collection.\nDe nouvelles pièces ont été acquises, données ou prêtées depuis 1982.",
+                "phare": "Hans et Fritz Schlumpf, Ettore et Jean Bugatti",
+                "dpt": "Haut-Rhin",
+                "nomoff": "musée national de l'automobile - collection Schlumpf",
+                "url_m": "www.citedelautomobile.com/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.327893525261629,
+                    47.76161416701042
+                ]
+            },
+            "record_timestamp": "2023-10-13T09:14:08.138Z"
+        },
+        {
+            "datasetid": "musees-de-france-base-museofile",
+            "recordid": "741dd1444e9a7d54f8ab0b4c6486a990db748b7a",
+            "fields": {
+                "geolocalisation_latlong": [
+                    47.749441,
+                    7.295058
+                ],
+                "latitude": 47.749441,
+                "dmaj": "2021-12-14",
+                "prot_esp": "Site patrimonial remarquable.",
+                "atout": "Machines et appareils anciens et pionniers (du XVIIIe au début du XXe siècles) et surtout un ensemble représentatif d'objets domestiques faisant du Musée Electropolis la collection publique française de référence dans le domaine des applications domestiques de l’électricité. L'objet le plus célèbre est le groupe électrogène Sulzer-BBC de 1901, machine à vapeur et alternateur totalisant 170 tonnes.",
+                "ref": "M0039",
+                "region": "Grand Est",
+                "themes": "Architecture et urbanisme;Arts décoratifs (Objets d'éclairage);Arts du spectacle : Cinéma;Autres collections : Archives papier, Fonds ancien d'imprimés, Photographie;Ethnologie : Métiers et Outils;Histoire : Musée thématique;Sciences fondamentales : Physique;Sciences et techniques : Sciences médicales, informatique, électricité,",
+                "longitude": 7.295058,
+                "adrl1_m": "55 rue du Pâturage",
+                "tel_m": "03 89 32 48 50",
+                "ville_m": "Mulhouse",
+                "dompal": "Arts décoratifs;Histoire;Sciences fondamentales;Technique et industrie",
+                "refmer": "SPR4400043;SPR4400044",
+                "cp_m": "68200",
+                "interet": "Sur un terrain de 20.000 m2, le bâtiment initial - un cube de 25 mètres d’arêtes - abrite la machine Sulzer-BBC. Il a été complété par un bâtiment de forme dynamique s’enroulant autour de celui-ci. Quatre pavillons en demi-cylindre forment le jardin technologique.",
+                "hist": "Fondée en 1980, l'Association pour le musée de l'énergie électrique a participé au sauvetage d'une machine à vapeur et d'un alternateur de 170 tonnes datant de 1901. Elle a progressivement enrichi les collections à partir de 1983.\nEn 1996, ce fonds constitutif est devenu une collection contrôlée par la Direction des Musées de France puis, en 2002, il a reçu l'appellation Musée de France. Depuis, une politique d’acquisition volontariste s'est mise en place.",
+                "dpt": "Haut-Rhin",
+                "nomoff": "musée Electropolis",
+                "url_m": "www.musee-electropolis.fr/"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.295058,
+                    47.749441
+                ]
+            },
+            "record_timestamp": "2023-10-13T09:14:08.138Z"
+        }
+    ],
+    "facet_groups": [
+        {
+            "name": "dompal",
+            "facets": [
+                {
+                    "name": "Histoire",
+                    "count": 592,
+                    "state": "displayed",
+                    "path": "Histoire"
+                },
+                {
+                    "name": "Archéologie",
+                    "count": 524,
+                    "state": "displayed",
+                    "path": "Archéologie"
+                },
+                {
+                    "name": "Ethnologie",
+                    "count": 518,
+                    "state": "displayed",
+                    "path": "Ethnologie"
+                },
+                {
+                    "name": "Beaux-arts",
+                    "count": 431,
+                    "state": "displayed",
+                    "path": "Beaux-arts"
+                },
+                {
+                    "name": "Arts décoratifs",
+                    "count": 399,
+                    "state": "displayed",
+                    "path": "Arts décoratifs"
+                },
+                {
+                    "name": "Technique et industrie",
+                    "count": 283,
+                    "state": "displayed",
+                    "path": "Technique et industrie"
+                },
+                {
+                    "name": "Art moderne et contemporain",
+                    "count": 233,
+                    "state": "displayed",
+                    "path": "Art moderne et contemporain"
+                },
+                {
+                    "name": "Sciences de la nature",
+                    "count": 212,
+                    "state": "displayed",
+                    "path": "Sciences de la nature"
+                },
+                {
+                    "name": "Photographie",
+                    "count": 179,
+                    "state": "displayed",
+                    "path": "Photographie"
+                },
+                {
+                    "name": "Afrique",
+                    "count": 120,
+                    "state": "displayed",
+                    "path": "Afrique"
+                },
+                {
+                    "name": "Beaux-Arts",
+                    "count": 112,
+                    "state": "displayed",
+                    "path": "Beaux-Arts"
+                },
+                {
+                    "name": "Asie",
+                    "count": 89,
+                    "state": "displayed",
+                    "path": "Asie"
+                },
+                {
+                    "name": "Amérique",
+                    "count": 63,
+                    "state": "displayed",
+                    "path": "Amérique"
+                },
+                {
+                    "name": "Océanie",
+                    "count": 63,
+                    "state": "displayed",
+                    "path": "Océanie"
+                },
+                {
+                    "name": "Littérature",
+                    "count": 38,
+                    "state": "displayed",
+                    "path": "Littérature"
+                },
+                {
+                    "name": "Arts de l'Islam",
+                    "count": 32,
+                    "state": "displayed",
+                    "path": "Arts de l'Islam"
+                },
+                {
+                    "name": "Sciences fondamentales",
+                    "count": 26,
+                    "state": "displayed",
+                    "path": "Sciences fondamentales"
+                },
+                {
+                    "name": "Militaria",
+                    "count": 15,
+                    "state": "displayed",
+                    "path": "Militaria"
+                },
+                {
+                    "name": "Egyptien",
+                    "count": 10,
+                    "state": "displayed",
+                    "path": "Egyptien"
+                },
+                {
+                    "name": "Mémoire de l'esclavage",
+                    "count": 6,
+                    "state": "displayed",
+                    "path": "Mémoire de l'esclavage"
+                },
+                {
+                    "name": "Grec",
+                    "count": 5,
+                    "state": "displayed",
+                    "path": "Grec"
+                },
+                {
+                    "name": "Mode et textile",
+                    "count": 3,
+                    "state": "displayed",
+                    "path": "Mode et textile"
+                },
+                {
+                    "name": "Sciences et techniques",
+                    "count": 3,
+                    "state": "displayed",
+                    "path": "Sciences et techniques"
+                },
+                {
+                    "name": "Gallo-romain",
+                    "count": 2,
+                    "state": "displayed",
+                    "path": "Gallo-romain"
+                },
+                {
+                    "name": "OCéanie",
+                    "count": 2,
+                    "state": "displayed",
+                    "path": "OCéanie"
+                },
+                {
+                    "name": "ethnologie",
+                    "count": 2,
+                    "state": "displayed",
+                    "path": "ethnologie"
+                },
+                {
+                    "name": "Design",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Design"
+                },
+                {
+                    "name": "Esclavage, société de plantation, histoire de La Réunion, colonisation, industrie sucrière",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Esclavage, société de plantation, histoire de La Réunion, colonisation, industrie sucrière"
+                },
+                {
+                    "name": "Ethnonolgie",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Ethnonolgie"
+                },
+                {
+                    "name": "Imprimé",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Imprimé"
+                },
+                {
+                    "name": "Musique",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Musique"
+                },
+                {
+                    "name": "Musique - chant - danse",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Musique - chant - danse"
+                },
+                {
+                    "name": "Numismatique",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Numismatique"
+                },
+                {
+                    "name": "Peinture",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Peinture"
+                },
+                {
+                    "name": "Protohistoire",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Protohistoire"
+                },
+                {
+                    "name": "Scieinces et techniques",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Scieinces et techniques"
+                },
+                {
+                    "name": "Sciences - techniques",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Sciences - techniques"
+                },
+                {
+                    "name": "Sciences naturelles",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Sciences naturelles"
+                },
+                {
+                    "name": "archéologie",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "archéologie"
+                },
+                {
+                    "name": "archéologie du bâti",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "archéologie du bâti"
+                },
+                {
+                    "name": "arts décoratifs",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "arts décoratifs"
+                },
+                {
+                    "name": "histoire",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "histoire"
+                },
+                {
+                    "name": "musée de société",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "musée de société"
+                },
+                {
+                    "name": "photographie",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "photographie"
+                }
+            ]
+        },
+        {
+            "name": "region",
+            "facets": [
+                {
+                    "name": "Île-de-France",
+                    "count": 140,
+                    "state": "displayed",
+                    "path": "Île-de-France"
+                },
+                {
+                    "name": "Auvergne-Rhône-Alpes",
+                    "count": 135,
+                    "state": "displayed",
+                    "path": "Auvergne-Rhône-Alpes"
+                },
+                {
+                    "name": "Occitanie",
+                    "count": 132,
+                    "state": "displayed",
+                    "path": "Occitanie"
+                },
+                {
+                    "name": "Provence-Alpes-Côte d'Azur",
+                    "count": 122,
+                    "state": "displayed",
+                    "path": "Provence-Alpes-Côte d'Azur"
+                },
+                {
+                    "name": "Grand Est",
+                    "count": 120,
+                    "state": "displayed",
+                    "path": "Grand Est"
+                },
+                {
+                    "name": "Nouvelle-Aquitaine",
+                    "count": 112,
+                    "state": "displayed",
+                    "path": "Nouvelle-Aquitaine"
+                },
+                {
+                    "name": "Bourgogne-Franche-Comté",
+                    "count": 101,
+                    "state": "displayed",
+                    "path": "Bourgogne-Franche-Comté"
+                },
+                {
+                    "name": "Normandie",
+                    "count": 90,
+                    "state": "displayed",
+                    "path": "Normandie"
+                },
+                {
+                    "name": "Hauts-de-France",
+                    "count": 89,
+                    "state": "displayed",
+                    "path": "Hauts-de-France"
+                },
+                {
+                    "name": "Centre-Val de Loire",
+                    "count": 65,
+                    "state": "displayed",
+                    "path": "Centre-Val de Loire"
+                },
+                {
+                    "name": "Pays-de-la-Loire",
+                    "count": 53,
+                    "state": "displayed",
+                    "path": "Pays-de-la-Loire"
+                },
+                {
+                    "name": "Bretagne",
+                    "count": 36,
+                    "state": "displayed",
+                    "path": "Bretagne"
+                },
+                {
+                    "name": "DROM",
+                    "count": 18,
+                    "state": "displayed",
+                    "path": "DROM"
+                },
+                {
+                    "name": "Corse",
+                    "count": 10,
+                    "state": "displayed",
+                    "path": "Corse"
+                },
+                {
+                    "name": "Guadeloupe",
+                    "count": 2,
+                    "state": "displayed",
+                    "path": "Guadeloupe"
+                },
+                {
+                    "name": "COM",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "COM"
+                }
+            ]
+        }
+    ]
+}

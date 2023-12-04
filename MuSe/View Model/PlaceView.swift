@@ -2,11 +2,12 @@
 //  PlaceView.swift
 //  MuSe
 //
-//  Created by Qattus on 22/04/2022.
+//  Created by Elie Arquier on 22/04/2022.
 //
 
 import MapKit
 
+// Creation of a personalized annotation displaying a precise image depending on the chosen category
 final class PlaceView: MKAnnotationView {
     override var annotation: MKAnnotation? {
         willSet {

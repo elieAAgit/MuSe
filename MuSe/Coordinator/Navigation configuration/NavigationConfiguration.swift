@@ -2,7 +2,7 @@
 //  NavigationConfiguration.swift
 //  MuSe
 //
-//  Created by Qattus on 13/04/2022.
+//  Created by Elie Arquier on 13/04/2022.
 //
 
 import UIKit
@@ -16,18 +16,20 @@ final class NavigationConfiguration {
         self.controller = controller
     }
 
+    /// Give a title, a return button or not, and give a name to the button or not
     func configurationNavigation(title: String, buttonBack: String, buttonIsHidden: Bool = false) {
 
+        // Title
         controller.title = title
         controller.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        let backBarButtonItem = UIBarButtonItem()
+        // Back button name
+        backBarButtonItem.buttonBack(name: buttonBack)
+        controller.navigationItem.backBarButtonItem = backBarButtonItem
         
-        if buttonIsHidden == false {
-            let backBarButtonItem = UIBarButtonItem()
-            backBarButtonItem.buttonBack(name: buttonBack)
-            controller.navigationItem.backBarButtonItem = backBarButtonItem
-        } else {
+        // hide back button
+        if buttonIsHidden == true {
             controller.navigationItem.setHidesBackButton(true, animated: true)
         }
-        
     }
 }

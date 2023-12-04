@@ -1,0 +1,1114 @@
+{
+    "nhits": 469,
+    "parameters": {
+        "dataset": "liste-des-jardins-remarquables",
+        "rows": 10,
+        "start": 0,
+        "facet": [
+            "region",
+            "departement"
+        ],
+        "format": "json",
+        "timezone": "UTC"
+    },
+    "records": [
+        {
+            "datasetid": "liste-des-jardins-remarquables",
+            "recordid": "5b88b98cde5df23803888fe6734892a835fc6593",
+            "fields": {
+                "longitude": "-1.692472",
+                "annee_d_obtention": "2004",
+                "description": "Château du XVIe siècle situé dans un parc à l'anglaise romantique créé en 1830 traversé par une rivière en cascade bordée d'arums et animé par une pièce d'eau et des fontaines fleuries. Vue merveilleuse sur la mer.",
+                "departement": "Manche",
+                "numero_et_libelle_de_la_voie": "1B Rte de la Castellerie",
+                "commune": "La Hague",
+                "date_de_creation": "2020-06-08 09:24:00",
+                "adresse_complete": "1B Rte de la Castellerie, 50690 La Hague, France",
+                "date_de_maj": "2022-07-22 10:28:16",
+                "identifiant_deps": "JARD_50041_0002",
+                "region": "Normandie",
+                "code_postal": "50690",
+                "latitude": "49.60915",
+                "site_internet_et_autres_liens": "[\"http://www.nacqueville.com\"]",
+                "equipement_precision": "monument historique",
+                "code_insee_departement": "50",
+                "nom_du_jardin": "Parc du domaine de Nacqueville",
+                "types": "Parc paysager|Jardin privé",
+                "accessible_au_public": "[]",
+                "adresse_de_l_entree_du_public": "1B Rte de la Castellerie, 50690 La Hague, France",
+                "identifiant_origine": "MHR_28_JR0015",
+                "code_insee": "50041",
+                "conditions_d_ouverture": "[]",
+                "code_insee_region": 28.0,
+                "coordonnees_geographiques": [
+                    49.60915,
+                    -1.692472
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.692472,
+                    49.60915
+                ]
+            },
+            "record_timestamp": "2023-05-19T14:20:23.12Z"
+        },
+        {
+            "datasetid": "liste-des-jardins-remarquables",
+            "recordid": "9a142daab88a6a398679992ed0e52eb103f6ea08",
+            "fields": {
+                "longitude": "3.39829",
+                "annee_d_obtention": "2006",
+                "description": "Ce jardin aménagé par André Le Nôtre au XVIIe siècle a été remodelé par Pierre Carlier après 1843. Ses descendants, au fil du temps, ont mis en valeur le parc. Le jardin présente des éléments remarquables : pont, cascade, cours d'eau, plan d'eau et des éléments végétaux : arbres d'alignement (tilleuls)...",
+                "departement": "Yonne",
+                "numero_et_libelle_de_la_voie": "3 Rue de la Division Leclerc",
+                "commune": "Thorigny-sur-Oreuse",
+                "date_de_creation": "2020-12-11 13:14:55",
+                "adresse_complete": "3 Rue de la Division Leclerc, 89260 Thorigny-sur-Oreuse, France",
+                "date_de_maj": "2022-07-22 10:28:04",
+                "identifiant_deps": "JARD_89414_0001",
+                "region": "Bourgogne-Franche-Comté",
+                "code_postal": "89260",
+                "latitude": "48.294482",
+                "site_internet_et_autres_liens": "[\"http://www.amisdethorigny.com\"]",
+                "equipement_precision": "monument historique",
+                "code_insee_departement": "89",
+                "nom_du_jardin": "Parc du château de Thorigny",
+                "types": "Jardin régulier|Jardin privé",
+                "accessible_au_public": "[]",
+                "adresse_de_l_entree_du_public": "3 Rue de la Division Leclerc, 89260 Thorigny-sur-Oreuse, France",
+                "identifiant_origine": "MHR_27_JR0016",
+                "code_insee": "89414",
+                "conditions_d_ouverture": "[]",
+                "code_insee_region": 27.0,
+                "coordonnees_geographiques": [
+                    48.294482,
+                    3.39829
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.39829,
+                    48.294482
+                ]
+            },
+            "record_timestamp": "2023-05-19T14:20:23.12Z"
+        },
+        {
+            "datasetid": "liste-des-jardins-remarquables",
+            "recordid": "7a2cb05f3527ac4b34873e8e40d80882c22a44b2",
+            "fields": {
+                "code_insee_departement": "59",
+                "longitude": "3.0754808",
+                "annee_d_obtention": "2020",
+                "description": "Le jardin des Géants, à proximité de la gare Lille Europe, s'étend sur plus de 2 hectares. En lieu et place d'un ancien parking aérien aujourd'hui enterré, les paysagistes de l'Atelier Mutabilis ont créé un nouvel espace de nature et de poésie, inauguré en juillet 2009. On y accède par le Parvis des Nuages, planté de 5 espèces de bambous puis par l'Herbe des Géants, où alternent clairières et végétation luxuriante. Les végétaux sont « maîtres » des lieux, avec plus de 45 000 plantes. Le Jardin des Sources offre une déambulation paisible entre bassins et miroirs d'eau et architectures d’osier tressé, avec en toile de fond, les tours futuristes d'Euralille. Havre de paix au cœur de la ville, l'atmosphère qui y règne résulte d'une alchimie dont les composantes sont liées aux cinq sens. \n Le Jardin des Géants a été conçu comme un lieu de vie, de culture et de diversité grâce à ses espaces ouverts et une grande esplanade dédiée aux réceptions et aux spectacles.",
+                "departement": "Nord",
+                "nom_du_jardin": "Jardin des Géants",
+                "numero_et_libelle_de_la_voie": "1 Rue de la Communauté",
+                "commune": "La Madeleine",
+                "types": "Jardin contemporain|Jardin public",
+                "accessible_au_public": "[]",
+                "date_de_creation": "2022-08-18 15:24:24",
+                "adresse_complete": "1 Rue de la Communauté, 59110 La Madeleine, France",
+                "date_de_maj": "2022-09-13 17:01:10",
+                "adresse_de_l_entree_du_public": "1 Rue de la Communauté, 59110 La Madeleine, France",
+                "identifiant_origine": "MHR_32_JR0032",
+                "region": "Hauts-de-France",
+                "code_postal": "59110",
+                "latitude": "50.6434333",
+                "site_internet_et_autres_liens": "[\"https://www.lilletourism.com/parc-et-jardin-lille/jardin-des-geants.html\"]",
+                "code_insee": "59368",
+                "conditions_d_ouverture": "[]",
+                "code_insee_region": 32.0,
+                "coordonnees_geographiques": [
+                    50.6434333,
+                    3.0754808
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.0754808,
+                    50.6434333
+                ]
+            },
+            "record_timestamp": "2023-05-19T14:20:23.12Z"
+        },
+        {
+            "datasetid": "liste-des-jardins-remarquables",
+            "recordid": "4fc025bae1a06930e47bf34176c14b58000d57c8",
+            "fields": {
+                "code_insee_departement": "51",
+                "longitude": "3.950731",
+                "annee_d_obtention": "2012",
+                "description": "Créé à partir de 1910 sur les plans de J.B. Thomereau, paysagiste, le parc met en scène de nombreuses essences rares parmi lesquelles un fau de Verzy, un hêtre à feuilles de fougère, un hêtre marginé de rose, un muscadier, un cyprès chauve, …. Cette collection est complétée d’une roseraie et d’un verger-école toujours gérés par la Société d’horticulture et de viticulture d’Épernay.",
+                "departement": "Marne",
+                "nom_du_jardin": "Jardin de l'horticulture",
+                "numero_et_libelle_de_la_voie": "36 Rue Comte de Lambertye",
+                "commune": "Épernay",
+                "types": "Parc paysager|Jardin public",
+                "accessible_au_public": "[]",
+                "date_de_creation": "2020-12-11 13:14:28",
+                "adresse_complete": "36 Rue Comte de Lambertye, 51200 Épernay, France",
+                "date_de_maj": "2022-07-22 10:28:11",
+                "adresse_de_l_entree_du_public": "36 Rue Comte de Lambertye, 51200 Épernay, France",
+                "identifiant_deps": "JARD_51230_0001",
+                "identifiant_origine": "MHR_44_JR0027",
+                "region": "Grand Est",
+                "code_postal": "51200",
+                "latitude": "49.033336",
+                "site_internet_et_autres_liens": "[\"http://www.epernay.fr\"]",
+                "code_insee": "51230",
+                "conditions_d_ouverture": "[]",
+                "code_insee_region": 44.0,
+                "coordonnees_geographiques": [
+                    49.033336,
+                    3.950731
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.950731,
+                    49.033336
+                ]
+            },
+            "record_timestamp": "2023-05-19T14:20:23.12Z"
+        },
+        {
+            "datasetid": "liste-des-jardins-remarquables",
+            "recordid": "6e87899db5ab51bedaf68e8b43752a0ea5dddd58",
+            "fields": {
+                "code_insee_departement": "76",
+                "longitude": "1.24955",
+                "annee_d_obtention": "2015",
+                "description": "Créés il y a 18 ans par Yves et Gloria Le Bellegard à la mémoire de leur fille Angélique,\n ces jardins sont divisés en 2 parties:\n - Au sud du manoir du XVIIe siècle, un jardin aux allées rectilignes, aux haies taillées au cordo...\n - Au nord, mélange de nature plus sauvage et infinité d'espèces de fleurs et d'arbres.\n Un petit cours d'eau artificiel et de jolis petits bassins agrémentent le tout et donne une âme à l'ensemble.\n Au milieu de votre flânerie vous pourrez vous reposer quelques instants sur un banc où sous une tonnelle.",
+                "departement": "Seine-Maritime",
+                "nom_du_jardin": "Jardin d’Angélique",
+                "numero_et_libelle_de_la_voie": "1750 Rte de Lyons",
+                "commune": "Montmain",
+                "types": "Jardin contemporain|Jardin de collection|Jardin privé",
+                "accessible_au_public": "[]",
+                "adresse_complete": "1750 Rte de Lyons, 76520 Montmain, France",
+                "date_de_maj": "2022-07-22 10:28:54",
+                "adresse_de_l_entree_du_public": "1750 Rte de Lyons, 76520 Montmain, France",
+                "identifiant_deps": "JARD_76448_0001",
+                "identifiant_origine": "MHR_28_JR0039",
+                "region": "Normandie",
+                "code_postal": "76520",
+                "latitude": "49.410691",
+                "site_internet_et_autres_liens": "[\"http://www.montmain.fr/commune/patrimoine\"]",
+                "code_insee": "76448",
+                "conditions_d_ouverture": "[]",
+                "code_insee_region": 28.0,
+                "coordonnees_geographiques": [
+                    49.410691,
+                    1.24955
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.24955,
+                    49.410691
+                ]
+            },
+            "record_timestamp": "2023-05-19T14:20:23.12Z"
+        },
+        {
+            "datasetid": "liste-des-jardins-remarquables",
+            "recordid": "6e435dc959cb1c1b53e6fcaf451e91bc67fd05b1",
+            "fields": {
+                "code_insee_departement": "5",
+                "longitude": "6.063043",
+                "annee_d_obtention": "2005",
+                "description": "Domaine de 220 hectares avec jardins d’inspiration anglaise, italienne ou française. Collections de roses anciennes, plantes ornementales et alpines. \n Ouvert : de mi-avril à fin mai, septembre, octobre de 14h à 17h et de juin à août de 10h à 18h30 (fermé le mardi).",
+                "departement": "Hautes-Alpes",
+                "nom_du_jardin": "Domaine de Charance",
+                "numero_et_libelle_de_la_voie": "14 Av. de Charance",
+                "commune": "Gap",
+                "types": "Jardin régulier|Jardin public",
+                "accessible_au_public": "[]",
+                "adresse_complete": "14 Av. de Charance, 05000 Gap, France",
+                "date_de_maj": "2022-07-22 10:28:10",
+                "adresse_de_l_entree_du_public": "14 Av. de Charance, 05000 Gap, France",
+                "identifiant_deps": "JARD_05061_0001",
+                "identifiant_origine": "MHR_93_JR0022",
+                "region": "Provence-Alpes-Côte d'Azur",
+                "code_postal": "5000",
+                "latitude": "44.563106",
+                "site_internet_et_autres_liens": "[\"https://www.gap-tallard-vallees.fr/fr/decouvrir/nature-et-decouvertes/parcs-et-domaines/domaine-de-charance/\"]",
+                "code_insee": "5061",
+                "equipement_precision": "monument historique",
+                "conditions_d_ouverture": "[]",
+                "code_insee_region": 93.0,
+                "coordonnees_geographiques": [
+                    44.563106,
+                    6.063043
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    6.063043,
+                    44.563106
+                ]
+            },
+            "record_timestamp": "2023-05-19T14:20:23.12Z"
+        },
+        {
+            "datasetid": "liste-des-jardins-remarquables",
+            "recordid": "3ea36984a6f06f3fafb20d16d3a5855cdd905ea7",
+            "fields": {
+                "code_insee_departement": "34",
+                "longitude": "3.305263",
+                "annee_d_obtention": "2004",
+                "description": "Le jardin de Saint Adrien fait partie des sites les plus spectaculaires de notre région : d’anciennes carrières datant du Moyen-âge ont été transformées peu à peu en bassins avec écrin de verdure, paradoxale oasis posée sur les roches volcaniques. Quatre plans d'eau apportent la fraîcheur dans ce paysage minéral tandis que les plantations et les fleurs en font une halte estivale sous le signe de la magie et de la sérénité.",
+                "departement": "Hérault",
+                "nom_du_jardin": "Jardin des carrières de Saint-Adrien",
+                "numero_et_libelle_de_la_voie": "72T Grand Rue",
+                "commune": "Servian",
+                "types": "Parc paysager|Jardin privé",
+                "accessible_au_public": "[]",
+                "date_de_creation": "2020-06-08 09:25:00",
+                "adresse_complete": "72T Grand Rue, 34290 Servian, France",
+                "date_de_maj": "2022-07-22 10:28:45",
+                "adresse_de_l_entree_du_public": "72T Grand Rue, 34290 Servian, France",
+                "identifiant_deps": "JARD_34300_0001",
+                "identifiant_origine": "MHR_76_JR0012",
+                "region": "Occitanie",
+                "code_postal": "34290",
+                "latitude": "43.425457",
+                "site_internet_et_autres_liens": "[\"http://www.stadrien.paysdepezenas.com\", \"https://www.facebook.com/LeJardinDeSaintAdrien\"]",
+                "code_insee": "34300",
+                "conditions_d_ouverture": "[]",
+                "code_insee_region": 76.0,
+                "coordonnees_geographiques": [
+                    43.425457,
+                    3.305263
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.305263,
+                    43.425457
+                ]
+            },
+            "record_timestamp": "2023-05-19T14:20:23.12Z"
+        },
+        {
+            "datasetid": "liste-des-jardins-remarquables",
+            "recordid": "385af2b115aebf5efacd9d50d718106e06893eb3",
+            "fields": {
+                "code_insee_departement": "29",
+                "longitude": "-4.164949",
+                "annee_d_obtention": "2005",
+                "description": "Parc privé aménagé à l'anglaise, qui abrite une très riche collection de plantes de l'Ouest et du monde entier (Amérique du Sud et du Nord, Afrique du Sud, Australie, Nouvelle-Zélande, Chine, Japon, Laponie, etc.), un vaste jardin aquatique et une collection de minéraux du Massif armoricain et du monde entier (4,5 ha).",
+                "departement": "Finistère",
+                "nom_du_jardin": "Parc botanique de Cornouaille",
+                "numero_et_libelle_de_la_voie": "368 Rte de Pont l'Abbé",
+                "commune": "Combrit",
+                "types": "Parc paysager|Jardin de collection|Jardin privé",
+                "accessible_au_public": "[]",
+                "date_de_creation": "2020-06-08 09:24:00",
+                "adresse_complete": "368 Rte de Pont l'Abbé, 29120 Combrit, France",
+                "date_de_maj": "2022-10-07 22:15:25",
+                "adresse_de_l_entree_du_public": "368 Rte de Pont l'Abbé, 29120 Combrit, France",
+                "identifiant_deps": "JARD_29037_0001",
+                "identifiant_origine": "MHR_53_JR0010",
+                "region": "Bretagne",
+                "code_postal": "29120",
+                "latitude": "47.883534",
+                "site_internet_et_autres_liens": "[\"http://www.parcbotanique.com\"]",
+                "code_insee": "29037",
+                "conditions_d_ouverture": "[]",
+                "code_insee_region": 53.0,
+                "coordonnees_geographiques": [
+                    47.883534,
+                    -4.164949
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.164949,
+                    47.883534
+                ]
+            },
+            "record_timestamp": "2023-05-19T14:20:23.12Z"
+        },
+        {
+            "datasetid": "liste-des-jardins-remarquables",
+            "recordid": "c2cf77556c9216a1b5ce7dd37c670ad6f253533a",
+            "fields": {
+                "code_insee_departement": "60",
+                "longitude": "2.9226608",
+                "annee_d_obtention": "2020",
+                "description": "L’architecte des lieux, grand aïeul du propriétaire actuel, s’est inspiré de la mémoire contemplative du site, celui de l’abbaye de Morienval, pour y recréer un cadre qui serait conforme selon lui au « génie » du lieu, celui d’un paysage naturel idéal. Le 27 mai 2014, l’Abbaye de Morienval a ouvert au public la première roseraie officielle David Austin en France. Dédiée au répertoire floral de David Austin avec 1600 rosiers et 154 variétés, répartis en 300 massifs et 14 lits de 30 m de long chacun, cette roseraie classique, structurée par des arches métalliques, a été créée en 2011 et dessinée par Michael Marriott, directeur artistique de David Austin Roses, au chevet de l’église abbatiale du 12e siècle. Parallèlement, le jardin est aussi un « Rose Center » où le visiteur peut acquérir les rosiers David Austin, qu’il a découverts lors de la visite.",
+                "departement": "Oise",
+                "nom_du_jardin": "Roseraie David Austin",
+                "numero_et_libelle_de_la_voie": "11 Rue des Lombards",
+                "commune": "Morienval",
+                "types": "Jardin régulier|Jardin contemporain|Jardin de collection|Jardin privé",
+                "accessible_au_public": "[]",
+                "date_de_creation": "2022-09-13 17:09:04",
+                "adresse_complete": "11 Rue des Lombards, 60127 Morienval, France",
+                "date_de_maj": "2022-09-13 17:09:04",
+                "adresse_de_l_entree_du_public": "11 Rue des Lombards, 60127 Morienval, France",
+                "region": "Hauts-de-France",
+                "code_postal": "60127",
+                "latitude": "49.2968175",
+                "site_internet_et_autres_liens": "[\"http://www.abbayedemorienval.com\", \"https://fr-fr.facebook.com/abbayemorienval\"]",
+                "code_insee": "60260",
+                "conditions_d_ouverture": "[]",
+                "code_insee_region": 32.0,
+                "coordonnees_geographiques": [
+                    49.2968175,
+                    2.9226608
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.9226608,
+                    49.2968175
+                ]
+            },
+            "record_timestamp": "2023-05-19T14:20:23.12Z"
+        },
+        {
+            "datasetid": "liste-des-jardins-remarquables",
+            "recordid": "570d7df3e8e3e8305f91af3ad3f5f7822e6a93b8",
+            "fields": {
+                "code_insee_departement": "23",
+                "longitude": "1.607292",
+                "annee_d_obtention": "2020",
+                "description": "La relation toute en douceur des jardins successifs, de cette vallée descendante vers la Sedelle, avec les différents milieux naturels en fait un exemple unique contemporain de paysage jardiné.\n  La réutilisation des plantes locales est le facteur dominant",
+                "departement": "Creuse",
+                "nom_du_jardin": "Jardin arboretum de la Sédelle",
+                "numero_et_libelle_de_la_voie": "1 Villejoint",
+                "commune": "Crozant",
+                "types": "Parc paysager|Jardin de collection|Jardin privé",
+                "accessible_au_public": "[]",
+                "date_de_creation": "2022-03-09 12:54:19",
+                "adresse_complete": "1 Villejoint, 23160 Crozant, France",
+                "date_de_maj": "2022-07-22 10:28:06",
+                "adresse_de_l_entree_du_public": "1 Villejoint, 23160 Crozant, France",
+                "identifiant_deps": "JARD_23070_0001",
+                "identifiant_origine": "MHR_75_JR0061",
+                "region": "Nouvelle-Aquitaine",
+                "code_postal": "23160",
+                "latitude": "46.361436",
+                "site_internet_et_autres_liens": "[\"http://www.arboretumsedelle.com\", \"https://www.facebook.com/ArboretumSedelle\"]",
+                "code_insee": "23070",
+                "conditions_d_ouverture": "[]",
+                "code_insee_region": 75.0,
+                "coordonnees_geographiques": [
+                    46.361436,
+                    1.607292
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.607292,
+                    46.361436
+                ]
+            },
+            "record_timestamp": "2023-05-19T14:20:23.12Z"
+        }
+    ],
+    "facet_groups": [
+        {
+            "name": "region",
+            "facets": [
+                {
+                    "name": "Nouvelle-Aquitaine",
+                    "count": 64,
+                    "state": "displayed",
+                    "path": "Nouvelle-Aquitaine"
+                },
+                {
+                    "name": "Grand Est",
+                    "count": 47,
+                    "state": "displayed",
+                    "path": "Grand Est"
+                },
+                {
+                    "name": "Provence-Alpes-Côte d'Azur",
+                    "count": 45,
+                    "state": "displayed",
+                    "path": "Provence-Alpes-Côte d'Azur"
+                },
+                {
+                    "name": "Occitanie",
+                    "count": 43,
+                    "state": "displayed",
+                    "path": "Occitanie"
+                },
+                {
+                    "name": "Île-de-France",
+                    "count": 42,
+                    "state": "displayed",
+                    "path": "Île-de-France"
+                },
+                {
+                    "name": "Normandie",
+                    "count": 37,
+                    "state": "displayed",
+                    "path": "Normandie"
+                },
+                {
+                    "name": "Hauts-de-France",
+                    "count": 34,
+                    "state": "displayed",
+                    "path": "Hauts-de-France"
+                },
+                {
+                    "name": "Centre-Val de Loire",
+                    "count": 33,
+                    "state": "displayed",
+                    "path": "Centre-Val de Loire"
+                },
+                {
+                    "name": "Auvergne-Rhône-Alpes",
+                    "count": 31,
+                    "state": "displayed",
+                    "path": "Auvergne-Rhône-Alpes"
+                },
+                {
+                    "name": "Bourgogne-Franche-Comté",
+                    "count": 31,
+                    "state": "displayed",
+                    "path": "Bourgogne-Franche-Comté"
+                },
+                {
+                    "name": "Bretagne",
+                    "count": 25,
+                    "state": "displayed",
+                    "path": "Bretagne"
+                },
+                {
+                    "name": "Pays de la Loire",
+                    "count": 21,
+                    "state": "displayed",
+                    "path": "Pays de la Loire"
+                },
+                {
+                    "name": "Martinique",
+                    "count": 7,
+                    "state": "displayed",
+                    "path": "Martinique"
+                },
+                {
+                    "name": "Guadeloupe",
+                    "count": 5,
+                    "state": "displayed",
+                    "path": "Guadeloupe"
+                },
+                {
+                    "name": "Corse",
+                    "count": 2,
+                    "state": "displayed",
+                    "path": "Corse"
+                },
+                {
+                    "name": "La Réunion",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "La Réunion"
+                },
+                {
+                    "name": "Réunion",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Réunion"
+                }
+            ]
+        },
+        {
+            "name": "departement",
+            "facets": [
+                {
+                    "name": "Dordogne",
+                    "count": 17,
+                    "state": "displayed",
+                    "path": "Dordogne"
+                },
+                {
+                    "name": "Alpes-Maritimes",
+                    "count": 13,
+                    "state": "displayed",
+                    "path": "Alpes-Maritimes"
+                },
+                {
+                    "name": "Var",
+                    "count": 13,
+                    "state": "displayed",
+                    "path": "Var"
+                },
+                {
+                    "name": "Oise",
+                    "count": 12,
+                    "state": "displayed",
+                    "path": "Oise"
+                },
+                {
+                    "name": "Seine-Maritime",
+                    "count": 10,
+                    "state": "displayed",
+                    "path": "Seine-Maritime"
+                },
+                {
+                    "name": "Bas-Rhin",
+                    "count": 9,
+                    "state": "displayed",
+                    "path": "Bas-Rhin"
+                },
+                {
+                    "name": "Hérault",
+                    "count": 9,
+                    "state": "displayed",
+                    "path": "Hérault"
+                },
+                {
+                    "name": "Indre-et-Loire",
+                    "count": 9,
+                    "state": "displayed",
+                    "path": "Indre-et-Loire"
+                },
+                {
+                    "name": "Yvelines",
+                    "count": 9,
+                    "state": "displayed",
+                    "path": "Yvelines"
+                },
+                {
+                    "name": "Calvados",
+                    "count": 8,
+                    "state": "displayed",
+                    "path": "Calvados"
+                },
+                {
+                    "name": "Côte-d'Or",
+                    "count": 8,
+                    "state": "displayed",
+                    "path": "Côte-d'Or"
+                },
+                {
+                    "name": "Gard",
+                    "count": 8,
+                    "state": "displayed",
+                    "path": "Gard"
+                },
+                {
+                    "name": "Ille-et-Vilaine",
+                    "count": 8,
+                    "state": "displayed",
+                    "path": "Ille-et-Vilaine"
+                },
+                {
+                    "name": "Loiret",
+                    "count": 8,
+                    "state": "displayed",
+                    "path": "Loiret"
+                },
+                {
+                    "name": "Bouches-du-Rhône",
+                    "count": 7,
+                    "state": "displayed",
+                    "path": "Bouches-du-Rhône"
+                },
+                {
+                    "name": "Charente-Maritime",
+                    "count": 7,
+                    "state": "displayed",
+                    "path": "Charente-Maritime"
+                },
+                {
+                    "name": "Cher",
+                    "count": 7,
+                    "state": "displayed",
+                    "path": "Cher"
+                },
+                {
+                    "name": "Côtes d'Armor",
+                    "count": 7,
+                    "state": "displayed",
+                    "path": "Côtes d'Armor"
+                },
+                {
+                    "name": "Finistère",
+                    "count": 7,
+                    "state": "displayed",
+                    "path": "Finistère"
+                },
+                {
+                    "name": "Haute-Saône",
+                    "count": 7,
+                    "state": "displayed",
+                    "path": "Haute-Saône"
+                },
+                {
+                    "name": "Marne",
+                    "count": 7,
+                    "state": "displayed",
+                    "path": "Marne"
+                },
+                {
+                    "name": "Martinique",
+                    "count": 7,
+                    "state": "displayed",
+                    "path": "Martinique"
+                },
+                {
+                    "name": "Orne",
+                    "count": 7,
+                    "state": "displayed",
+                    "path": "Orne"
+                },
+                {
+                    "name": "Paris",
+                    "count": 7,
+                    "state": "displayed",
+                    "path": "Paris"
+                },
+                {
+                    "name": "Sarthe",
+                    "count": 7,
+                    "state": "displayed",
+                    "path": "Sarthe"
+                },
+                {
+                    "name": "Seine-et-Marne",
+                    "count": 7,
+                    "state": "displayed",
+                    "path": "Seine-et-Marne"
+                },
+                {
+                    "name": "Somme",
+                    "count": 7,
+                    "state": "displayed",
+                    "path": "Somme"
+                },
+                {
+                    "name": "Vaucluse",
+                    "count": 7,
+                    "state": "displayed",
+                    "path": "Vaucluse"
+                },
+                {
+                    "name": "Corrèze",
+                    "count": 6,
+                    "state": "displayed",
+                    "path": "Corrèze"
+                },
+                {
+                    "name": "Eure",
+                    "count": 6,
+                    "state": "displayed",
+                    "path": "Eure"
+                },
+                {
+                    "name": "Gironde",
+                    "count": 6,
+                    "state": "displayed",
+                    "path": "Gironde"
+                },
+                {
+                    "name": "Haut-Rhin",
+                    "count": 6,
+                    "state": "displayed",
+                    "path": "Haut-Rhin"
+                },
+                {
+                    "name": "Hauts-de-Seine",
+                    "count": 6,
+                    "state": "displayed",
+                    "path": "Hauts-de-Seine"
+                },
+                {
+                    "name": "Manche",
+                    "count": 6,
+                    "state": "displayed",
+                    "path": "Manche"
+                },
+                {
+                    "name": "Meurthe-et-Moselle",
+                    "count": 6,
+                    "state": "displayed",
+                    "path": "Meurthe-et-Moselle"
+                },
+                {
+                    "name": "Pas-de-Calais",
+                    "count": 6,
+                    "state": "displayed",
+                    "path": "Pas-de-Calais"
+                },
+                {
+                    "name": "Puy-de-Dôme",
+                    "count": 6,
+                    "state": "displayed",
+                    "path": "Puy-de-Dôme"
+                },
+                {
+                    "name": "Val-D'Oise",
+                    "count": 6,
+                    "state": "displayed",
+                    "path": "Val-D'Oise"
+                },
+                {
+                    "name": "Deux-Sèvres",
+                    "count": 5,
+                    "state": "displayed",
+                    "path": "Deux-Sèvres"
+                },
+                {
+                    "name": "Essonne",
+                    "count": 5,
+                    "state": "displayed",
+                    "path": "Essonne"
+                },
+                {
+                    "name": "Guadeloupe",
+                    "count": 5,
+                    "state": "displayed",
+                    "path": "Guadeloupe"
+                },
+                {
+                    "name": "Haute-Marne",
+                    "count": 5,
+                    "state": "displayed",
+                    "path": "Haute-Marne"
+                },
+                {
+                    "name": "Isère",
+                    "count": 5,
+                    "state": "displayed",
+                    "path": "Isère"
+                },
+                {
+                    "name": "Lot-et-Garonne",
+                    "count": 5,
+                    "state": "displayed",
+                    "path": "Lot-et-Garonne"
+                },
+                {
+                    "name": "Maine-et-Loire",
+                    "count": 5,
+                    "state": "displayed",
+                    "path": "Maine-et-Loire"
+                },
+                {
+                    "name": "Nord",
+                    "count": 5,
+                    "state": "displayed",
+                    "path": "Nord"
+                },
+                {
+                    "name": "Tarn",
+                    "count": 5,
+                    "state": "displayed",
+                    "path": "Tarn"
+                },
+                {
+                    "name": "Aisne",
+                    "count": 4,
+                    "state": "displayed",
+                    "path": "Aisne"
+                },
+                {
+                    "name": "Aube",
+                    "count": 4,
+                    "state": "displayed",
+                    "path": "Aube"
+                },
+                {
+                    "name": "Haute-Garonne",
+                    "count": 4,
+                    "state": "displayed",
+                    "path": "Haute-Garonne"
+                },
+                {
+                    "name": "Indre",
+                    "count": 4,
+                    "state": "displayed",
+                    "path": "Indre"
+                },
+                {
+                    "name": "Jura",
+                    "count": 4,
+                    "state": "displayed",
+                    "path": "Jura"
+                },
+                {
+                    "name": "Loir-et-Cher",
+                    "count": 4,
+                    "state": "displayed",
+                    "path": "Loir-et-Cher"
+                },
+                {
+                    "name": "Moselle",
+                    "count": 4,
+                    "state": "displayed",
+                    "path": "Moselle"
+                },
+                {
+                    "name": "Nièvre",
+                    "count": 4,
+                    "state": "displayed",
+                    "path": "Nièvre"
+                },
+                {
+                    "name": "Rhône",
+                    "count": 4,
+                    "state": "displayed",
+                    "path": "Rhône"
+                },
+                {
+                    "name": "Vendée",
+                    "count": 4,
+                    "state": "displayed",
+                    "path": "Vendée"
+                },
+                {
+                    "name": "Vienne",
+                    "count": 4,
+                    "state": "displayed",
+                    "path": "Vienne"
+                },
+                {
+                    "name": "Vosges",
+                    "count": 4,
+                    "state": "displayed",
+                    "path": "Vosges"
+                },
+                {
+                    "name": "Yonne",
+                    "count": 4,
+                    "state": "displayed",
+                    "path": "Yonne"
+                },
+                {
+                    "name": "Alpes-de-Haute-Provence",
+                    "count": 3,
+                    "state": "displayed",
+                    "path": "Alpes-de-Haute-Provence"
+                },
+                {
+                    "name": "Ardèche",
+                    "count": 3,
+                    "state": "displayed",
+                    "path": "Ardèche"
+                },
+                {
+                    "name": "Charente",
+                    "count": 3,
+                    "state": "displayed",
+                    "path": "Charente"
+                },
+                {
+                    "name": "Creuse",
+                    "count": 3,
+                    "state": "displayed",
+                    "path": "Creuse"
+                },
+                {
+                    "name": "Côtes-d'Armor",
+                    "count": 3,
+                    "state": "displayed",
+                    "path": "Côtes-d'Armor"
+                },
+                {
+                    "name": "Drôme",
+                    "count": 3,
+                    "state": "displayed",
+                    "path": "Drôme"
+                },
+                {
+                    "name": "Gers",
+                    "count": 3,
+                    "state": "displayed",
+                    "path": "Gers"
+                },
+                {
+                    "name": "Haute-Savoie",
+                    "count": 3,
+                    "state": "displayed",
+                    "path": "Haute-Savoie"
+                },
+                {
+                    "name": "Hautes-Pyrénées",
+                    "count": 3,
+                    "state": "displayed",
+                    "path": "Hautes-Pyrénées"
+                },
+                {
+                    "name": "Landes",
+                    "count": 3,
+                    "state": "displayed",
+                    "path": "Landes"
+                },
+                {
+                    "name": "Loire",
+                    "count": 3,
+                    "state": "displayed",
+                    "path": "Loire"
+                },
+                {
+                    "name": "Mayenne",
+                    "count": 3,
+                    "state": "displayed",
+                    "path": "Mayenne"
+                },
+                {
+                    "name": "Pyrénées-Atlantiques",
+                    "count": 3,
+                    "state": "displayed",
+                    "path": "Pyrénées-Atlantiques"
+                },
+                {
+                    "name": "Saône-et-Loire",
+                    "count": 3,
+                    "state": "displayed",
+                    "path": "Saône-et-Loire"
+                },
+                {
+                    "name": "Ariège",
+                    "count": 2,
+                    "state": "displayed",
+                    "path": "Ariège"
+                },
+                {
+                    "name": "Aude",
+                    "count": 2,
+                    "state": "displayed",
+                    "path": "Aude"
+                },
+                {
+                    "name": "Aveyron",
+                    "count": 2,
+                    "state": "displayed",
+                    "path": "Aveyron"
+                },
+                {
+                    "name": "Haute-Vienne",
+                    "count": 2,
+                    "state": "displayed",
+                    "path": "Haute-Vienne"
+                },
+                {
+                    "name": "Hautes-Alpes",
+                    "count": 2,
+                    "state": "displayed",
+                    "path": "Hautes-Alpes"
+                },
+                {
+                    "name": "Loire-Atlantique",
+                    "count": 2,
+                    "state": "displayed",
+                    "path": "Loire-Atlantique"
+                },
+                {
+                    "name": "Lot",
+                    "count": 2,
+                    "state": "displayed",
+                    "path": "Lot"
+                },
+                {
+                    "name": "Meuse",
+                    "count": 2,
+                    "state": "displayed",
+                    "path": "Meuse"
+                },
+                {
+                    "name": "Tarn-et-Garonne",
+                    "count": 2,
+                    "state": "displayed",
+                    "path": "Tarn-et-Garonne"
+                },
+                {
+                    "name": "Ain",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Ain"
+                },
+                {
+                    "name": "Allier",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Allier"
+                },
+                {
+                    "name": "Cantal",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Cantal"
+                },
+                {
+                    "name": "Corse-du-Sud",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Corse-du-Sud"
+                },
+                {
+                    "name": "Doubs",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Doubs"
+                },
+                {
+                    "name": "Eure-et-Loir",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Eure-et-Loir"
+                },
+                {
+                    "name": "Haute-Corse",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Haute-Corse"
+                },
+                {
+                    "name": "Haute-Loire",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Haute-Loire"
+                },
+                {
+                    "name": "La Réunion",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "La Réunion"
+                },
+                {
+                    "name": "Pyrénées-Orientales",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Pyrénées-Orientales"
+                },
+                {
+                    "name": "Réunion",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Réunion"
+                },
+                {
+                    "name": "Seine-St-Denis",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Seine-St-Denis"
+                },
+                {
+                    "name": "Val-de-Marne",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Val-de-Marne"
+                }
+            ]
+        }
+    ]
+}

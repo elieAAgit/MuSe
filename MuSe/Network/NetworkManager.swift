@@ -2,11 +2,12 @@
 //  NetworkManager.swift
 //  MuSe
 //
-//  Created by Qattus on 14/04/2022.
+//  Created by Elie Arquier on 14/04/2022.
 //
 
 import Foundation
 
+//Differents network errors
 enum NetworkError: String, Error {
     case data = "error data"
     case error = "error"
@@ -37,16 +38,19 @@ final class NetworkManager {
         task = session.dataTask(with: request) { (data, response, error) in
             DispatchQueue.main.async {
 
+                //Handle the data errors
                 guard let data = data else {
                     callback(.failure(.data))
                     return
                 }
 
+                //Handle errors
                 guard error == nil else {
                     callback(.failure(.error))
                     return
                 }
 
+                //Handle the response
                 guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
                     callback(.failure(.response))
                     return

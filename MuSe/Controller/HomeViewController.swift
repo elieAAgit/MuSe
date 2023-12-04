@@ -2,7 +2,7 @@
 //  HomeViewController.swift
 //  MuSe
 //
-//  Created by Qattus on 12/04/2022.
+//  Created by Elie Arquier on 12/04/2022.
 //
 
 import UIKit
@@ -23,17 +23,10 @@ class HomeViewController: UIViewController, Storyboarded {
         homeModel?.setup()
     }
 
-    override func viewWillAppear(_ animated: Bool) {
-        homeModel?.reloadData()
-    }
-
     // MARK: - Method
 
+    ///  Go to map
     @IBAction func selectCategories(_ sender: AnimateButton) {
         homeModel?.getSelectors()
-    }
-
-    func refreshSelectors(with selectors: [String]) {
-        homeModel?.refreshSelectors(with: selectors)
     }
 }

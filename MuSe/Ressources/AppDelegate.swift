@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  MuSe
 //
-//  Created by Qattus on 12/04/2022.
+//  Created by Elie Arquier on 12/04/2022.
 //
 
 import UIKit

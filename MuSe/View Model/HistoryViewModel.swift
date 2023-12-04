@@ -16,7 +16,6 @@ final class HistoryViewModel: NSObject {
     private var searchBar: UISearchBar
     private var tableView: UITableView
     private var missingEntry: RoundedView!
-    private var firstLoading: Bool = true
 
     // properties use with searBar for filtering results of search
     private var filtered: [String] = []
@@ -31,6 +30,7 @@ final class HistoryViewModel: NSObject {
         self.searchBar = searchBar
     }
 
+    /// Prepare the tableView
     func setup() {
         tableView.delegate = self
         tableView.dataSource = self
@@ -49,10 +49,6 @@ final class HistoryViewModel: NSObject {
     func reloadData() {
         tableView.reloadData()
         updateView()
-
-        if firstLoading {
-            //animateTable()
-        }
     }
 }
 
@@ -77,7 +73,7 @@ extension HistoryViewModel: UITableViewDelegate, UITableViewDataSource {
         return 1
     }
 
-    /// Number of row for the table view: number of favorites in the database
+    /// Number of row for the table view: number of histories in the database
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let entities = placeManager?.findPlacesHistory() else { return 0 }
 
@@ -118,12 +114,14 @@ extension HistoryViewModel: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
 
+    /// Deleting row
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let delete = UIContextualAction(style: .destructive, title: "Delete") { (action, view, success) in
             let cell = tableView.cellForRow(at: indexPath) as? PlaceTableViewCell
 
             guard let place = cell?.place else { return }
-            
+
+            // place.history = false
             self.placeManager?.removeFromHistory(place)
             tableView.deleteRows(at: [indexPath], with: .automatic)
         }
@@ -161,7 +159,7 @@ extension HistoryViewModel: NSFetchedResultsControllerDelegate {
     }
 }
 
-// MARK: - Use UITableViewDelegate to access recipe detail
+// MARK: - Use UITableViewDelegate to access place detail
 extension HistoryViewModel {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         var place: Place
@@ -182,30 +180,6 @@ extension HistoryViewModel {
         coordinator?.getPlace(with: place)
     }
 }
-/*
-extension TableViewModel {
-    func animateTable() {
-        tableView.reloadData()
-        let cells = tableView.visibleCells
-        
-        let tableViewHeight = tableView.bounds.size.height
-        
-        for cell in cells {
-            cell.transform = CGAffineTransform(translationX: 0, y: tableViewHeight)
-        }
-        
-        var delayCounter = 0
-        for cell in cells {
-            UIView.animate(withDuration: 1.75, delay: Double(delayCounter) * 0.05, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseInOut, animations: {
-                cell.transform = CGAffineTransform.identity
-                }, completion: nil)
-            delayCounter += 1
-        }
-
-        firstLoading = false
-    }
-}
-*/
 
 // MARK: - SearchBar
 extension HistoryViewModel: UISearchBarDelegate {

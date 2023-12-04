@@ -2,7 +2,7 @@
 //  MapViewModel.swift
 //  MuSe
 //
-//  Created by Qattus on 16/04/2022.
+//  Created by Elie Arquier on 16/04/2022.
 //
 
 import UIKit
@@ -40,11 +40,7 @@ final class MapViewModel: NSObject {
         setupLocationManager()
     }
 
-    func viewDidDisappear() {
-        coordinator.refreshSelectors(with: selectors)
-        print(selectors)
-    }
-
+    /// Add 1 selector to selectors and map
     func addSelector(tag: Int) {
         var selector: String {
             switch tag {
@@ -66,9 +62,11 @@ final class MapViewModel: NSObject {
             }
         }
 
+        // Display all places with this selector
         showAnnotations(selector)
     }
 
+    /// Remove 1 selector to selectors and the map
     func removeSelector(tag: Int) {
         var selector: String {
             switch tag {
@@ -90,9 +88,11 @@ final class MapViewModel: NSObject {
             }
         }
 
+        // Remove all places with this selector
         hideAnnotations(selector)
     }
 
+    /// Adding or removing a selector from selectors when a selector is tapped on MapViewController
     func refreshSelectors() -> [String] {
         let value = selectors
 
@@ -109,6 +109,7 @@ extension MapViewModel: MKMapViewDelegate {
         loadingAnnotations()
     }
 
+    /// Display annotations with the new selector
     private func showAnnotations(_ selector: String) {
         for place in places {
             let location = PlaceMap(place: place)
@@ -121,6 +122,7 @@ extension MapViewModel: MKMapViewDelegate {
         }
     }
 
+    /// Remove all annotations with the selector
     private func hideAnnotations(_ selector: String) {
         let annotations = mapView.annotations
 
@@ -129,6 +131,7 @@ extension MapViewModel: MKMapViewDelegate {
         loadingAnnotations()
     }
 
+    /// Load more than 1 selector, and display to the map
     private func loadingAnnotations() {
         for place in places {
             let location = PlaceMap(place: place)
@@ -159,6 +162,7 @@ extension MapViewModel: MKMapViewDelegate {
         return annotationView
     }
 
+    ///  Go to place details
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView,
                  calloutAccessoryControlTapped control: UIControl) {
         guard let place = view.annotation as? PlaceMap else { return }
@@ -169,32 +173,26 @@ extension MapViewModel: MKMapViewDelegate {
 
 // MARK: - LocationManager
 extension MapViewModel: CLLocationManagerDelegate {
+    /// Setup user location authorization
     func setupLocationManager() {
         locationManager.requestAlwaysAuthorization()
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         getUserLocation()
     }
 
+    /// Center to the user location
     func getUserLocation() {
         guard let location = mapView.userLocation.location else { return }
         
         mapView.centerToLocation(location)
     }
 
+    ///  User location authorization changes
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
       // 1
       let status = manager.authorizationStatus
 
       // 2
       mapView.showsUserLocation = (status == .authorizedAlways)
-
-      // 3
-      if status != .authorizedAlways {
-        let message = """
-        message
-        """
-
-        //showAlert(withTitle: "Warning", message: message)
-      }
     }
 }

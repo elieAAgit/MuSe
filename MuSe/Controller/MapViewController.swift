@@ -2,7 +2,7 @@
 //  MapViewController.swift
 //  MuSe
 //
-//  Created by Qattus on 12/04/2022.
+//  Created by Elie Arquier on 12/04/2022.
 //
 
 import UIKit
@@ -31,10 +31,6 @@ final class MapViewController: UIViewController, Storyboarded {
         selectedOrNot()
     }
 
-    override func viewDidDisappear(_ animated: Bool) {
-        mapViewModel?.viewDidDisappear()
-    }
-
     override func didReceiveMemoryWarning() {
             super.didReceiveMemoryWarning()
             // Dispose of any resources that can be recreated.
@@ -54,6 +50,7 @@ extension MapViewController {
         }
     }
 
+    /// Load the selectors when the page loads
     private func selectedOrNot() {
         for selector in selectors {
             if selector == Categories.museum.id {
@@ -68,6 +65,7 @@ extension MapViewController {
         }
     }
 
+    ///  Change the status and color of the selectors depending on whether they are selected or not
     @IBAction func selectorIsTapped(_ sender: CapsuleButton) {
         if sender.isSelected {
            if selectors.count > 1 {
@@ -79,9 +77,11 @@ extension MapViewController {
             sender.isSelected = true
         }
 
+        // Refresh selectors in the MapViewModel
         selectors = mapViewModel?.refreshSelectors() ?? []
     }
 
+    /// Show user location
     @IBAction func userLocation(_ sender: RoundButton) {
         mapViewModel?.getUserLocation()
     }

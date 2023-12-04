@@ -2,11 +2,12 @@
 //  RoundButton.swift
 //  MuSe
 //
-//  Created by Qattus on 13/04/2022.
+//  Created by Elie Arquier on 13/04/2022.
 //
 
 import UIKit
 
+// Animated button when used and color changed when selected
 class RoundButton: UIButton {
 
     // MARK: - Lifecycle

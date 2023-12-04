@@ -2,12 +2,13 @@
 //  MKMapView.swift
 //  MuSe
 //
-//  Created by Qattus on 22/04/2022.
+//  Created by Elie Arquier on 22/04/2022.
 //
 
 import MapKit
 
 extension MKMapView {
+    /// Center the map 
     func centerToLocation(_ location: CLLocation,
                         regionRadius: CLLocationDistance = 1000) {
         let coordinateRegion = MKCoordinateRegion(center: location.coordinate,

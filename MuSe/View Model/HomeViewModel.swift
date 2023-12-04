@@ -2,7 +2,7 @@
 //  HomeViewModel.swift
 //  MuSe
 //
-//  Created by Qattus on 14/04/2022.
+//  Created by Elie Arquier on 14/04/2022.
 //
 
 import UIKit
@@ -32,27 +32,27 @@ final class HomeViewModel: NSObject {
         let nib = UINib(nibName: HomeCollectionViewCell.nibName, bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: HomeCollectionViewCell.cellIdentifier)
     }
-
-    func refreshSelectors(with selectors: [String]) {
-        self.selectors = selectors
-    }
 }
 
 // MARK: - Collection View
 extension HomeViewModel: UICollectionViewDataSource {
 
+    /// Reload the collectionView
     func reloadData() {
         collectionView.reloadData()
     }
 
+    /// Number of sections for the colletion view
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
 
+    /// Number of row for the collection view
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return categories.count
     }
-    
+
+    /// Display data to the collection view cell
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeCollectionViewCell.cellIdentifier, for: indexPath) as? HomeCollectionViewCell else {
             return UICollectionViewCell()
@@ -61,16 +61,12 @@ extension HomeViewModel: UICollectionViewDataSource {
         let category = categories[indexPath.row]
         cell.getCategory(category: category)
 
-        if selectors.contains(category.id) {
-            cell.selectedCell(with: true)
-        }
-
         return cell
     }
 }
 
 extension HomeViewModel: UICollectionViewDelegate {
-
+    /// When an item is selected: add or remove from selector
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = categories[indexPath.row]
 
@@ -85,7 +81,7 @@ extension HomeViewModel: UICollectionViewDelegate {
 
 // MARK: - Coordinator
 extension HomeViewModel {
-
+    /// Categories selected to be displayed on the map
     func getSelectors() {
         if selectors.isEmpty {
             // Show Alert

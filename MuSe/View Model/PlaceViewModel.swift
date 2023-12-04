@@ -2,7 +2,7 @@
 //  PlaceViewModel.swift
 //  MuSe
 //
-//  Created by Qattus on 26/04/2022.
+//  Created by Elie Arquier on 26/04/2022.
 //
 
 import Foundation
@@ -51,10 +51,12 @@ final class PlaceViewModel {
         placeManager?.updateFavorite(place)
     }
 
+    /// Mark place as visit for history tab
     func history() {
         placeManager?.updateHistory(place)
     }
 
+    /// to Itinerary
     func itinerary() {
         coordinator.donePlace(with: place)
     }

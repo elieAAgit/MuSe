@@ -1,0 +1,430 @@
+{
+    "nhits": 15882,
+    "parameters": {
+        "dataset": "adresses-des-bibliotheques-publiques",
+        "rows": 10,
+        "start": 0,
+        "facet": [
+            "comment",
+            "type_adresse"
+        ],
+        "format": "json",
+        "timezone": "UTC"
+    },
+    "records": [
+        {
+            "datasetid": "adresses-des-bibliotheques-publiques",
+            "recordid": "4ca2aac8ad7c9ad0681e23712c8b9b38618bdd5d",
+            "fields": {
+                "geolocalisation": [
+                    46.178735,
+                    5.322996
+                ],
+                "code_region": 84.0,
+                "libelle_2": "L'Île ô Livres",
+                "latitude": "46.178735",
+                "code_insee_commune": "01072",
+                "nom_de_l_etablissement": "Médiathèque Municipale",
+                "ville": "Ceyzériat",
+                "longitude": "5.322996",
+                "nombre_de_benevoles": 11.0,
+                "population_commune": 3256,
+                "type_adresse": "Bâtiment ouvert",
+                "cp": "01250",
+                "nombre_de_salaries": 1.0,
+                "departement": "Ain",
+                "statut": "Bibliothèque municipale",
+                "region": "Auvergne-Rhône-Alpes",
+                "code_departement": "01",
+                "surface": 227.0,
+                "amplitude_horaire": 11.5,
+                "adresse": "2 Rue Jerome Lalande",
+                "code_bib": 11.0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    5.322996,
+                    46.178735
+                ]
+            },
+            "record_timestamp": "2023-09-26T08:29:52.51Z"
+        },
+        {
+            "datasetid": "adresses-des-bibliotheques-publiques",
+            "recordid": "aa8630519ca95f75a9d5e89cd7befe0483690a3d",
+            "fields": {
+                "geolocalisation": [
+                    46.338068,
+                    5.128198
+                ],
+                "code_region": 84.0,
+                "latitude": "46.338068",
+                "code_insee_commune": "01266",
+                "nom_de_l_etablissement": "MEDIATHEQUE COMMUNAUTAIRE DE MONTREVEL-EN-BRESSE",
+                "ville": "Montrevel-en-Bresse",
+                "longitude": "5.128198",
+                "nombre_de_benevoles": 1.0,
+                "population_commune": 2618,
+                "type_adresse": "Bâtiment ouvert",
+                "cp": "01340",
+                "nombre_de_salaries": 5.0,
+                "departement": "Ain",
+                "statut": "Bibliothèque municipale",
+                "region": "Auvergne-Rhône-Alpes",
+                "code_departement": "01",
+                "surface": 313.0,
+                "amplitude_horaire": 15.0,
+                "adresse": "66 route du comte de Montrevel",
+                "code_bib": 25.0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    5.128198,
+                    46.338068
+                ]
+            },
+            "record_timestamp": "2023-09-26T08:29:52.51Z"
+        },
+        {
+            "datasetid": "adresses-des-bibliotheques-publiques",
+            "recordid": "3f4e289fc64cbe2cdc44f5a82fdc9513858167ed",
+            "fields": {
+                "geolocalisation": [
+                    46.248271,
+                    5.125865
+                ],
+                "code_region": 84.0,
+                "latitude": "46.248271",
+                "code_insee_commune": "01301",
+                "nom_de_l_etablissement": "Médiathèque Municipale",
+                "ville": "Polliat",
+                "longitude": "5.125865",
+                "nombre_de_benevoles": 10.0,
+                "population_commune": 2608,
+                "type_adresse": "Bâtiment ouvert",
+                "cp": "01310",
+                "nombre_de_salaries": 1.0,
+                "departement": "Ain",
+                "statut": "Bibliothèque municipale",
+                "region": "Auvergne-Rhône-Alpes",
+                "code_departement": "01",
+                "surface": 190.0,
+                "amplitude_horaire": 11.0,
+                "adresse": "41 ROUTE DE MEZERIAT",
+                "code_bib": 29.0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    5.125865,
+                    46.248271
+                ]
+            },
+            "record_timestamp": "2023-09-26T08:29:52.51Z"
+        },
+        {
+            "datasetid": "adresses-des-bibliotheques-publiques",
+            "recordid": "4816dabdd451e77076cc63e77bbf9d4c0bc8dca6",
+            "fields": {
+                "geolocalisation": [
+                    46.177627,
+                    4.817191
+                ],
+                "code_region": 84.0,
+                "latitude": "46.177627",
+                "code_insee_commune": "01348",
+                "nom_de_l_etablissement": "Médiathèque",
+                "ville": "Saint-Didier-sur-Chalaronne",
+                "longitude": "4.817191",
+                "nombre_de_benevoles": 12.0,
+                "population_commune": 3003,
+                "type_adresse": "Bâtiment ouvert",
+                "cp": "01140",
+                "nombre_de_salaries": 2.0,
+                "departement": "Ain",
+                "statut": "Bibliothèque municipale",
+                "region": "Auvergne-Rhône-Alpes",
+                "code_departement": "01",
+                "surface": 200.0,
+                "amplitude_horaire": 10.0,
+                "adresse": "Mairie 1 Place de la Fontaine",
+                "code_bib": 34.0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.817191,
+                    46.177627
+                ]
+            },
+            "record_timestamp": "2023-09-26T08:29:52.51Z"
+        },
+        {
+            "datasetid": "adresses-des-bibliotheques-publiques",
+            "recordid": "0642d3986e02076e7da637d3795c7b7bf59ab62a",
+            "fields": {
+                "geolocalisation": [
+                    45.927597,
+                    5.353048
+                ],
+                "code_region": 84.0,
+                "latitude": "45.927597",
+                "code_insee_commune": "01431",
+                "nom_de_l_etablissement": "Bibliotheque Municipale",
+                "ville": "Vaux-en-Bugey",
+                "longitude": "5.353048",
+                "nombre_de_benevoles": 8.0,
+                "population_commune": 1257,
+                "type_adresse": "Bâtiment ouvert",
+                "cp": "01150",
+                "nombre_de_salaries": 0.0,
+                "departement": "Ain",
+                "statut": "Bibliothèque municipale",
+                "region": "Auvergne-Rhône-Alpes",
+                "code_departement": "01",
+                "surface": 40.0,
+                "amplitude_horaire": 5.0,
+                "adresse": "66 route de la gare",
+                "code_bib": 39.0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    5.353048,
+                    45.927597
+                ]
+            },
+            "record_timestamp": "2023-09-26T08:29:52.51Z"
+        },
+        {
+            "datasetid": "adresses-des-bibliotheques-publiques",
+            "recordid": "8b75480ad6dddbab5687fbfeb324f13bb401479a",
+            "fields": {
+                "geolocalisation": [
+                    45.918172,
+                    5.221221
+                ],
+                "code_region": 84.0,
+                "latitude": "45.918172",
+                "code_insee_commune": "01450",
+                "nom_de_l_etablissement": "Bibliotheque Municipale",
+                "ville": "Villieu-Loyes-Mollon",
+                "longitude": "5.221221",
+                "nombre_de_benevoles": 9.0,
+                "population_commune": 3784,
+                "type_adresse": "Bâtiment ouvert",
+                "cp": "01800",
+                "nombre_de_salaries": 1.0,
+                "departement": "Ain",
+                "statut": "Bibliothèque municipale",
+                "region": "Auvergne-Rhône-Alpes",
+                "code_departement": "01",
+                "surface": 200.0,
+                "amplitude_horaire": 12.5,
+                "adresse": "avenue Charles de Gaulle",
+                "code_bib": 40.0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    5.221221,
+                    45.918172
+                ]
+            },
+            "record_timestamp": "2023-09-26T08:29:52.51Z"
+        },
+        {
+            "datasetid": "adresses-des-bibliotheques-publiques",
+            "recordid": "6bce85f7072854cef36af0befdf3096f0032a111",
+            "fields": {
+                "geolocalisation": [
+                    49.400106,
+                    3.354642
+                ],
+                "code_region": 32.0,
+                "latitude": "49.400106",
+                "code_insee_commune": "02243",
+                "nom_de_l_etablissement": "Biblitotheque De Crouy",
+                "ville": "Crouy",
+                "longitude": "3.354642",
+                "nombre_de_benevoles": 7.0,
+                "population_commune": 2970,
+                "type_adresse": "Bâtiment ouvert",
+                "cp": "02880",
+                "nombre_de_salaries": 1.0,
+                "departement": "Aisne",
+                "statut": "Bibliothèque municipale",
+                "region": "Hauts-de-France",
+                "code_departement": "02",
+                "surface": 200.0,
+                "amplitude_horaire": 8.5,
+                "adresse": "31 AVENUE GENERAL PATTON",
+                "code_bib": 57.0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.354642,
+                    49.400106
+                ]
+            },
+            "record_timestamp": "2023-09-26T08:29:52.51Z"
+        },
+        {
+            "datasetid": "adresses-des-bibliotheques-publiques",
+            "recordid": "d4d6685a3045cc173f8eb3a2374012a86920ae0f",
+            "fields": {
+                "geolocalisation": [
+                    49.663353,
+                    3.369584
+                ],
+                "code_region": 32.0,
+                "latitude": "49.663353",
+                "code_insee_commune": "02304",
+                "nom_de_l_etablissement": "Bibliotheque Municipale de La Fere",
+                "ville": "La Fère",
+                "longitude": "3.369584",
+                "nombre_de_benevoles": 0.0,
+                "population_commune": 2973,
+                "type_adresse": "Bâtiment ouvert",
+                "cp": "02800",
+                "nombre_de_salaries": 1.0,
+                "departement": "Aisne",
+                "statut": "Bibliothèque municipale",
+                "region": "Hauts-de-France",
+                "code_departement": "02",
+                "surface": 0.0,
+                "amplitude_horaire": 8.0,
+                "adresse": "5 Rue des Bigors",
+                "code_bib": 61.0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.369584,
+                    49.663353
+                ]
+            },
+            "record_timestamp": "2023-09-26T08:29:52.51Z"
+        },
+        {
+            "datasetid": "adresses-des-bibliotheques-publiques",
+            "recordid": "12d0e575f5f87016de569bd24fbf2a411e1f5c4c",
+            "fields": {
+                "geolocalisation": [
+                    49.947697,
+                    3.417631
+                ],
+                "code_region": 32.0,
+                "latitude": "49.947697",
+                "code_insee_commune": "02334",
+                "nom_de_l_etablissement": "Bibliotheque Municipale de Fresnoy Le Grand",
+                "ville": "Fresnoy-le-Grand",
+                "longitude": "3.417631",
+                "nombre_de_benevoles": 0.0,
+                "population_commune": 3028,
+                "type_adresse": "Bâtiment ouvert",
+                "cp": "02230",
+                "nombre_de_salaries": 2.0,
+                "departement": "Aisne",
+                "statut": "Bibliothèque municipale",
+                "region": "Hauts-de-France",
+                "code_departement": "02",
+                "surface": 481.0,
+                "amplitude_horaire": 17.0,
+                "adresse": "95 RUE ALBERT MEUNIER",
+                "code_bib": 64.0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.417631,
+                    49.947697
+                ]
+            },
+            "record_timestamp": "2023-09-26T08:29:52.51Z"
+        },
+        {
+            "datasetid": "adresses-des-bibliotheques-publiques",
+            "recordid": "2b3d99f19875b9e08352b3dfafc8d0483cf8787c",
+            "fields": {
+                "geolocalisation": [
+                    49.904456,
+                    3.62508
+                ],
+                "code_region": 32.0,
+                "latitude": "49.904456",
+                "code_insee_commune": "02361",
+                "nom_de_l_etablissement": "Bibliotheque Municipale",
+                "ville": "Guise",
+                "longitude": "3.62508",
+                "nombre_de_benevoles": 0.0,
+                "population_commune": 4723,
+                "type_adresse": "Bâtiment ouvert",
+                "cp": "02120",
+                "nombre_de_salaries": 2.0,
+                "departement": "Aisne",
+                "statut": "Bibliothèque municipale",
+                "region": "Hauts-de-France",
+                "code_departement": "02",
+                "surface": 160.0,
+                "amplitude_horaire": 21.3,
+                "adresse": "Cite Familistere",
+                "code_bib": 66.0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.62508,
+                    49.904456
+                ]
+            },
+            "record_timestamp": "2023-09-26T08:29:52.51Z"
+        }
+    ],
+    "facet_groups": [
+        {
+            "name": "type_adresse",
+            "facets": [
+                {
+                    "name": "Bâtiment ouvert",
+                    "count": 15465,
+                    "state": "displayed",
+                    "path": "Bâtiment ouvert"
+                },
+                {
+                    "name": "Lieu uniquement administratif",
+                    "count": 208,
+                    "state": "displayed",
+                    "path": "Lieu uniquement administratif"
+                },
+                {
+                    "name": "Bibliothèque départementale",
+                    "count": 96,
+                    "state": "displayed",
+                    "path": "Bibliothèque départementale"
+                },
+                {
+                    "name": "Inconnue",
+                    "count": 71,
+                    "state": "displayed",
+                    "path": "Inconnue"
+                },
+                {
+                    "name": "Bibliobus",
+                    "count": 26,
+                    "state": "displayed",
+                    "path": "Bibliobus"
+                },
+                {
+                    "name": "Réserve de documents non ouverte au public",
+                    "count": 16,
+                    "state": "displayed",
+                    "path": "Réserve de documents non ouverte au public"
+                }
+            ]
+        }
+    ]
+}

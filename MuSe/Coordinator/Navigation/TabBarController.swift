@@ -2,7 +2,7 @@
 //  TabBarController.swift
 //  MuSe
 //
-//  Created by Qattus on 13/04/2022.
+//  Created by Elie Arquier on 13/04/2022.
 //
 
 import UIKit
@@ -19,6 +19,7 @@ final class TabBarController: UITabBarController {
 
     // MARK: - Lifecycle
 
+    // Loading the tabBarController with 1 tab for each navigator
     override func viewDidLoad() {
         super.viewDidLoad()
 

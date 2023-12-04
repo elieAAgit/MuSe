@@ -2,7 +2,7 @@
 //  CoreDataStack.swift
 //  MuSe
 //
-//  Created by Qattus on 23/04/2022.
+//  Created by Elie Arquier on 23/04/2022.
 //
 
 import Foundation

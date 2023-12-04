@@ -2,11 +2,12 @@
 //  CapsuleButton.swift
 //  MuSe
 //
-//  Created by Qattus on 12/04/2022.
+//  Created by Elie Arquier on 12/04/2022.
 //
 
 import UIKit
 
+// Inherits from round button with different colors properties
 final class CapsuleButton: RoundButton {
 
     // MARK: - Lifecycle

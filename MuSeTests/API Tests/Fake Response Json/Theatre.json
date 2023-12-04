@@ -1,0 +1,722 @@
+{
+    "nhits": 2061,
+    "parameters": {
+        "dataset": "etablissements-cinematographiques",
+        "rows": 10,
+        "start": 0,
+        "facet": [
+            "region_administrative",
+            "genre",
+            "multiplexe",
+            "zone_de_la_commune"
+        ],
+        "format": "json",
+        "timezone": "UTC"
+    },
+    "records": [
+        {
+            "datasetid": "etablissements-cinematographiques",
+            "recordid": "47f11d3133dec2f9c681677f28d1c29fb3698912",
+            "fields": {
+                "nombre_de_films_en_semaine_1": 77.0,
+                "fauteuils": 1533.0,
+                "geolocalisation": [
+                    48.872265,
+                    2.300938
+                ],
+                "pdm_en_entrees_des_films_americains": 36.505312038274816,
+                "semaines_d_activite": 53.0,
+                "films_art_et_essai": 54.0,
+                "ndeguu": "00851",
+                "ecrans": 4.0,
+                "categorie_art_et_essai": "NON",
+                "genre": "FIXE",
+                "population_de_la_commune": 36218.0,
+                "pdm_en_entrees_des_autres_films": 6.339970449588404,
+                "evolution_entrees": 23.923673325853613,
+                "region_administrative": "ILE-DE-FRANCE",
+                "tranche_d_entrees": "De 100 à 150 000 entrées",
+                "multiplexe": "NON",
+                "regioncnc": 1,
+                "code_insee": "75108",
+                "situation_geographique": "01-Paris",
+                "zone_de_la_commune": "C",
+                "nom": "UGC NORMANDIE",
+                "adresse": "116 AVENUE DES CHAMPS ELYSEES",
+                "population_unite_urbaine": 10949158.0,
+                "nombre_de_films_inedits": 79.0,
+                "latitude": "48.872265",
+                "pdm_en_entrees_des_films_europeens": 12.451276999929641,
+                "pdm_en_entrees_des_films_art_et_essai": 23.97523394075846,
+                "programmateur": "UGC",
+                "nombre_de_films_programmes": 125.0,
+                "ndeg_auto": "31",
+                "ae": "NON",
+                "commune": "Paris 8e Arrondissement",
+                "dep": "75",
+                "longitude": "2.300938",
+                "unite_urbaine": "Paris",
+                "seances": 6966.0,
+                "entrees_2022": 148007.0,
+                "pdm_en_entrees_des_films_francais": 44.70344051220713,
+                "entrees_2021": 119434.0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.300938,
+                    48.872265
+                ]
+            },
+            "record_timestamp": "2023-10-23T12:07:53.558Z"
+        },
+        {
+            "datasetid": "etablissements-cinematographiques",
+            "recordid": "a040b934be62da8d694c023522c7342e1cb63ef4",
+            "fields": {
+                "nombre_de_films_en_semaine_1": 71.0,
+                "fauteuils": 722.0,
+                "geolocalisation": [
+                    48.871332,
+                    2.335302
+                ],
+                "pdm_en_entrees_des_films_americains": 27.053596576506184,
+                "semaines_d_activite": 53.0,
+                "films_art_et_essai": 55.0,
+                "ndeguu": "00851",
+                "ecrans": 4.0,
+                "categorie_art_et_essai": "NON",
+                "genre": "FIXE",
+                "population_de_la_commune": 60784.0,
+                "pdm_en_entrees_des_autres_films": 4.679138311694212,
+                "evolution_entrees": 34.490511626770285,
+                "region_administrative": "ILE-DE-FRANCE",
+                "tranche_d_entrees": "De 100 à 150 000 entrées",
+                "multiplexe": "NON",
+                "regioncnc": 1,
+                "code_insee": "75109",
+                "situation_geographique": "01-Paris",
+                "zone_de_la_commune": "C",
+                "nom": "UGC OPERA",
+                "adresse": "32 BD DES ITALIENS",
+                "population_unite_urbaine": 10949158.0,
+                "nombre_de_films_inedits": 71.0,
+                "latitude": "48.871332",
+                "pdm_en_entrees_des_films_europeens": 12.62277059502285,
+                "pdm_en_entrees_des_films_art_et_essai": 23.24759455947957,
+                "programmateur": "UGC",
+                "nombre_de_films_programmes": 111.0,
+                "ndeg_auto": "204",
+                "ae": "NON",
+                "commune": "Paris 9e Arrondissement",
+                "dep": "75",
+                "longitude": "2.335302",
+                "unite_urbaine": "Paris",
+                "seances": 6840.0,
+                "entrees_2022": 110063.0,
+                "pdm_en_entrees_des_films_francais": 55.64449451677675,
+                "entrees_2021": 81837.0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.335302,
+                    48.871332
+                ]
+            },
+            "record_timestamp": "2023-10-23T12:07:53.558Z"
+        },
+        {
+            "datasetid": "etablissements-cinematographiques",
+            "recordid": "0366c0f31be41b2da77efe50d258cb2fa80679e4",
+            "fields": {
+                "nombre_de_films_en_semaine_1": 4.0,
+                "fauteuils": 97.0,
+                "geolocalisation": [
+                    48.851619,
+                    2.347076
+                ],
+                "pdm_en_entrees_des_films_americains": 4.697147897677153,
+                "semaines_d_activite": 53.0,
+                "films_art_et_essai": 115.0,
+                "ndeguu": "00851",
+                "ecrans": 1.0,
+                "categorie_art_et_essai": "A",
+                "genre": "FIXE",
+                "population_de_la_commune": 58050.0,
+                "pdm_en_entrees_des_autres_films": 16.28197588944428,
+                "evolution_entrees": 68.76546264225631,
+                "region_administrative": "ILE-DE-FRANCE",
+                "tranche_d_entrees": "De 10 à 20 000 entrées",
+                "multiplexe": "NON",
+                "regioncnc": 1,
+                "code_insee": "75105",
+                "situation_geographique": "01-Paris",
+                "zone_de_la_commune": "C",
+                "nom": "STUDIO GALANDE",
+                "adresse": "42 RUE GALANDE",
+                "population_unite_urbaine": 10949158.0,
+                "nombre_de_films_inedits": 110.0,
+                "latitude": "48.851619",
+                "pdm_en_entrees_des_films_europeens": 53.33725374889738,
+                "pdm_en_entrees_des_films_art_et_essai": 87.83446045280799,
+                "nombre_de_films_programmes": 155.0,
+                "ndeg_auto": "733",
+                "ae": "OUI",
+                "commune": "Paris 5e Arrondissement",
+                "dep": "75",
+                "longitude": "2.347076",
+                "unite_urbaine": "Paris",
+                "seances": 996.0,
+                "entrees_2022": 13643.0,
+                "pdm_en_entrees_des_films_francais": 25.68362246398118,
+                "entrees_2021": 8084.0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.347076,
+                    48.851619
+                ]
+            },
+            "record_timestamp": "2023-10-23T12:07:53.558Z"
+        },
+        {
+            "datasetid": "etablissements-cinematographiques",
+            "recordid": "12d00bf3413a35a6aabe90e380a0a982aab0a087",
+            "fields": {
+                "nombre_de_films_en_semaine_1": 134.0,
+                "fauteuils": 842.0,
+                "geolocalisation": [
+                    48.842443,
+                    2.327625
+                ],
+                "pdm_en_entrees_des_films_americains": 5.584635766497744,
+                "semaines_d_activite": 53.0,
+                "films_art_et_essai": 201.0,
+                "ndeguu": "00851",
+                "ecrans": 7.0,
+                "categorie_art_et_essai": "A",
+                "label_art_et_essai": "RD",
+                "genre": "FIXE",
+                "population_de_la_commune": 134926.0,
+                "pdm_en_entrees_des_autres_films": 15.732033833924715,
+                "evolution_entrees": 126.53739264893326,
+                "region_administrative": "ILE-DE-FRANCE",
+                "tranche_d_entrees": "De 200 à 300 000 entrées",
+                "multiplexe": "NON",
+                "regioncnc": 1,
+                "code_insee": "75114",
+                "situation_geographique": "01-Paris",
+                "zone_de_la_commune": "C",
+                "nom": "PARNASSIEN",
+                "adresse": "98 BD DU MONTPARNASSE",
+                "population_unite_urbaine": 10949158.0,
+                "nombre_de_films_inedits": 153.0,
+                "latitude": "48.842443",
+                "pdm_en_entrees_des_films_europeens": 15.321153614541547,
+                "pdm_en_entrees_des_films_art_et_essai": 94.58166186457166,
+                "nombre_de_films_programmes": 248.0,
+                "ndeg_auto": "821",
+                "ae": "OUI",
+                "commune": "Paris 14e Arrondissement",
+                "dep": "75",
+                "longitude": "2.327625",
+                "unite_urbaine": "Paris",
+                "seances": 13507.0,
+                "entrees_2022": 216828.0,
+                "pdm_en_entrees_des_films_francais": 63.362176785036,
+                "entrees_2021": 95714.0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.327625,
+                    48.842443
+                ]
+            },
+            "record_timestamp": "2023-10-23T12:07:53.558Z"
+        },
+        {
+            "datasetid": "etablissements-cinematographiques",
+            "recordid": "276b875a719dcbc1ec3f0e5fd79ea135f6425286",
+            "fields": {
+                "nombre_de_films_en_semaine_1": 48.0,
+                "fauteuils": 609.0,
+                "geolocalisation": [
+                    48.872794,
+                    2.296984
+                ],
+                "pdm_en_entrees_des_films_americains": 20.324248650845618,
+                "semaines_d_activite": 50.0,
+                "films_art_et_essai": 68.0,
+                "ndeguu": "00851",
+                "ecrans": 2.0,
+                "categorie_art_et_essai": "NON",
+                "genre": "FIXE",
+                "population_de_la_commune": 36218.0,
+                "pdm_en_entrees_des_autres_films": 24.483482737597942,
+                "evolution_entrees": 28.378943844673188,
+                "region_administrative": "ILE-DE-FRANCE",
+                "tranche_d_entrees": "De 40 à 50 000 entrées",
+                "multiplexe": "NON",
+                "regioncnc": 1,
+                "code_insee": "75108",
+                "situation_geographique": "01-Paris",
+                "zone_de_la_commune": "C",
+                "nom": "PUBLICIS ELYSEES",
+                "adresse": "133 AV DES CHAMPS ELYSEES",
+                "population_unite_urbaine": 10949158.0,
+                "nombre_de_films_inedits": 86.0,
+                "latitude": "48.872794",
+                "pdm_en_entrees_des_films_europeens": 16.806286269108316,
+                "pdm_en_entrees_des_films_art_et_essai": 42.59715040531081,
+                "nombre_de_films_programmes": 165.0,
+                "ndeg_auto": "1031",
+                "ae": "NON",
+                "commune": "Paris 8e Arrondissement",
+                "dep": "75",
+                "longitude": "2.296984",
+                "unite_urbaine": "Paris",
+                "seances": 3164.0,
+                "entrees_2022": 46020.0,
+                "pdm_en_entrees_des_films_francais": 38.38598234244812,
+                "entrees_2021": 35847.0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.296984,
+                    48.872794
+                ]
+            },
+            "record_timestamp": "2023-10-23T12:07:53.558Z"
+        },
+        {
+            "datasetid": "etablissements-cinematographiques",
+            "recordid": "d3ccd3325b09d052d2214585267c44dfdca279a5",
+            "fields": {
+                "nombre_de_films_en_semaine_1": 4.0,
+                "fauteuils": 139.0,
+                "geolocalisation": [
+                    48.871771,
+                    2.355398
+                ],
+                "pdm_en_entrees_des_films_americains": 15.255045811195366,
+                "semaines_d_activite": 53.0,
+                "films_art_et_essai": 325.0,
+                "ndeguu": "00851",
+                "ecrans": 2.0,
+                "categorie_art_et_essai": "A",
+                "label_art_et_essai": "RDJPPR",
+                "genre": "FIXE",
+                "population_de_la_commune": 83873.0,
+                "pdm_en_entrees_des_autres_films": 11.938874541476814,
+                "evolution_entrees": 73.99792260367006,
+                "region_administrative": "ILE-DE-FRANCE",
+                "tranche_d_entrees": "De 50 à 80 000 entrées",
+                "multiplexe": "NON",
+                "regioncnc": 1,
+                "code_insee": "75110",
+                "situation_geographique": "01-Paris",
+                "zone_de_la_commune": "C",
+                "nom": "LE BRADY",
+                "adresse": "39 BOULEVARD DE STRASBOURG",
+                "population_unite_urbaine": 10949158.0,
+                "nombre_de_films_inedits": 120.0,
+                "latitude": "48.871771",
+                "pdm_en_entrees_des_films_europeens": 19.388745414768145,
+                "pdm_en_entrees_des_films_art_et_essai": 82.93060056256478,
+                "nombre_de_films_programmes": 410.0,
+                "ndeg_auto": "1393",
+                "ae": "OUI",
+                "commune": "Paris 10e Arrondissement",
+                "dep": "75",
+                "longitude": "2.355398",
+                "unite_urbaine": "Paris",
+                "seances": 4825.0,
+                "entrees_2022": 65331.0,
+                "pdm_en_entrees_des_films_francais": 53.41733423255967,
+                "entrees_2021": 37547.0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.355398,
+                    48.871771
+                ]
+            },
+            "record_timestamp": "2023-10-23T12:07:53.558Z"
+        },
+        {
+            "datasetid": "etablissements-cinematographiques",
+            "recordid": "f5d3dd2aab94091ad6d08bb8ff9ca8d86e44c44e",
+            "fields": {
+                "nombre_de_films_en_semaine_1": 60.0,
+                "fauteuils": 617.0,
+                "geolocalisation": [
+                    48.858204,
+                    2.282104
+                ],
+                "pdm_en_entrees_des_films_americains": 18.601532395776523,
+                "semaines_d_activite": 51.0,
+                "films_art_et_essai": 102.0,
+                "ndeguu": "00851",
+                "ecrans": 3.0,
+                "categorie_art_et_essai": "NON",
+                "genre": "FIXE",
+                "population_de_la_commune": 165118.0,
+                "pdm_en_entrees_des_autres_films": 5.48497554782702,
+                "evolution_entrees": 58.64111971735291,
+                "region_administrative": "ILE-DE-FRANCE",
+                "tranche_d_entrees": "De 100 à 150 000 entrées",
+                "multiplexe": "NON",
+                "regioncnc": 1,
+                "code_insee": "75116",
+                "situation_geographique": "01-Paris",
+                "zone_de_la_commune": "C",
+                "nom": "MAJESTIC PASSY",
+                "adresse": "18 - 20 RUE DE PASSY",
+                "population_unite_urbaine": 10949158.0,
+                "nombre_de_films_inedits": 93.0,
+                "latitude": "48.858204",
+                "pdm_en_entrees_des_films_europeens": 13.611858633360452,
+                "pdm_en_entrees_des_films_art_et_essai": 28.845517697651342,
+                "nombre_de_films_programmes": 192.0,
+                "ndeg_auto": "2251",
+                "ae": "NON",
+                "commune": "Paris 16e Arrondissement",
+                "dep": "75",
+                "longitude": "2.282104",
+                "unite_urbaine": "Paris",
+                "seances": 5456.0,
+                "entrees_2022": 116744.0,
+                "pdm_en_entrees_des_films_francais": 62.30163342303601,
+                "entrees_2021": 73590.0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.282104,
+                    48.858204
+                ]
+            },
+            "record_timestamp": "2023-10-23T12:07:53.558Z"
+        },
+        {
+            "datasetid": "etablissements-cinematographiques",
+            "recordid": "ed08438bd85b4e8fb52349b746ce17caad8643a9",
+            "fields": {
+                "nombre_de_films_en_semaine_1": 65.0,
+                "fauteuils": 469.0,
+                "geolocalisation": [
+                    48.854674,
+                    2.369381
+                ],
+                "pdm_en_entrees_des_films_americains": 18.357678243125847,
+                "semaines_d_activite": 53.0,
+                "films_art_et_essai": 111.0,
+                "ndeguu": "00851",
+                "ecrans": 4.0,
+                "categorie_art_et_essai": "A",
+                "genre": "FIXE",
+                "population_de_la_commune": 145124.0,
+                "pdm_en_entrees_des_autres_films": 6.7398024122674105,
+                "evolution_entrees": 65.17295662279219,
+                "region_administrative": "ILE-DE-FRANCE",
+                "tranche_d_entrees": "De 200 à 300 000 entrées",
+                "multiplexe": "NON",
+                "regioncnc": 1,
+                "code_insee": "75111",
+                "situation_geographique": "01-Paris",
+                "zone_de_la_commune": "C",
+                "nom": "MK2 BASTILLE COTE BEAUMARCHAIS",
+                "adresse": "3 BD R LENOIR 4/6 BD BEAUMARCHAI",
+                "population_unite_urbaine": 10949158.0,
+                "nombre_de_films_inedits": 96.0,
+                "latitude": "48.854674",
+                "pdm_en_entrees_des_films_europeens": 12.3219589066004,
+                "pdm_en_entrees_des_films_art_et_essai": 83.88185142533891,
+                "programmateur": "MK2",
+                "nombre_de_films_programmes": 131.0,
+                "ndeg_auto": "5861",
+                "ae": "OUI",
+                "commune": "Paris 11e Arrondissement",
+                "dep": "75",
+                "longitude": "2.369381",
+                "unite_urbaine": "Paris",
+                "seances": 8259.0,
+                "entrees_2022": 200406.0,
+                "pdm_en_entrees_des_films_francais": 62.58056043800634,
+                "entrees_2021": 121331.0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.369381,
+                    48.854674
+                ]
+            },
+            "record_timestamp": "2023-10-23T12:07:53.558Z"
+        },
+        {
+            "datasetid": "etablissements-cinematographiques",
+            "recordid": "6809712470a022be5a58c814ab86f99a3ad56c8f",
+            "fields": {
+                "nombre_de_films_en_semaine_1": 86.0,
+                "fauteuils": 554.0,
+                "geolocalisation": [
+                    48.848213,
+                    2.39311
+                ],
+                "pdm_en_entrees_des_films_americains": 20.094993060247702,
+                "semaines_d_activite": 53.0,
+                "films_art_et_essai": 127.0,
+                "ndeguu": "00851",
+                "ecrans": 8.0,
+                "categorie_art_et_essai": "NON",
+                "genre": "FIXE",
+                "population_de_la_commune": 141275.0,
+                "pdm_en_entrees_des_autres_films": 4.704386522568341,
+                "evolution_entrees": 55.638421773155436,
+                "region_administrative": "ILE-DE-FRANCE",
+                "tranche_d_entrees": "De 300 à 450 000 entrées",
+                "multiplexe": "OUI",
+                "regioncnc": 1,
+                "code_insee": "75112",
+                "situation_geographique": "01-Paris",
+                "zone_de_la_commune": "C",
+                "nom": "MK2 NATION",
+                "adresse": "133 BOULEVARD DIDEROT",
+                "population_unite_urbaine": 10949158.0,
+                "nombre_de_films_inedits": 108.0,
+                "latitude": "48.848213",
+                "pdm_en_entrees_des_films_europeens": 11.755307995193764,
+                "pdm_en_entrees_des_films_art_et_essai": 50.227830237349515,
+                "programmateur": "MK2",
+                "nombre_de_films_programmes": 194.0,
+                "ndeg_auto": "6212",
+                "ae": "NON",
+                "commune": "Paris 12e Arrondissement",
+                "dep": "75",
+                "longitude": "2.39311",
+                "unite_urbaine": "Paris",
+                "seances": 14123.0,
+                "entrees_2022": 304684.0,
+                "pdm_en_entrees_des_films_francais": 63.445312421990195,
+                "entrees_2021": 195764.0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.39311,
+                    48.848213
+                ]
+            },
+            "record_timestamp": "2023-10-23T12:07:53.558Z"
+        },
+        {
+            "datasetid": "etablissements-cinematographiques",
+            "recordid": "43c3c9bd88937a372c60039f50b76245b2108120",
+            "fields": {
+                "nombre_de_films_en_semaine_1": 5.0,
+                "fauteuils": 200.0,
+                "geolocalisation": [
+                    48.847502,
+                    2.342301
+                ],
+                "pdm_en_entrees_des_films_americains": 5.047225501770956,
+                "semaines_d_activite": 53.0,
+                "films_art_et_essai": 54.0,
+                "ndeguu": "00851",
+                "ecrans": 1.0,
+                "categorie_art_et_essai": "A",
+                "genre": "FIXE",
+                "population_de_la_commune": 58050.0,
+                "pdm_en_entrees_des_autres_films": 2.125147579693034,
+                "evolution_entrees": 121.36807817589576,
+                "region_administrative": "ILE-DE-FRANCE",
+                "tranche_d_entrees": "De 10 à 20 000 entrées",
+                "multiplexe": "NON",
+                "regioncnc": 1,
+                "code_insee": "75105",
+                "situation_geographique": "01-Paris",
+                "zone_de_la_commune": "C",
+                "nom": "LE CINEMA DU PANTHEON",
+                "adresse": "13 RUE VICTOR COUSIN",
+                "population_unite_urbaine": 10949158.0,
+                "nombre_de_films_inedits": 16.0,
+                "latitude": "48.847502",
+                "pdm_en_entrees_des_films_europeens": 4.203069657615112,
+                "pdm_en_entrees_des_films_art_et_essai": 93.9728453364817,
+                "nombre_de_films_programmes": 64.0,
+                "ndeg_auto": "8391",
+                "ae": "OUI",
+                "commune": "Paris 5e Arrondissement",
+                "dep": "75",
+                "longitude": "2.342301",
+                "unite_urbaine": "Paris",
+                "seances": 1527.0,
+                "entrees_2022": 16990.0,
+                "pdm_en_entrees_des_films_francais": 88.6245572609209,
+                "entrees_2021": 7675.0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.342301,
+                    48.847502
+                ]
+            },
+            "record_timestamp": "2023-10-23T12:07:53.558Z"
+        }
+    ],
+    "facet_groups": [
+        {
+            "name": "region_administrative",
+            "facets": [
+                {
+                    "name": "AUVERGNE-RHONE-ALPES",
+                    "count": 324,
+                    "state": "displayed",
+                    "path": "AUVERGNE-RHONE-ALPES"
+                },
+                {
+                    "name": "ILE-DE-FRANCE",
+                    "count": 311,
+                    "state": "displayed",
+                    "path": "ILE-DE-FRANCE"
+                },
+                {
+                    "name": "NOUVELLE AQUITAINE",
+                    "count": 229,
+                    "state": "displayed",
+                    "path": "NOUVELLE AQUITAINE"
+                },
+                {
+                    "name": "OCCITANIE",
+                    "count": 218,
+                    "state": "displayed",
+                    "path": "OCCITANIE"
+                },
+                {
+                    "name": "PROVENCE-ALPES-COTE D'AZUR",
+                    "count": 199,
+                    "state": "displayed",
+                    "path": "PROVENCE-ALPES-COTE D'AZUR"
+                },
+                {
+                    "name": "GRAND EST",
+                    "count": 127,
+                    "state": "displayed",
+                    "path": "GRAND EST"
+                },
+                {
+                    "name": "PAYS DE LA LOIRE",
+                    "count": 124,
+                    "state": "displayed",
+                    "path": "PAYS DE LA LOIRE"
+                },
+                {
+                    "name": "HAUTS DE FRANCE",
+                    "count": 121,
+                    "state": "displayed",
+                    "path": "HAUTS DE FRANCE"
+                },
+                {
+                    "name": "BRETAGNE",
+                    "count": 120,
+                    "state": "displayed",
+                    "path": "BRETAGNE"
+                },
+                {
+                    "name": "NORMANDIE",
+                    "count": 104,
+                    "state": "displayed",
+                    "path": "NORMANDIE"
+                },
+                {
+                    "name": "BOURGOGNE-FRANCHE-COMTE",
+                    "count": 92,
+                    "state": "displayed",
+                    "path": "BOURGOGNE-FRANCHE-COMTE"
+                },
+                {
+                    "name": "CENTRE-VAL DE LOIRE",
+                    "count": 73,
+                    "state": "displayed",
+                    "path": "CENTRE-VAL DE LOIRE"
+                },
+                {
+                    "name": "CORSE",
+                    "count": 19,
+                    "state": "displayed",
+                    "path": "CORSE"
+                }
+            ]
+        },
+        {
+            "name": "genre",
+            "facets": [
+                {
+                    "name": "FIXE",
+                    "count": 1947,
+                    "state": "displayed",
+                    "path": "FIXE"
+                },
+                {
+                    "name": "ITINERANT",
+                    "count": 114,
+                    "state": "displayed",
+                    "path": "ITINERANT"
+                }
+            ]
+        },
+        {
+            "name": "multiplexe",
+            "facets": [
+                {
+                    "name": "NON",
+                    "count": 1814,
+                    "state": "displayed",
+                    "path": "NON"
+                },
+                {
+                    "name": "OUI",
+                    "count": 247,
+                    "state": "displayed",
+                    "path": "OUI"
+                }
+            ]
+        },
+        {
+            "name": "zone_de_la_commune",
+            "facets": [
+                {
+                    "name": "C",
+                    "count": 902,
+                    "state": "displayed",
+                    "path": "C"
+                },
+                {
+                    "name": "B",
+                    "count": 559,
+                    "state": "displayed",
+                    "path": "B"
+                },
+                {
+                    "name": "I",
+                    "count": 336,
+                    "state": "displayed",
+                    "path": "I"
+                },
+                {
+                    "name": "R",
+                    "count": 264,
+                    "state": "displayed",
+                    "path": "R"
+                }
+            ]
+        }
+    ]
+}

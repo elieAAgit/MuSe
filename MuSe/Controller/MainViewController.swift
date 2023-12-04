@@ -2,7 +2,7 @@
 //  MainViewController.swift
 //  MuSe
 //
-//  Created by Qattus on 12/04/2022.
+//  Created by Elie Arquier on 12/04/2022.
 //
 
 import UIKit
@@ -23,6 +23,7 @@ class MainViewController: UIViewController, Storyboarded, OtherPageDelegate {
         networkModel.start()
     }
 
+    /// Go to Home view
     func otherPage() {
         self.coordinator?.goToHome()
     }

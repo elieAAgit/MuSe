@@ -2,11 +2,12 @@
 //  PlaceButton.swift
 //  MuSe
 //
-//  Created by Qattus on 26/04/2022.
+//  Created by Elie Arquier on 26/04/2022.
 //
 
 import UIKit
 
+// Custom button for the place detail page
 final class PlaceButton: UIButton {
 
     override func awakeFromNib() {

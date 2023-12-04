@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_7" orientation="landscape" appearance="dark"/>
+    <device id="retina6_7" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -14,20 +14,20 @@
             <objects>
                 <viewController storyboardIdentifier="Home" id="Y6W-OH-hqX" customClass="HomeViewController" customModule="MuSe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default" translatesAutoresizingMaskIntoConstraints="NO" id="0Cd-jc-V6V" userLabel="Background Image">
-                                <rect key="frame" x="0.0" y="0.0" width="926" height="407"/>
+                                <rect key="frame" x="0.0" y="44" width="428" height="848"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ERC-9L-bOL" userLabel="Top View">
-                                <rect key="frame" x="0.0" y="0.0" width="926" height="60"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="104"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RFA-CM-1aU" userLabel="Title View">
-                                        <rect key="frame" x="0.0" y="0.0" width="926" height="60"/>
+                                        <rect key="frame" x="0.0" y="44" width="428" height="60"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Muse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AAf-rb-0Qc">
-                                                <rect key="frame" x="424.66666666666669" y="12" width="77" height="36"/>
+                                                <rect key="frame" x="175.66666666666666" y="12" width="77" height="36"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -54,7 +54,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jw6-gx-dc6" userLabel="Search" customClass="AnimateButton" customModule="MuSe" customModuleProvider="target">
-                                <rect key="frame" x="353" y="337" width="220" height="50"/>
+                                <rect key="frame" x="104" y="822" width="220" height="50"/>
                                 <color key="backgroundColor" name="ButtonColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="220" id="G9P-K7-Pq7">
@@ -76,8 +76,14 @@
                                     <action selector="selectCategories:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="fxF-VA-rfM"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sélectionnez une ou plusieurs categories pour afficher la carte." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDu-Bk-byu">
+                                <rect key="frame" x="16" y="120.00000000000001" width="396" height="40.666666666666671"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1LE-PT-wMx" userLabel="Home Collection View">
-                                <rect key="frame" x="60" y="76" width="806" height="231"/>
+                                <rect key="frame" x="16" y="176.66666666666669" width="396" height="615.33333333333326"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="40" minimumInteritemSpacing="40" id="pPy-wQ-eIp">
                                     <size key="itemSize" width="100" height="140"/>
@@ -91,6 +97,7 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="1LE-PT-wMx" firstAttribute="top" secondItem="uDu-Bk-byu" secondAttribute="bottom" constant="16" id="3D0-Pt-zXU"/>
                             <constraint firstItem="0Cd-jc-V6V" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="topMargin" id="7N6-gx-Pdy"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="1LE-PT-wMx" secondAttribute="trailing" constant="16" id="85L-np-4G1"/>
                             <constraint firstItem="Jw6-gx-dc6" firstAttribute="top" secondItem="1LE-PT-wMx" secondAttribute="bottom" constant="30" id="9Cu-oS-TI8"/>
@@ -103,9 +110,11 @@
                                 <variation key="heightClass=regular-widthClass=regular" constant="30"/>
                             </constraint>
                             <constraint firstItem="1LE-PT-wMx" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="dQd-cy-s9e"/>
-                            <constraint firstItem="1LE-PT-wMx" firstAttribute="top" secondItem="ERC-9L-bOL" secondAttribute="bottom" constant="16" id="dc1-Kj-XZs"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="uDu-Bk-byu" secondAttribute="trailing" constant="16" id="ggm-44-rpi"/>
                             <constraint firstAttribute="trailing" secondItem="0Cd-jc-V6V" secondAttribute="trailing" id="lIb-c8-OfM"/>
+                            <constraint firstItem="uDu-Bk-byu" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="sel-ec-awl"/>
                             <constraint firstItem="Jw6-gx-dc6" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="v49-wW-YCU"/>
+                            <constraint firstItem="uDu-Bk-byu" firstAttribute="top" secondItem="ERC-9L-bOL" secondAttribute="bottom" constant="16" id="vkX-C0-lto"/>
                             <constraint firstItem="ERC-9L-bOL" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="vxx-Kd-ryH"/>
                         </constraints>
                     </view>

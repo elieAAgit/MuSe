@@ -379,6 +379,7 @@
                         <outlet property="opening" destination="tJe-BW-9xJ" id="v5w-vl-mLM"/>
                         <outlet property="phone" destination="gsS-DA-Dq5" id="NcP-db-gUC"/>
                         <outlet property="phoneView" destination="MN4-9x-osi" id="Am8-WP-omS"/>
+                        <outlet property="questionMark" destination="OM6-k7-QH0" id="6lV-O7-bsS"/>
                         <outlet property="topFavorite" destination="6Ej-vx-bTe" id="hBq-GW-H1W"/>
                         <outlet property="web" destination="2mT-cp-b41" id="rZY-j1-xvK"/>
                         <outlet property="webView" destination="8NH-vH-Db5" id="MXn-ko-fgr"/>

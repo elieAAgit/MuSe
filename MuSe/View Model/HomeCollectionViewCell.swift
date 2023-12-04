@@ -2,7 +2,7 @@
 //  HomeCollectionViewCell.swift
 //  MuSe
 //
-//  Created by Qattus on 14/04/2022.
+//  Created by Elie Arquier on 14/04/2022.
 //
 
 import UIKit
@@ -32,6 +32,7 @@ class HomeCollectionViewCell: UICollectionViewCell {
         config()
     }
     
+    /// Cell configuration with title and image
     func getCategory(category: Category) {
 
         self.title.text = category.title
@@ -67,6 +68,7 @@ class HomeCollectionViewCell: UICollectionViewCell {
         }
     }
 
+    /// cell design configuration
     private func config() {
         let cornerRadius = self.imageView.layer.frame.width / 2
 
@@ -93,7 +95,8 @@ class HomeCollectionViewCell: UICollectionViewCell {
         shape.strokeEnd = 0
         self.imageView.layer.addSublayer(shape)
     }
-    
+
+    /// Animation if the cell is selected
     func selectedCell(with selected: Bool) {
 
         if selected == false {
@@ -109,6 +112,7 @@ class HomeCollectionViewCell: UICollectionViewCell {
         }
     }
 
+    /// Circle animation
     private func animate(with selected: Bool) {
         var circleColor: CGColor
 

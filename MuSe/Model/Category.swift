@@ -2,11 +2,12 @@
 //  Category.swift
 //  MuSe
 //
-//  Created by Qattus on 13/04/2022.
+//  Created by Elie Arquier on 13/04/2022.
 //
 
 import Foundation
 
+// Custom category to be used in the Place entity for the category attribute of Transformable type
 public class Category: NSObject, NSSecureCoding {
 
     public static var supportsSecureCoding: Bool = true

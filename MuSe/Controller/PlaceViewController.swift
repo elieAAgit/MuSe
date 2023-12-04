@@ -2,7 +2,7 @@
 //  PlaceViewController.swift
 //  MuSe
 //
-//  Created by Qattus on 13/04/2022.
+//  Created by Elie Arquier on 13/04/2022.
 //
 
 import UIKit
@@ -32,6 +32,7 @@ class PlaceViewController: UIViewController, Storyboarded {
     @IBOutlet weak var descriptionTitle: UILabel!
     @IBOutlet weak var descriptionDetail: UITextView!
     @IBOutlet weak var backUp: UILabel!
+    @IBOutlet weak var questionMark: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,29 +57,35 @@ extension PlaceViewController {
 
         validAdress()
         categories()
+        openingAndQuestionMark()
         phoneAndInternet()
         favoriteColor()
         description()
     }
 
+    /// Updates favorite when to use
     @IBAction func favoriteTapped(_ sender: Any) {
         placeViewModel?.updateFavorite()
         favoriteColor()
         print("ok")
     }
 
+    /// To itinary view
     @IBAction func itinerary(_ sender: AnimateButton) {
         placeViewModel?.itinerary()
     }
 
+    /// Call the place
     @IBAction func phoneTapped(_ sender: AnimateButton) {
         placeViewModel?.phone()
     }
 
+    /// To the place's website
     @IBAction func webTapped(_ sender: Any) {
         placeViewModel?.web()
     }
 
+    /// Show address if address is valid, otherwise hide address
     private func validAdress() {
         if place.adress != nil && place.adress != "" {
             adress.text = place.adress
@@ -88,6 +95,7 @@ extension PlaceViewController {
         }
     }
 
+    /// Show category
     private func categories() {
         categoryImage.image = UIImage(named: place.category?.id ?? "")
 
@@ -98,6 +106,7 @@ extension PlaceViewController {
         }
     }
 
+    /// Show favorite's status
     private func favoriteColor() {
         if place.favorite == true {
             topFavorite.tintColor = .yellow
@@ -108,6 +117,14 @@ extension PlaceViewController {
         }
     }
 
+    ///  Hide questionmark if opening is missing
+    private func openingAndQuestionMark() {
+        if place.opening == nil {
+            questionMark.isHidden = true
+        }
+    }
+
+    /// hide phone and internet if missing
     private func phoneAndInternet() {
         if place.phone == nil {
             phoneView.isHidden = true
@@ -118,6 +135,7 @@ extension PlaceViewController {
         }
     }
 
+    /// Show description if description is valid
     private func description() {
         if place.descript != nil {
             descriptionDetail.text = place.descript

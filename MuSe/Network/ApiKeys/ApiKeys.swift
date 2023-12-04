@@ -2,7 +2,7 @@
 //  ApiKeys.swift
 //  MuSe
 //
-//  Created by Qattus on 14/04/2022.
+//  Created by Elie Arquier on 14/04/2022.
 //
 
 import Foundation
@@ -18,6 +18,7 @@ struct ApiKey {
     var method: Methods
 }
 
+// NO GITIGNORE : APIs are public
 struct ApiKeys {
     // MARK: - culture.gouv
     static private let cultureBase = "https://data.culture.gouv.fr/api/records/1.0/"
@@ -47,7 +48,7 @@ struct ApiKeys {
 
     // MARK: - Library
     static private let datasetLibrary = "search/?dataset=adresses-des-bibliotheques-publiques"
-    static private let facetLibrary = "&q=&facet=comment&facet=type_adresse"
+    static private let facetLibrary = "&q=&facet=comment&facet=type_adresse&rows=300"
 
     static private var libraryBody: String {
         return datasetLibrary + facetLibrary

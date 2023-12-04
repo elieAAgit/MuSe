@@ -2,7 +2,7 @@
 //  PlaceTableViewCell.swift
 //  MuSe
 //
-//  Created by Qattus on 13/04/2022.
+//  Created by Elie Arquier on 13/04/2022.
 //
 
 import UIKit
@@ -31,6 +31,7 @@ class PlaceTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    /// Cell configuration with the place's information
     func getInfo(place: Place) {
         self.place = place
         self.category?.image = UIImage(named: place.category?.id ?? Images.defaultImage.rawValue)

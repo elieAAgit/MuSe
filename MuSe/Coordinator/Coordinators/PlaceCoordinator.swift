@@ -2,7 +2,7 @@
 //  PlaceCoordinator.swift
 //  MuSe
 //
-//  Created by Qattus on 15/04/2022.
+//  Created by Elie Arquier on 15/04/2022.
 //
 
 import UIKit
@@ -38,7 +38,7 @@ final class PlaceCoordinator: Coordinator {
         let nav = NavigationConfiguration(controller: vc)
         vc.coordinator = self
         vc.place = place
-        nav.configurationNavigation(title: place.title ?? "", buttonBack: place.title ?? "")
+        nav.configurationNavigation(title: place.title ?? "", buttonBack: "")
 
         navigationController.pushViewController(vc, animated: false)
     }

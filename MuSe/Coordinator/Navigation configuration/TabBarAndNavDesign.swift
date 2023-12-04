@@ -2,13 +2,14 @@
 //  TabBarAndNavDesign.swift
 //  MuSe
 //
-//  Created by Qattus on 13/04/2022.
+//  Created by Elie Arquier on 13/04/2022.
 //
 
 import UIKit
 
 final class TabBarAndNavDesign {
 
+    /// The design of the tabBar (background, tint, colors)
     func configuration() {
 
         UITabBar.appearance().isTranslucent = false
