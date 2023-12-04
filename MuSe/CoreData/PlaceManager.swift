@@ -2,7 +2,7 @@
 //  PlaceManager.swift
 //  MuSe
 //
-//  Created by Qattus on 23/04/2022.
+//  Created by Elie Arquier on 23/04/2022.
 //
 
 import Foundation
@@ -64,7 +64,7 @@ final class PlaceManager {
         try? context.save()
     }
 
-    ///
+    /// Find a specific place in the data base with a name
     func findPlace(_ find: String) -> Place? {
         let request: NSFetchRequest<Place> = Place.fetchRequest()
         request.predicate = NSPredicate(format: "title == %@", find)
@@ -84,15 +84,17 @@ final class PlaceManager {
         return nil
     }
 
-    ///
+    /// Find all favorites
     func findPlacesFavorite() -> [Place] {
         findPlaces("favorite")
     }
 
+    /// Finf all history places
     func findPlacesHistory() -> [Place] {
         findPlaces("history")
     }
 
+    /// find place who are history or favorite
     func findPlaces(_ with: String) -> [Place] {
         let request: NSFetchRequest<Place> = Place.fetchRequest()
         request.predicate = NSPredicate(format: "\(with) == true")
@@ -120,9 +122,9 @@ final class PlaceManager {
         if let results = try? context.fetch(request) {
 
             for result in results {
-                if result.favorite == false {
+                if result.favorite == false && result.latitude == find.latitude && result.longitude == find.longitude {
                     result.favorite = true
-                } else if result.favorite == true {
+                } else if result.favorite == true && result.latitude == find.latitude && result.longitude == find.longitude {
                     result.favorite = false
                 }
 
@@ -131,7 +133,7 @@ final class PlaceManager {
         }
     }
 
-    /// Update favorite
+    /// Add place to History
     func updateHistory(_ find: Place) {
         let request: NSFetchRequest<Place> = Place.fetchRequest()
         request.predicate = NSPredicate(format: "title == %@", find.title!)
@@ -139,7 +141,7 @@ final class PlaceManager {
         if let results = try? context.fetch(request) {
 
             for result in results {
-                if result.history == false {
+                if result.history == false && result.latitude == find.latitude && result.longitude == find.longitude {
                     result.history = true
                 }
 
@@ -148,6 +150,7 @@ final class PlaceManager {
         }
     }
 
+    /// Remove history
     func removeFromHistory(_ find: Place) {
         let request: NSFetchRequest<Place> = Place.fetchRequest()
         request.predicate = NSPredicate(format: "title == %@", find.title!)
@@ -155,7 +158,7 @@ final class PlaceManager {
         if let results = try? context.fetch(request) {
 
             for result in results {
-                if result.history == true {
+                if result.history == true && result.latitude == find.latitude && result.longitude == find.longitude {
                     result.history = false
                 }
 
@@ -163,8 +166,30 @@ final class PlaceManager {
             }
         }
     }
-    
-    /// Remove place in Database
+
+    /// Find if a place is a favorite or an history or nothing. Return boolean
+    func findPlaceFavoriteOrHistory(title: String, latitude: Double, longitude: Double) -> Bool {
+        let request: NSFetchRequest<Place> = Place.fetchRequest()
+        request.predicate = NSPredicate(format: "title == %@", title)
+
+        if let results = try? context.fetch(request) {
+
+            for result in results {
+                if (result.history == true || result.favorite == true) && result.latitude == latitude
+                    && result.longitude == longitude {
+                    return true
+                }
+
+                try? context.save()
+                return false
+            }
+        }
+
+        try? context.save()
+        return false
+    }
+
+    /// Remove place from the Database
     func removePlace(_ remove: Place) {
         let request: NSFetchRequest<Place> = Place.fetchRequest()
         request.predicate = NSPredicate(format: "title == %@", remove.title!)
@@ -178,39 +203,26 @@ final class PlaceManager {
         try? context.save()
     }
 
+    /// Delete all places from the data base, except favorite and history
     func deleteAll() {
-        // Specify a batch to delete with a fetch request
-        let fetchRequest: NSFetchRequest<NSFetchRequestResult>
-        fetchRequest = NSFetchRequest(entityName: entityName)
+        var objects: [Place] {
+            // Create Fetch Request
+            let fetchRequest: NSFetchRequest<Place> = Place.fetchRequest()
+            // Configure Fetch Request
+            fetchRequest.sortDescriptors = [NSSortDescriptor(key: "title", ascending: true)]
+            // Create Fetched Results Controller
+            guard let tasks = try? context.fetch(fetchRequest) else { return [] }
+                    return tasks
+        }
 
-        // Create a batch delete request for the
-        // fetch request
-        let deleteRequest = NSBatchDeleteRequest(
-            fetchRequest: fetchRequest
-        )
+        // Delete multiple objects
+        for object in objects {
+            if object.history == false && object.favorite == false {
+                context.delete(object)
+            }
 
-        // Specify the result of the NSBatchDeleteRequest
-        // should be the NSManagedObject IDs for the
-        // deleted objects
-        deleteRequest.resultType = .resultTypeObjectIDs
-
-        // Perform the batch delete
-        let batchDelete = try? context.execute(deleteRequest)
-            as? NSBatchDeleteResult
-
-        guard let deleteResult = batchDelete?.result
-            as? [NSManagedObjectID]
-            else { return }
-
-        let deletedObjects: [AnyHashable: Any] = [
-            NSDeletedObjectsKey: deleteResult
-        ]
-
-        // Merge the delete changes into the managed
-        // object context
-        NSManagedObjectContext.mergeChanges(
-            fromRemoteContextSave: deletedObjects,
-            into: [context]
-        )
+        // Save the deletions to the persistent store
+        try? context.save()
+        }
     }
 }
