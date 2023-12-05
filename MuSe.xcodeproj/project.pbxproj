@@ -44,7 +44,6 @@
 		0D8979D52B1BD9E000A34E54 /* Museum.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D8979D42B1BD9E000A34E54 /* Museum.json */; };
 		0D8979D72B1BDA6900A34E54 /* Theatre.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D8979D62B1BDA6900A34E54 /* Theatre.json */; };
 		0D8979D92B1BDAC800A34E54 /* Garden.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D8979D82B1BDAC800A34E54 /* Garden.json */; };
-		0D8979DB2B1BDB4000A34E54 /* Library.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D8979DA2B1BDB4000A34E54 /* Library.json */; };
 		0D94BA0F2806D20300AC8A6D /* Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA0E2806D20300AC8A6D /* Design.swift */; };
 		0D94BA112806D39000AC8A6D /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA102806D39000AC8A6D /* RoundButton.swift */; };
 		0D94BA152806DE3500AC8A6D /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D94BA142806DE3500AC8A6D /* Favorites.storyboard */; };
@@ -77,7 +76,6 @@
 		0DB2022B28082EE600262DEE /* MuseumDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB2022A28082EE600262DEE /* MuseumDecodable.swift */; };
 		0DB2022D28082F6F00262DEE /* TheatreDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB2022C28082F6F00262DEE /* TheatreDecodable.swift */; };
 		0DB2022F28082F8B00262DEE /* GardenDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB2022E28082F8B00262DEE /* GardenDecodable.swift */; };
-		0DB2023128082FC200262DEE /* LibraryDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB2023028082FC200262DEE /* LibraryDecodable.swift */; };
 		0DB202342808300C00262DEE /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB202332808300C00262DEE /* ApiKeys.swift */; };
 		0DB202382808539100262DEE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB202372808539100262DEE /* NetworkManager.swift */; };
 		0DB2023A2808559800262DEE /* NetworkTreatment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB202392808559800262DEE /* NetworkTreatment.swift */; };
@@ -147,7 +145,6 @@
 		0D8979D42B1BD9E000A34E54 /* Museum.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Museum.json; sourceTree = "<group>"; };
 		0D8979D62B1BDA6900A34E54 /* Theatre.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Theatre.json; sourceTree = "<group>"; };
 		0D8979D82B1BDAC800A34E54 /* Garden.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Garden.json; sourceTree = "<group>"; };
-		0D8979DA2B1BDB4000A34E54 /* Library.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Library.json; sourceTree = "<group>"; };
 		0D94BA0E2806D20300AC8A6D /* Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design.swift; sourceTree = "<group>"; };
 		0D94BA102806D39000AC8A6D /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		0D94BA142806DE3500AC8A6D /* Favorites.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favorites.storyboard; sourceTree = "<group>"; };
@@ -180,7 +177,6 @@
 		0DB2022A28082EE600262DEE /* MuseumDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumDecodable.swift; sourceTree = "<group>"; };
 		0DB2022C28082F6F00262DEE /* TheatreDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheatreDecodable.swift; sourceTree = "<group>"; };
 		0DB2022E28082F8B00262DEE /* GardenDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenDecodable.swift; sourceTree = "<group>"; };
-		0DB2023028082FC200262DEE /* LibraryDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryDecodable.swift; sourceTree = "<group>"; };
 		0DB202332808300C00262DEE /* ApiKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
 		0DB202372808539100262DEE /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		0DB202392808559800262DEE /* NetworkTreatment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTreatment.swift; sourceTree = "<group>"; };
@@ -393,7 +389,6 @@
 				0D8979D42B1BD9E000A34E54 /* Museum.json */,
 				0D8979D62B1BDA6900A34E54 /* Theatre.json */,
 				0D8979D82B1BDAC800A34E54 /* Garden.json */,
-				0D8979DA2B1BDB4000A34E54 /* Library.json */,
 			);
 			path = "Fake Response Json";
 			sourceTree = "<group>";
@@ -460,7 +455,6 @@
 				0DB2022A28082EE600262DEE /* MuseumDecodable.swift */,
 				0DB2022C28082F6F00262DEE /* TheatreDecodable.swift */,
 				0DB2022E28082F8B00262DEE /* GardenDecodable.swift */,
-				0DB2023028082FC200262DEE /* LibraryDecodable.swift */,
 			);
 			path = Decodables;
 			sourceTree = "<group>";
@@ -630,7 +624,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D8979D52B1BD9E000A34E54 /* Museum.json in Resources */,
-				0D8979DB2B1BDB4000A34E54 /* Library.json in Resources */,
 				0D8979D72B1BDA6900A34E54 /* Theatre.json in Resources */,
 				0D8979D92B1BDAC800A34E54 /* Garden.json in Resources */,
 			);
@@ -695,7 +688,6 @@
 				0D94BA2B28073D8F00AC8A6D /* FavoritesNavigator.swift in Sources */,
 				0D5C393E280606D2005BF28D /* CapsuleButton.swift in Sources */,
 				0DC95F0A2B1EF6C700FEBB15 /* Notification.swift in Sources */,
-				0DB2023128082FC200262DEE /* LibraryDecodable.swift in Sources */,
 				0D94BA2628073A0500AC8A6D /* Storyboarded.swift in Sources */,
 				0DB20227280821F800262DEE /* HomeCoordinator.swift in Sources */,
 				0DE9470228187FAD0043049B /* PlaceViewModel.swift in Sources */,

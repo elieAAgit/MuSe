@@ -28,12 +28,6 @@ final class NetworkTreatment {
 
             return garden as AnyObject
         }
-        // Library
-        else if url.body == ApiKeys.libraryUrl.body {
-            let library = response as! LibraryDecodable
-
-            return library as AnyObject
-        }
         else {
             return nil
         }

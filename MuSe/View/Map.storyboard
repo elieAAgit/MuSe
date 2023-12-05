@@ -76,11 +76,15 @@
                                 </constraints>
                             </view>
                             <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="gl3-Iy-mFe" userLabel="Filters Stack View">
-                                <rect key="frame" x="64" y="76" width="150" height="208"/>
+                                <rect key="frame" x="64" y="76" width="150" height="152"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ira-C4-Xek" customClass="CapsuleButton" customModule="MuSe" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="40"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="k2g-LU-rKQ"/>
+                                            <constraint firstAttribute="height" constant="40" id="vrh-yM-kZ4"/>
+                                        </constraints>
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -110,32 +114,8 @@
                                             <action selector="selectorIsTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="5dk-nT-M8u"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HFG-bX-2S6" customClass="CapsuleButton" customModule="MuSe" customModuleProvider="target">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCP-Lf-YRo" customClass="CapsuleButton" customModule="MuSe" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="112" width="150" height="40"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="3UE-oY-AOF">
-                                                <variation key="heightClass=regular-widthClass=regular" constant="50"/>
-                                            </constraint>
-                                            <constraint firstAttribute="width" constant="150" id="o4L-uC-rEx">
-                                                <variation key="heightClass=regular-widthClass=regular" constant="200"/>
-                                            </constraint>
-                                        </constraints>
-                                        <color key="tintColor" systemColor="labelColor"/>
-                                        <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Bibliothèque" image="Library">
-                                            <color key="titleColor" systemColor="labelColor"/>
-                                        </state>
-                                        <variation key="heightClass=regular-widthClass=regular">
-                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        </variation>
-                                        <connections>
-                                            <action selector="selectorIsTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="lUk-eg-1Sd"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCP-Lf-YRo" customClass="CapsuleButton" customModule="MuSe" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="168" width="150" height="40"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -177,7 +157,6 @@
                     <connections>
                         <outlet property="filtersStackView" destination="gl3-Iy-mFe" id="hc3-N7-afa"/>
                         <outlet property="garden" destination="SCP-Lf-YRo" id="nDf-tR-maM"/>
-                        <outlet property="library" destination="HFG-bX-2S6" id="OIx-g8-Ndv"/>
                         <outlet property="mapView" destination="wuY-EY-07f" id="QTv-kw-dTu"/>
                         <outlet property="museum" destination="Ira-C4-Xek" id="mdV-MV-nvM"/>
                         <outlet property="theatre" destination="IKZ-Df-Zv7" id="ASI-Yv-dUe"/>
@@ -190,7 +169,6 @@
     </scenes>
     <resources>
         <image name="Garden" width="32" height="32"/>
-        <image name="Library" width="32" height="32"/>
         <image name="Museum" width="32" height="32"/>
         <image name="Theatre" width="32" height="32"/>
         <image name="text.alignleft" catalog="system" width="128" height="100"/>

@@ -19,14 +19,17 @@ class HomeViewController: UIViewController, Storyboarded {
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        homeModel = HomeViewModel(coordinator: coordinator, collectionView: homeCollection)
+        homeModel = HomeViewModel(coordinator: coordinator)
         homeModel?.setup()
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(actionAlert(notification:)),
-                                               name: .alertName, object: nil)
+        notifications()
     }
 
     // MARK: - Method
+
+    private func notifications() {
+        NotificationCenter.default.addObserver(self, selector:
+            #selector(actionAlert(notification:)), name: .alertName, object: nil)
+    }
 
     ///  Go to map
     @IBAction func selectCategories(_ sender: AnimateButton) {

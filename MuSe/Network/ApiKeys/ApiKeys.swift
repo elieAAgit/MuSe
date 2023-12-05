@@ -46,17 +46,8 @@ struct ApiKeys {
         return datasetGarden + facetTheatre
     }
 
-    // MARK: - Library
-    static private let datasetLibrary = "search/?dataset=adresses-des-bibliotheques-publiques"
-    static private let facetLibrary = "&q=&facet=comment&facet=type_adresse&rows=300"
-
-    static private var libraryBody: String {
-        return datasetLibrary + facetLibrary
-    }
-
     // MARK: - Keys
     static var museumUrl = ApiKey(base: cultureBase, body: museumBody, method: .get)
     static var theatreUrl = ApiKey(base: cultureBase, body: theatreBody, method: .get)
     static var gardenUrl = ApiKey(base: cultureBase, body: gardenBody, method: .get)
-    static var libraryUrl = ApiKey(base: cultureBase, body: libraryBody, method: .get)
 }

@@ -21,7 +21,6 @@ final class MapViewController: UIViewController, Storyboarded {
     
     @IBOutlet weak var museum: CapsuleButton!
     @IBOutlet weak var theatre: CapsuleButton!
-    @IBOutlet weak var library: CapsuleButton!
     @IBOutlet weak var garden: CapsuleButton!
 
     override func viewDidLoad() {
@@ -57,8 +56,6 @@ extension MapViewController {
                 museum.isSelected = true
             } else if selector == Categories.theatre.id {
                 theatre.isSelected = true
-            } else if selector == Categories.library.id {
-                library.isSelected = true
             } else if selector == Categories.garden.id {
                 garden.isSelected = true
             }

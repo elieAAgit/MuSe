@@ -17,4 +17,13 @@ extension MKMapView {
         
         setRegion(coordinateRegion, animated: true)
     }
+
+    func centerToUserLocation(_ location: CLLocation,
+                              regionRadius: CLLocationDistance = 100) {
+              let coordinateRegion = MKCoordinateRegion(center: location.coordinate,
+                                                        latitudinalMeters: regionRadius,
+                                                        longitudinalMeters: regionRadius)
+              
+              setRegion(coordinateRegion, animated: true)
+    }
 }

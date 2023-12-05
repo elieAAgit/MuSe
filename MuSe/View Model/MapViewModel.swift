@@ -51,9 +51,6 @@ final class MapViewModel: NSObject {
                 selectors.append(Categories.theatre.id)
                 return Categories.theatre.id
             case 2:
-                selectors.append(Categories.library.id)
-                return Categories.library.id
-            case 3:
                 selectors.append(Categories.garden.id)
                 return Categories.garden.id
             default:
@@ -77,9 +74,6 @@ final class MapViewModel: NSObject {
                 selectors.removeAll(where: { $0 == Categories.theatre.id })
                 return Categories.theatre.id
             case 2:
-                selectors.removeAll(where: { $0 == Categories.library.id })
-                return Categories.library.id
-            case 3:
                 selectors.removeAll(where: { $0 == Categories.garden.id })
                 return Categories.garden.id
             default:

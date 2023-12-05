@@ -70,23 +70,6 @@ extension NetworkCallsViewModel {
             case .failure(let error):
                 print(error)
             }
-            // Next
-            self.networkLibrary()
-        }
-    }
-
-    // MARK: - Library
-
-    /// Library API
-    private func networkLibrary() {
-        NetworkManager.shared.getNetworkResponse(url: ApiKeys.libraryUrl, decodable: LibraryDecodable.self) { result in
-            switch result {
-            case .success(let response):
-                self.networkModel.library(response: response)
-                print(Categories.library.id)
-            case .failure(let error):
-                print(error)
-            }
             // Go to Home
             self.delegate?.otherPage()
         }

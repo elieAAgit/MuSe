@@ -55,11 +55,9 @@ final class CategoryValueTransformer: NSSecureUnarchiveFromDataTransformer {
 struct Categories {
     static var categories: [Category] = [museum,
                                          theatre,
-                                         garden,
-                                         library]
+                                         garden]
 
     static let museum = Category(title: "Musée", id: "Museum")
     static let theatre = Category(title: "Cinéma", id: "Theatre")
     static let garden = Category(title: "Jardin", id: "Garden")
-    static let library = Category(title: "Bibliothèque", id: "Library")
 }
