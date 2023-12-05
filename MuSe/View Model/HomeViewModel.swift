@@ -83,10 +83,6 @@ extension HomeViewModel: UICollectionViewDelegate {
 extension HomeViewModel {
     /// Categories selected to be displayed on the map
     func getSelectors() {
-        if selectors.isEmpty {
-            // Show Alert
-        } else {
-            coordinator.getSelectors(with: selectors)
-        }
+        coordinator.getSelectors(with: selectors)
     }
 }

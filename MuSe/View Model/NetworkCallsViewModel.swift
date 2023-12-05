@@ -13,7 +13,6 @@ protocol OtherPageDelegate {
 }
 
 final class NetworkCallsViewModel: NSObject {
-
     private var networkModel = NetworkModel()
     var delegate: OtherPageDelegate?
 

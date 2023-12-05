@@ -19,7 +19,6 @@
 		0D4A219C2B095F2D00BEA10D /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A219B2B095F2D00BEA10D /* HistoryViewModel.swift */; };
 		0D53ECF12B0FFA4E00663239 /* MockCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D53ECF02B0FFA4E00663239 /* MockCoreDataStack.swift */; };
 		0D53ECF32B0FFA5F00663239 /* PlaceManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D53ECF22B0FFA5F00663239 /* PlaceManagerTests.swift */; };
-		0D53ECF62B10070100663239 /* FakeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D53ECF52B10070000663239 /* FakeResponse.swift */; };
 		0D53ECF82B10074900663239 /* FakeResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D53ECF72B10074900663239 /* FakeResponseData.swift */; };
 		0D53ECFA2B1007E000663239 /* ApiSessionFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D53ECF92B1007E000663239 /* ApiSessionFake.swift */; };
 		0D5C38B92805AA8A005BF28D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C38B82805AA8A005BF28D /* AppDelegate.swift */; };
@@ -83,6 +82,8 @@
 		0DB202382808539100262DEE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB202372808539100262DEE /* NetworkManager.swift */; };
 		0DB2023A2808559800262DEE /* NetworkTreatment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB202392808559800262DEE /* NetworkTreatment.swift */; };
 		0DB2023C280859DA00262DEE /* NetworkCallsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB2023B280859DA00262DEE /* NetworkCallsViewModel.swift */; };
+		0DC95F0A2B1EF6C700FEBB15 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC95F092B1EF6C600FEBB15 /* Notification.swift */; };
+		0DC95F0F2B1EF9C900FEBB15 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC95F0E2B1EF9C800FEBB15 /* Controller.swift */; };
 		0DDE95B32814108000114464 /* PlaceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE95B22814108000114464 /* PlaceManager.swift */; };
 		0DE9470228187FAD0043049B /* PlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE9470128187FAC0043049B /* PlaceViewModel.swift */; };
 		0DE94704281888A10043049B /* PlaceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE94703281888A00043049B /* PlaceButton.swift */; };
@@ -118,7 +119,6 @@
 		0D4A219B2B095F2D00BEA10D /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
 		0D53ECF02B0FFA4E00663239 /* MockCoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCoreDataStack.swift; sourceTree = "<group>"; };
 		0D53ECF22B0FFA5F00663239 /* PlaceManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceManagerTests.swift; sourceTree = "<group>"; };
-		0D53ECF52B10070000663239 /* FakeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeResponse.swift; sourceTree = "<group>"; };
 		0D53ECF72B10074900663239 /* FakeResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeResponseData.swift; sourceTree = "<group>"; };
 		0D53ECF92B1007E000663239 /* ApiSessionFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiSessionFake.swift; sourceTree = "<group>"; };
 		0D5C38B52805AA8A005BF28D /* MuSe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuSe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,6 +185,8 @@
 		0DB202372808539100262DEE /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		0DB202392808559800262DEE /* NetworkTreatment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTreatment.swift; sourceTree = "<group>"; };
 		0DB2023B280859DA00262DEE /* NetworkCallsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCallsViewModel.swift; sourceTree = "<group>"; };
+		0DC95F092B1EF6C600FEBB15 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		0DC95F0E2B1EF9C800FEBB15 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		0DDE95B22814108000114464 /* PlaceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceManager.swift; sourceTree = "<group>"; };
 		0DE9470128187FAC0043049B /* PlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewModel.swift; sourceTree = "<group>"; };
 		0DE94703281888A00043049B /* PlaceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceButton.swift; sourceTree = "<group>"; };
@@ -239,7 +241,6 @@
 			children = (
 				0D7E248F2B10DDCD0000BF41 /* Fake Response Json */,
 				0D53ECF92B1007E000663239 /* ApiSessionFake.swift */,
-				0D53ECF52B10070000663239 /* FakeResponse.swift */,
 				0D53ECF72B10074900663239 /* FakeResponseData.swift */,
 				0D8979D22B1BD7D500A34E54 /* NetworkManagerTests.swift */,
 			);
@@ -331,6 +332,7 @@
 				0D94BA1C2806FF5A00AC8A6D /* HistoryViewController.swift */,
 				0D94BA1E280702A400AC8A6D /* PlaceViewController.swift */,
 				0D762E502AE19C7C008F343F /* ItineraryViewController.swift */,
+				0DC95F0D2B1EF97800FEBB15 /* Extension */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -357,6 +359,7 @@
 			children = (
 				0D94BA4528076C6A00AC8A6D /* Category.swift */,
 				0D31DB3D280B53FA0076017D /* PlaceMap.swift */,
+				0DC95F092B1EF6C600FEBB15 /* Notification.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -469,6 +472,14 @@
 				0DB202332808300C00262DEE /* ApiKeys.swift */,
 			);
 			path = ApiKeys;
+			sourceTree = "<group>";
+		};
+		0DC95F0D2B1EF97800FEBB15 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0DC95F0E2B1EF9C800FEBB15 /* Controller.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		0DE9D1252B0FE4E00077643B /* MuSeTests */ = {
@@ -675,6 +686,7 @@
 				0D2EE73E280A0B2500EE6349 /* MapCoordinator.swift in Sources */,
 				0DB202342808300C00262DEE /* ApiKeys.swift in Sources */,
 				0D4A219C2B095F2D00BEA10D /* HistoryViewModel.swift in Sources */,
+				0DC95F0F2B1EF9C900FEBB15 /* Controller.swift in Sources */,
 				0D94BA342807438800AC8A6D /* NavigationConfiguration.swift in Sources */,
 				0DB2023A2808559800262DEE /* NetworkTreatment.swift in Sources */,
 				0D5C38FB2805BCF8005BF28D /* MapViewController.swift in Sources */,
@@ -682,6 +694,7 @@
 				0D94BA192806F9C200AC8A6D /* FavoritesViewController.swift in Sources */,
 				0D94BA2B28073D8F00AC8A6D /* FavoritesNavigator.swift in Sources */,
 				0D5C393E280606D2005BF28D /* CapsuleButton.swift in Sources */,
+				0DC95F0A2B1EF6C700FEBB15 /* Notification.swift in Sources */,
 				0D762E532AE19E26008F343F /* ItineraryViewModel.swift in Sources */,
 				0DB2023128082FC200262DEE /* LibraryDecodable.swift in Sources */,
 				0D94BA2628073A0500AC8A6D /* Storyboarded.swift in Sources */,
@@ -704,7 +717,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D53ECF62B10070100663239 /* FakeResponse.swift in Sources */,
 				0D53ECF82B10074900663239 /* FakeResponseData.swift in Sources */,
 				0D53ECF32B0FFA5F00663239 /* PlaceManagerTests.swift in Sources */,
 				0D8979D32B1BD7D600A34E54 /* NetworkManagerTests.swift in Sources */,

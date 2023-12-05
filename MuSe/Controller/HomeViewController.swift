@@ -21,12 +21,20 @@ class HomeViewController: UIViewController, Storyboarded {
     
         homeModel = HomeViewModel(coordinator: coordinator, collectionView: homeCollection)
         homeModel?.setup()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(actionAlert(notification:)),
+                                               name: .alertName, object: nil)
     }
 
     // MARK: - Method
 
     ///  Go to map
     @IBAction func selectCategories(_ sender: AnimateButton) {
-        homeModel?.getSelectors()
+        // If no selector selected then show alert
+        if homeModel?.selectors.count == 0 {
+            Notification.alertNotification(.emptySelectorChoice)
+        } else {
+            homeModel?.getSelectors()
+        }
     }
 }
