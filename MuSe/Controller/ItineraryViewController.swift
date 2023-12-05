@@ -12,17 +12,24 @@ class ItineraryViewController: UIViewController, Storyboarded {
 
     // MARK: - Properties
 
-    weak var coordinator: ItineraryCoordinator!
+    weak var coordinator: ItineraryCoordinator?
     var place: Place!
-    private var itineraryViewModel: ItineraryViewModel?
-
 
     @IBOutlet weak var mapLocation: MKMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        itineraryViewModel = ItineraryViewModel(coordinator: coordinator, map: mapLocation, place: place)
 
-        itineraryViewModel?.coordinatesSetup()
+        coordinatesSetup()
+    }
+
+    /// The Coordinates of the place
+    func coordinatesSetup() {
+        let location = PlaceMap(place: place)
+        mapLocation.addAnnotation(location)
+
+        // Set initial location
+        let initialLocation = CLLocation(latitude: place.latitude, longitude: place.longitude)
+        mapLocation.centerToLocation(initialLocation)
     }
 }

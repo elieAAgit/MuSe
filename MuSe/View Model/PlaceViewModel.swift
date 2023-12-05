@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import MapKit
+import UIKit
 import CoreData
 
 final class PlaceViewModel {
@@ -15,14 +15,12 @@ final class PlaceViewModel {
 
     var coordinator: PlaceCoordinator
     var placeManager: PlaceManager!
-    var mapLocation: MKMapView
     var place: Place
 
     // MARK: - Initializer
 
-    init(coordinator: PlaceCoordinator, map: MKMapView, place: Place) {
+    init(coordinator: PlaceCoordinator, place: Place) {
         self.coordinator = coordinator
-        self.mapLocation = map
         self.place = place
     }
 
@@ -34,16 +32,6 @@ final class PlaceViewModel {
         placeManager = PlaceManager(context: context)
 
         history()
-    }
-
-    /// Loading place's coordinates
-    func coordinatesSetup() {
-        let location = PlaceMap(place: place)
-        mapLocation.addAnnotation(location)
-
-        // Set initial location
-        let initialLocation = CLLocation(latitude: place.latitude, longitude: place.longitude)
-        mapLocation.centerToLocation(initialLocation)
     }
 
     /// Check if the place is in favorites or not
@@ -59,13 +47,6 @@ final class PlaceViewModel {
     /// to Itinerary
     func itinerary() {
         coordinator.donePlace(with: place)
-    }
-
-    /// Call place
-    func phone() {
-        if let callUrl = URL(string: "tel:\(String(describing: place.phone))"), UIApplication.shared.canOpenURL(callUrl) {
-            UIApplication.shared.open(callUrl)
-        }
     }
 
     /// Go to place's website

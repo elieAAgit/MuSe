@@ -14,7 +14,7 @@ class PlaceViewController: UIViewController, Storyboarded {
 
     weak var coordinator: PlaceCoordinator!
     var place: Place!
-    private var placeViewModel: PlaceViewModel?
+    var placeModel: PlaceViewModel!
 
     @IBOutlet weak var mapLocation: MKMapView!
     @IBOutlet weak var topFavorite: RoundButton!
@@ -25,8 +25,6 @@ class PlaceViewController: UIViewController, Storyboarded {
     @IBOutlet weak var adressImage: UIImageView!
     @IBOutlet weak var adress: UILabel!
     @IBOutlet weak var opening: UILabel!
-    @IBOutlet weak var phoneView: UIView!
-    @IBOutlet weak var phone: PlaceButton!
     @IBOutlet weak var webView: UIView!
     @IBOutlet weak var web: PlaceButton!
     @IBOutlet weak var descriptionTitle: UILabel!
@@ -36,10 +34,10 @@ class PlaceViewController: UIViewController, Storyboarded {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        placeViewModel = PlaceViewModel(coordinator: coordinator, map: mapLocation, place: place)
-        placeViewModel?.setup()
-        placeViewModel?.coordinatesSetup()
+        placeModel = PlaceViewModel(coordinator: coordinator, place: place)
+        placeModel.setup()
 
+        coordinatesSetup()
         setup()
     }
 
@@ -48,47 +46,59 @@ class PlaceViewController: UIViewController, Storyboarded {
     }
 }
 
+// MARK: - Map
+extension PlaceViewController{
+    /// Loading place's coordinates
+    func coordinatesSetup() {
+        let thisPlace = placeModel.place
+        let location = PlaceMap(place: thisPlace)
+        mapLocation.addAnnotation(location)
+
+        // Set initial location
+        let latitude = thisPlace.latitude
+        let longitude = thisPlace.longitude
+        let initialLocation = CLLocation(latitude: latitude, longitude: longitude)
+
+        mapLocation.centerToLocation(initialLocation)
+    }
+}
+
 // MARK: - Methods
 extension PlaceViewController {
     private func setup() {
-        name.text = place.title
-        opening.text = place.opening
-        phone.setTitle(place.phone, for: .normal)
+        name.text = placeModel.place.title
+        opening.text = placeModel.place.opening
+
 
         validAdress()
         categories()
         openingAndQuestionMark()
-        phoneAndInternet()
+        showInternet()
         favoriteColor()
         description()
     }
 
     /// Updates favorite when to use
     @IBAction func favoriteTapped(_ sender: Any) {
-        placeViewModel?.updateFavorite()
+        placeModel.updateFavorite()
         favoriteColor()
         print("ok")
     }
 
     /// To itinary view
     @IBAction func itinerary(_ sender: AnimateButton) {
-        placeViewModel?.itinerary()
-    }
-
-    /// Call the place
-    @IBAction func phoneTapped(_ sender: AnimateButton) {
-        placeViewModel?.phone()
+        placeModel.itinerary()
     }
 
     /// To the place's website
     @IBAction func webTapped(_ sender: Any) {
-        placeViewModel?.web()
+        placeModel.web()
     }
 
     /// Show address if address is valid, otherwise hide address
     private func validAdress() {
-        if place.adress != nil && place.adress != "" {
-            adress.text = place.adress
+        if placeModel.place.adress != nil && placeModel.place.adress != "" {
+            adress.text = placeModel.place.adress
         } else {
             adressImage.isHidden = true
             adress.isHidden = true
@@ -97,18 +107,19 @@ extension PlaceViewController {
 
     /// Show category
     private func categories() {
-        categoryImage.image = UIImage(named: place.category?.id ?? "")
+        let named = placeModel.place.category?.id ?? ""
+        categoryImage.image = UIImage(named: named)
 
-        if place.detail != nil && place.detail != "" {
-            category.text = place.detail
+        if placeModel.place.detail != nil && placeModel.place.detail != "" {
+            category.text = placeModel.place.detail
         } else {
-            category.text = place.category?.title
+            category.text = placeModel.place.category?.title
         }
     }
 
     /// Show favorite's status
     private func favoriteColor() {
-        if place.favorite == true {
+        if placeModel.place.favorite == true {
             topFavorite.tintColor = .yellow
             favorite.tintColor = .yellow
         } else {
@@ -119,26 +130,22 @@ extension PlaceViewController {
 
     ///  Hide questionmark if opening is missing
     private func openingAndQuestionMark() {
-        if place.opening == nil {
+        if placeModel.place.opening == nil {
             questionMark.isHidden = true
         }
     }
 
     /// hide phone and internet if missing
-    private func phoneAndInternet() {
-        if place.phone == nil {
-            phoneView.isHidden = true
-        }
-
-        if place.internet == nil {
+    private func showInternet() {
+        if placeModel.place.internet == nil {
             webView.isHidden = true
         }
     }
 
     /// Show description if description is valid
     private func description() {
-        if place.descript != nil {
-            descriptionDetail.text = place.descript
+        if placeModel.place.descript != nil {
+            descriptionDetail.text = placeModel.place.descript
         } else {
             descriptionTitle.isHidden = true
             descriptionDetail.isHidden = true

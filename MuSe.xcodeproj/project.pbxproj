@@ -16,6 +16,7 @@
 		0D2EE740280A0DFA00EE6349 /* PlaceCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2EE73F280A0DFA00EE6349 /* PlaceCoordinator.swift */; };
 		0D31DB3A280AA2330076017D /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D31DB39280AA2330076017D /* MapViewModel.swift */; };
 		0D31DB3E280B53FB0076017D /* PlaceMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D31DB3D280B53FA0076017D /* PlaceMap.swift */; };
+		0D49A2E52B1F87A800CC09F0 /* HomeModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D49A2E42B1F87A800CC09F0 /* HomeModelTests.swift */; };
 		0D4A219C2B095F2D00BEA10D /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A219B2B095F2D00BEA10D /* HistoryViewModel.swift */; };
 		0D53ECF12B0FFA4E00663239 /* MockCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D53ECF02B0FFA4E00663239 /* MockCoreDataStack.swift */; };
 		0D53ECF32B0FFA5F00663239 /* PlaceManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D53ECF22B0FFA5F00663239 /* PlaceManagerTests.swift */; };
@@ -38,7 +39,6 @@
 		0D5C393E280606D2005BF28D /* CapsuleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C393D280606D2005BF28D /* CapsuleButton.swift */; };
 		0D762E4F2AE19C18008F343F /* ItineraryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D762E4E2AE19C18008F343F /* ItineraryCoordinator.swift */; };
 		0D762E512AE19C7C008F343F /* ItineraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D762E502AE19C7C008F343F /* ItineraryViewController.swift */; };
-		0D762E532AE19E26008F343F /* ItineraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D762E522AE19E26008F343F /* ItineraryViewModel.swift */; };
 		0D762E552AE1A28E008F343F /* Itinerary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D762E542AE1A28E008F343F /* Itinerary.storyboard */; };
 		0D8979D32B1BD7D600A34E54 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8979D22B1BD7D500A34E54 /* NetworkManagerTests.swift */; };
 		0D8979D52B1BD9E000A34E54 /* Museum.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D8979D42B1BD9E000A34E54 /* Museum.json */; };
@@ -116,6 +116,7 @@
 		0D2EE73F280A0DFA00EE6349 /* PlaceCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCoordinator.swift; sourceTree = "<group>"; };
 		0D31DB39280AA2330076017D /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		0D31DB3D280B53FA0076017D /* PlaceMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceMap.swift; sourceTree = "<group>"; };
+		0D49A2E42B1F87A800CC09F0 /* HomeModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModelTests.swift; sourceTree = "<group>"; };
 		0D4A219B2B095F2D00BEA10D /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
 		0D53ECF02B0FFA4E00663239 /* MockCoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCoreDataStack.swift; sourceTree = "<group>"; };
 		0D53ECF22B0FFA5F00663239 /* PlaceManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceManagerTests.swift; sourceTree = "<group>"; };
@@ -141,7 +142,6 @@
 		0D5C393D280606D2005BF28D /* CapsuleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleButton.swift; sourceTree = "<group>"; };
 		0D762E4E2AE19C18008F343F /* ItineraryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryCoordinator.swift; sourceTree = "<group>"; };
 		0D762E502AE19C7C008F343F /* ItineraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryViewController.swift; sourceTree = "<group>"; };
-		0D762E522AE19E26008F343F /* ItineraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryViewModel.swift; sourceTree = "<group>"; };
 		0D762E542AE1A28E008F343F /* Itinerary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Itinerary.storyboard; sourceTree = "<group>"; };
 		0D8979D22B1BD7D500A34E54 /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
 		0D8979D42B1BD9E000A34E54 /* Museum.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Museum.json; sourceTree = "<group>"; };
@@ -315,7 +315,6 @@
 				0D2C31482813EBE300CD12DF /* TableViewModel.swift */,
 				0D4A219B2B095F2D00BEA10D /* HistoryViewModel.swift */,
 				0D94BA412807685600AC8A6D /* PlaceTableViewCell.swift */,
-				0D762E522AE19E26008F343F /* ItineraryViewModel.swift */,
 				0DB2023B280859DA00262DEE /* NetworkCallsViewModel.swift */,
 				0D2C314228133E6E00CD12DF /* Extension */,
 			);
@@ -487,6 +486,7 @@
 			children = (
 				0DE9D12F2B0FE54B0077643B /* Core Data Tests */,
 				0D53ECF42B1006BA00663239 /* API Tests */,
+				0D49A2E42B1F87A800CC09F0 /* HomeModelTests.swift */,
 			);
 			path = MuSeTests;
 			sourceTree = "<group>";
@@ -695,7 +695,6 @@
 				0D94BA2B28073D8F00AC8A6D /* FavoritesNavigator.swift in Sources */,
 				0D5C393E280606D2005BF28D /* CapsuleButton.swift in Sources */,
 				0DC95F0A2B1EF6C700FEBB15 /* Notification.swift in Sources */,
-				0D762E532AE19E26008F343F /* ItineraryViewModel.swift in Sources */,
 				0DB2023128082FC200262DEE /* LibraryDecodable.swift in Sources */,
 				0D94BA2628073A0500AC8A6D /* Storyboarded.swift in Sources */,
 				0DB20227280821F800262DEE /* HomeCoordinator.swift in Sources */,
@@ -717,6 +716,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D49A2E52B1F87A800CC09F0 /* HomeModelTests.swift in Sources */,
 				0D53ECF82B10074900663239 /* FakeResponseData.swift in Sources */,
 				0D53ECF32B0FFA5F00663239 /* PlaceManagerTests.swift in Sources */,
 				0D8979D32B1BD7D600A34E54 /* NetworkManagerTests.swift in Sources */,
