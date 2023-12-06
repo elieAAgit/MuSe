@@ -11,7 +11,7 @@ final class HomeViewModel: NSObject {
 
     // MARK: - Properties
 
-    private var coordinator: HomeCoordinator
+    private var coordinator: HomeCoordinator?
 
     // The three different categories
     var categories = Categories.categories
@@ -47,6 +47,6 @@ extension HomeViewModel {
 extension HomeViewModel {
     /// Categories selected to be displayed on the map
     func getSelectors() {
-        coordinator.getSelectors(with: selectors)
+        coordinator?.getSelectors(with: selectors)
     }
 }

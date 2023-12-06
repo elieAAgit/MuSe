@@ -44,7 +44,7 @@ final class PlaceViewModel {
         placeManager?.updateHistory(place)
     }
 
-    /// to Itinerary
+    /// To Itinerary
     func itinerary() {
         coordinator.donePlace(with: place)
     }

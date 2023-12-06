@@ -31,7 +31,9 @@ class HomeCollectionViewCell: UICollectionViewCell {
 
         config()
     }
-    
+
+    // MARK: - Methods
+
     /// Cell configuration with title and image
     func getCategory(category: Category) {
 

@@ -74,7 +74,7 @@ final class NetworkManager {
         var requestUrl: URL
         var request: URLRequest
 
-        //get method must not have a body
+        // get method must not have a body
         if method == .get {
             requestUrl = URL(string: base + body)!
             request = URLRequest(url: requestUrl)
@@ -82,6 +82,8 @@ final class NetworkManager {
             request.httpMethod = method.rawValue
 
             return request
+
+        // if post request usus in the future
         } else {
             requestUrl = URL(string: base)!
             request = URLRequest(url: requestUrl)

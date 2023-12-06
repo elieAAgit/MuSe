@@ -29,6 +29,24 @@ class FakeResponseData {
         guard let data = try? Data(contentsOf: url) else { return Data() }
         return data
     }
-    
+
+    static var correctTheatreData: Data {
+        let bundle = Bundle(for: FakeResponseData.self)
+        guard let url = bundle.url(forResource: "Theatre", withExtension: "json") else {
+            fatalError("json is not found.")
+        }
+        guard let data = try? Data(contentsOf: url) else { return Data() }
+        return data
+    }
+
+    static var correctGardenData: Data {
+        let bundle = Bundle(for: FakeResponseData.self)
+        guard let url = bundle.url(forResource: "Garden", withExtension: "json") else {
+            fatalError("json is not found.")
+        }
+        guard let data = try? Data(contentsOf: url) else { return Data() }
+        return data
+    }
+
     static let incorrectData = "erreur".data(using: .utf8)!
 }
