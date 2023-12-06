@@ -21,7 +21,7 @@ extension UIViewController {
         case .emptySelectorChoice:
             message = """
                       Aucune catégorie n'a été sélectionné.
-                      Choisissez-en choisir au moins une.
+                      Choisissez-en au moins une.
                       """
         }
 

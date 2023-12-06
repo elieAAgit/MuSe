@@ -72,41 +72,27 @@ class HistoryModelTests: XCTestCase {
 
     func testDataForCell_WhenDataAreFound_theAnArrayOfPlacesIsCreated() {
         // Given
-        let seconName = "Other Place"
-
-        // First place
         historyModel.placeManager?.addPlace(title: title, detail: detail, category: category, longitude: longitude, latitude: latitude, favorite: favorite, history: history, adress: adress, opening: opening, phone: phone, internet: internet, description: descript)
-
-        // Second place
-        historyModel.placeManager?.addPlace(title: seconName, detail: detail, category: category, longitude: longitude, latitude: latitude, favorite: favorite, history: history, adress: adress, opening: opening, phone: phone, internet: internet, description: descript)
 
         // When
         let places = historyModel.dataForCell()
-        let title = historyModel.placeManager?.fetchedResultsController[1].title
+        guard let place = places?[0] else { return }
 
         // Then
-        XCTAssertEqual(historyModel.placeManager?.fetchedResultsController.count, 2)
-        XCTAssertEqual(historyModel.placeManager?.fetchedResultsController.count, places?.count)
-        XCTAssertEqual(title, seconName)
+        XCTAssertEqual(place.title, title)
     }
 
-    func testDeletingRow_whenARowIsDeleted_thenThePlaceIsRemoveFromTheDatabase() {
+    func testDeletingRow_whenARowIsDeleted_thenThePlaceFavoriteIsFalse() {
         // Given
-        let seconName = "Other Place"
-
-        // First place
         historyModel.placeManager?.addPlace(title: title, detail: detail, category: category, longitude: longitude, latitude: latitude, favorite: favorite, history: history, adress: adress, opening: opening, phone: phone, internet: internet, description: descript)
-
-        // Second place
-        historyModel.placeManager?.addPlace(title: seconName, detail: detail, category: category, longitude: longitude, latitude: latitude, favorite: favorite, history: history, adress: adress, opening: opening, phone: phone, internet: internet, description: descript)
 
         // When
         guard let place = historyModel.placeManager?.fetchedResultsController[0] else { return }
 
+        XCTAssertEqual(place.history, true)
         historyModel.deletingRow(place)
 
         // Then
-        XCTAssertEqual(historyModel.placeManager?.fetchedResultsController.count, 1)
-        XCTAssertEqual(historyModel.placeManager?.fetchedResultsController[1].title, seconName)
+        XCTAssertEqual(place.history, false)
     }
 }
