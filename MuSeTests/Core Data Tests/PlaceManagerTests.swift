@@ -79,7 +79,7 @@ final class PlaceManagerTests: XCTestCase {
 
     func testFindPlace_WhenPlaceIsSearched_thenSheShouldBeFound() {
         //Given
-        placeManager.addPlace(title: title, detail: detail, category: category, longitude: longitude, latitude: latitude, favorite: false, history: false, adress: adress, opening: opening, phone: phone, internet: internet, description: description)
+        placeManager.addPlace(title: title, detail: detail, category: category, longitude: longitude, latitude: latitude, favorite: false, history: false, adress: adress, opening: opening, phone: phone, internet: internet, description: descript)
 
         let place = placeManager.fetchedResultsController[0]
 
@@ -94,7 +94,7 @@ final class PlaceManagerTests: XCTestCase {
 
     func testFindPlace_WhenPlaceIsSearchedAndUnknown_thenSheShouldNotBeFound() {
         //Given
-        placeManager.addPlace(title: title, detail: detail, category: category, longitude: longitude, latitude: latitude, favorite: false, history: false, adress: adress, opening: opening, phone: phone, internet: internet, description: description)
+        placeManager.addPlace(title: title, detail: detail, category: category, longitude: longitude, latitude: latitude, favorite: false, history: false, adress: adress, opening: opening, phone: phone, internet: internet, description: descript)
 
         let place = placeManager.fetchedResultsController[0]
 
@@ -110,7 +110,7 @@ final class PlaceManagerTests: XCTestCase {
     func testFindFavoritesPlaces_WhenPlacesAreSearched_thenTheyShouldBeFound() {
         //Given
         var favorites = [Place]()
-        placeManager.addPlace(title: title, detail: detail, category: category, longitude: longitude, latitude: latitude, favorite: true, history: false, adress: adress, opening: opening, phone: phone, internet: internet, description: description)
+        placeManager.addPlace(title: title, detail: detail, category: category, longitude: longitude, latitude: latitude, favorite: true, history: false, adress: adress, opening: opening, phone: phone, internet: internet, description: descript)
 
         // Verification of the addition of the recipe into the favorites
         XCTAssertEqual(placeManager.fetchedResultsController.count, 1)
@@ -124,7 +124,7 @@ final class PlaceManagerTests: XCTestCase {
     func testFindHistoryPlaces_WhenPlacesAreSearched_thenTheyShouldBeFound() {
         //Given
         var history = [Place]()
-        placeManager.addPlace(title: title, detail: detail, category: category, longitude: longitude, latitude: latitude, favorite: false, history: true, adress: adress, opening: opening, phone: phone, internet: internet, description: description)
+        placeManager.addPlace(title: title, detail: detail, category: category, longitude: longitude, latitude: latitude, favorite: false, history: true, adress: adress, opening: opening, phone: phone, internet: internet, description: descript)
 
         // Verification of the addition of the recipe into the favorites
         XCTAssertEqual(placeManager.fetchedResultsController.count, 1)
@@ -138,7 +138,7 @@ final class PlaceManagerTests: XCTestCase {
     func testFindPlaces_WhenPlacesAreSearched_thenTheyShouldNotBeFound() {
         //Given
         var places = [Place]()
-        placeManager.addPlace(title: title, detail: detail, category: category, longitude: longitude, latitude: latitude, favorite: false, history: false, adress: adress, opening: opening, phone: phone, internet: internet, description: description)
+        placeManager.addPlace(title: title, detail: detail, category: category, longitude: longitude, latitude: latitude, favorite: false, history: false, adress: adress, opening: opening, phone: phone, internet: internet, description: descript)
 
         // Verification of the addition of the recipe into the favorites
         XCTAssertEqual(placeManager.fetchedResultsController.count, 1)
@@ -150,7 +150,7 @@ final class PlaceManagerTests: XCTestCase {
 
     func testUpdatesFavorites_WhenFavoriteIsAdded_thenFavoriteIsTrue() {
         //Given
-        placeManager.addPlace(title: title, detail: detail, category: category, longitude: longitude, latitude: latitude, favorite: false, history: false, adress: adress, opening: opening, phone: phone, internet: internet, description: description)
+        placeManager.addPlace(title: title, detail: detail, category: category, longitude: longitude, latitude: latitude, favorite: false, history: false, adress: adress, opening: opening, phone: phone, internet: internet, description: descript)
 
         let place = placeManager.fetchedResultsController[0]
 
@@ -165,7 +165,7 @@ final class PlaceManagerTests: XCTestCase {
 
     func testUpdatesHistory_WhenHistoryIsAdded_thenHistoryIsTrue() {
         //Given
-        placeManager.addPlace(title: title, detail: detail, category: category, longitude: longitude, latitude: latitude, favorite: false, history: false, adress: adress, opening: opening, phone: phone, internet: internet, description: description)
+        placeManager.addPlace(title: title, detail: detail, category: category, longitude: longitude, latitude: latitude, favorite: false, history: false, adress: adress, opening: opening, phone: phone, internet: internet, description: descript)
 
         let place = placeManager.fetchedResultsController[0]
 
@@ -180,7 +180,7 @@ final class PlaceManagerTests: XCTestCase {
 
     func testRemoveFromHistory_WhenFavoriteIsRemoved_thenHistoryIsFalse() {
         //Given
-        placeManager.addPlace(title: title, detail: detail, category: category, longitude: longitude, latitude: latitude, favorite: false, history: true, adress: adress, opening: opening, phone: phone, internet: internet, description: description)
+        placeManager.addPlace(title: title, detail: detail, category: category, longitude: longitude, latitude: latitude, favorite: false, history: true, adress: adress, opening: opening, phone: phone, internet: internet, description: descript)
 
         let place = placeManager.fetchedResultsController[0]
 
@@ -195,7 +195,7 @@ final class PlaceManagerTests: XCTestCase {
 
     func testRemovePlace_WhenPlaceIsRemoved_thenShouldNotBeInTheDataBase() {
         //Given
-        placeManager.addPlace(title: title, detail: detail, category: category, longitude: longitude, latitude: latitude, favorite: false, history: false, adress: adress, opening: opening, phone: phone, internet: internet, description: description)
+        placeManager.addPlace(title: title, detail: detail, category: category, longitude: longitude, latitude: latitude, favorite: false, history: false, adress: adress, opening: opening, phone: phone, internet: internet, description: descript)
 
         let place = placeManager.fetchedResultsController[0]
 
@@ -216,7 +216,7 @@ final class PlaceManagerTests: XCTestCase {
 
     func testfindPlaceFavoriteOrHistory_whenFavoriteIsFound_thenDontAddThePlace() {
         //Given
-        placeManager.addPlace(title: title, detail: detail, category: category, longitude: longitude, latitude: latitude, favorite: true, history: false, adress: adress, opening: opening, phone: phone, internet: internet, description: description)
+        placeManager.addPlace(title: title, detail: detail, category: category, longitude: longitude, latitude: latitude, favorite: true, history: false, adress: adress, opening: opening, phone: phone, internet: internet, description: descript)
         //When
         let result = placeManager.findPlaceFavoriteOrHistory(title: title, latitude: latitude, longitude: longitude)
         //Then
@@ -225,7 +225,7 @@ final class PlaceManagerTests: XCTestCase {
 
     func testfindPlaceFavoriteOrHistory_whenHistoryIsFound_thenDontAddThePlace() {
         //Given
-        placeManager.addPlace(title: title, detail: detail, category: category, longitude: longitude, latitude: latitude, favorite: false, history: true, adress: adress, opening: opening, phone: phone, internet: internet, description: description)
+        placeManager.addPlace(title: title, detail: detail, category: category, longitude: longitude, latitude: latitude, favorite: false, history: true, adress: adress, opening: opening, phone: phone, internet: internet, description: descript)
         //When
         let result = placeManager.findPlaceFavoriteOrHistory(title: title, latitude: latitude, longitude: longitude)
         //Then
@@ -234,7 +234,7 @@ final class PlaceManagerTests: XCTestCase {
 
     func testDeleteAll_WhenAllPlacesAreDeleted_thenTheDataBaseIsEmpty() {
         //Given
-        placeManager.addPlace(title: title, detail: detail, category: category, longitude: longitude, latitude: latitude, favorite: false, history: false, adress: adress, opening: opening, phone: phone, internet: internet, description: description)
+        placeManager.addPlace(title: title, detail: detail, category: category, longitude: longitude, latitude: latitude, favorite: false, history: false, adress: adress, opening: opening, phone: phone, internet: internet, description: descript)
 
         // Verification of the addition of the recipe into the favorites
         XCTAssertEqual(placeManager.fetchedResultsController.count, 1)
@@ -246,7 +246,7 @@ final class PlaceManagerTests: XCTestCase {
 
     func testDeleteAll_WhenAllPlacesAreDeletedExceptFavorite_thenTheDataBaseIsNotEmpty() {
         //Given
-        placeManager.addPlace(title: title, detail: detail, category: category, longitude: longitude, latitude: latitude, favorite: true, history: false, adress: adress, opening: opening, phone: phone, internet: internet, description: description)
+        placeManager.addPlace(title: title, detail: detail, category: category, longitude: longitude, latitude: latitude, favorite: true, history: false, adress: adress, opening: opening, phone: phone, internet: internet, description: descript)
 
         // Verification of the addition of the recipe into the favorites
         XCTAssertEqual(placeManager.fetchedResultsController.count, 1)
@@ -258,7 +258,7 @@ final class PlaceManagerTests: XCTestCase {
 
     func testDeleteAll_WhenAllPlacesAreDeletedExceptHisory_thenTheDataBaseIsNotEmpty() {
         //Given
-        placeManager.addPlace(title: title, detail: detail, category: category, longitude: longitude, latitude: latitude, favorite: false, history: true, adress: adress, opening: opening, phone: phone, internet: internet, description: description)
+        placeManager.addPlace(title: title, detail: detail, category: category, longitude: longitude, latitude: latitude, favorite: false, history: true, adress: adress, opening: opening, phone: phone, internet: internet, description: descript)
 
         // Verification of the addition of the recipe into the favorites
         XCTAssertEqual(placeManager.fetchedResultsController.count, 1)
