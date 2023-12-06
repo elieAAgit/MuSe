@@ -69,6 +69,7 @@
 		0D94BA432807685700AC8A6D /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA412807685600AC8A6D /* PlaceTableViewCell.swift */; };
 		0D94BA442807685700AC8A6D /* PlaceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D94BA422807685600AC8A6D /* PlaceTableViewCell.xib */; };
 		0D94BA4628076C6A00AC8A6D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94BA4528076C6A00AC8A6D /* Category.swift */; };
+		0D9CC5832B1FF2F5004F10C5 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9CC5822B1FF2F5004F10C5 /* File.swift */; };
 		0DB20222280809FE00262DEE /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB20220280809FE00262DEE /* HomeCollectionViewCell.swift */; };
 		0DB20223280809FE00262DEE /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DB20221280809FE00262DEE /* HomeCollectionViewCell.xib */; };
 		0DB202252808200C00262DEE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB202242808200C00262DEE /* HomeViewModel.swift */; };
@@ -170,6 +171,7 @@
 		0D94BA412807685600AC8A6D /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
 		0D94BA422807685600AC8A6D /* PlaceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceTableViewCell.xib; sourceTree = "<group>"; };
 		0D94BA4528076C6A00AC8A6D /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		0D9CC5822B1FF2F5004F10C5 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		0DB20220280809FE00262DEE /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		0DB20221280809FE00262DEE /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		0DB202242808200C00262DEE /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -328,6 +330,7 @@
 				0D94BA1E280702A400AC8A6D /* PlaceViewController.swift */,
 				0D762E502AE19C7C008F343F /* ItineraryViewController.swift */,
 				0DC95F0D2B1EF97800FEBB15 /* Extension */,
+				0D9CC5822B1FF2F5004F10C5 /* File.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -691,6 +694,7 @@
 				0D94BA2628073A0500AC8A6D /* Storyboarded.swift in Sources */,
 				0DB20227280821F800262DEE /* HomeCoordinator.swift in Sources */,
 				0DE9470228187FAD0043049B /* PlaceViewModel.swift in Sources */,
+				0D9CC5832B1FF2F5004F10C5 /* File.swift in Sources */,
 				0DB2022B28082EE600262DEE /* MuseumDecodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

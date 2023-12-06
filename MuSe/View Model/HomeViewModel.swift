@@ -13,62 +13,26 @@ final class HomeViewModel: NSObject {
 
     private var coordinator: HomeCoordinator
 
-    private var collectionView: UICollectionView
-    private var categories = Categories.categories
+    // The three different categories
+    var categories = Categories.categories
+    // To select the categories
     var selectors = [String]()
 
-    init(coordinator: HomeCoordinator, collectionView: UICollectionView) {
+    init(coordinator: HomeCoordinator) {
         self.coordinator = coordinator
-        self.collectionView = collectionView
     }
 
-    // MARK: - Life Cycle
-
-    func setup() {
-        collectionView.dataSource = self
-        collectionView.delegate = self
-
-        // To use reusable custom cell
-        let nib = UINib(nibName: HomeCollectionViewCell.nibName, bundle: nil)
-        collectionView.register(nib, forCellWithReuseIdentifier: HomeCollectionViewCell.cellIdentifier)
-    }
-}
-
-// MARK: - Collection View
-extension HomeViewModel: UICollectionViewDataSource {
-
-    /// Reload the collectionView
-    func reloadData() {
-        collectionView.reloadData()
-    }
-
-    /// Number of sections for the colletion view
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
-
-    /// Number of row for the collection view
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    let numberOfSections = 1
+    var numberOfRows: Int {
         return categories.count
     }
 
-    /// Display data to the collection view cell
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeCollectionViewCell.cellIdentifier, for: indexPath) as? HomeCollectionViewCell else {
-            return UICollectionViewCell()
-        }
-
-        let category = categories[indexPath.row]
-        cell.getCategory(category: category)
-
-        return cell
-    }
 }
-
-extension HomeViewModel: UICollectionViewDelegate {
-    /// When an item is selected: add or remove from selector
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cell = categories[indexPath.row]
+// MARK: - Methods
+extension HomeViewModel {
+    /// Add or remove an item from the selectors.
+    func addOrRemoveItem(_ indexPath: Int) {
+        let cell = categories[indexPath]
 
         if selectors.contains(cell.id) {
             guard let index = selectors.firstIndex(of: cell.id) else { return }
