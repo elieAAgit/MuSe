@@ -32,12 +32,12 @@ final class MapCoordinator: Coordinator {
         navigationController.pushViewController(vc, animated: false)
     }
 
-    /// Retrieve data from home view
+    /// Retrieve data from home 
     func getSelectors(with selectors: [String]) {
         let vc = MapViewController.instantiate()
         let nav = NavigationConfiguration(controller: vc)
         vc.coordinator = self
-        vc.selectors = selectors
+        vc.selectorsForViewModel = selectors
         nav.configurationNavigation(title: "Plan", buttonBack: "", buttonIsHidden: true)
 
         navigationController.pushViewController(vc, animated: false)
